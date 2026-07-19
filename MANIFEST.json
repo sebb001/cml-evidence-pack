@@ -20,8 +20,8 @@
     },
     {
       "path": "00-tech-note.md",
-      "bytes": 3809,
-      "sha256": "f0e43ff20780ece5e58d09538a96077c44127f1c810a0cae2a424b7e2cb09d21"
+      "bytes": 3911,
+      "sha256": "480f12e7ec9237f59f8a6e2694dd0aef34e5a42140cd838251be91c2cc63818a"
     },
     {
       "path": "LICENSE.txt",
@@ -30,8 +30,8 @@
     },
     {
       "path": "README.md",
-      "bytes": 3954,
-      "sha256": "622f675ac849ae930141302041e45ccab0dd1d90f4eae340b9a89dd0216e0560"
+      "bytes": 4089,
+      "sha256": "fd8c565288a89a8d2638e3c38e8c8963a97376dbc443b8ee113b7f561ce70eb0"
     },
     {
       "path": "REDACTIONS.md",
@@ -45,8 +45,8 @@
     },
     {
       "path": "cases/00-baseline-recovery-notion-prototype/README.md",
-      "bytes": 5830,
-      "sha256": "0330b8b606880a2d21796b302855febb7cba8a9af111aed84153c92ab6c95534"
+      "bytes": 5647,
+      "sha256": "4faca6d9f7faff077dd1c9de4f3f6f8f974b352d6ce41098ad97108f85dd33bb"
     },
     {
       "path": "cases/00-baseline-recovery-notion-prototype/case.json",
@@ -55,8 +55,8 @@
     },
     {
       "path": "cases/01-paperclip-peer-correction/README.md",
-      "bytes": 3925,
-      "sha256": "022f223f4bce99fcde20bda957f52b91bc66fc125a5df92b66a6bd9ac233d14c"
+      "bytes": 3965,
+      "sha256": "0ae059e7a4914c0eb3d662da5e48c2603b9009b1529fee7ee362bc304e10d498"
     },
     {
       "path": "cases/01-paperclip-peer-correction/case.json",
@@ -65,8 +65,8 @@
     },
     {
       "path": "cases/02-repo-separation-build-loop/README.md",
-      "bytes": 4069,
-      "sha256": "20af322be6019e6a2c0d95bafc5c75f51fddf908ca320c2803732b4b18029ca8"
+      "bytes": 4120,
+      "sha256": "36e90711fe14024560ef0b9b5f63f883c4c2a517434915d886822176f9872c78"
     },
     {
       "path": "cases/02-repo-separation-build-loop/case.json",
@@ -75,8 +75,8 @@
     },
     {
       "path": "cases/03-substrate-salvage/README.md",
-      "bytes": 4392,
-      "sha256": "33bc3ecc4f1b4ebf2af1bd239e29e1db4c7fef12a4fea52107f361fa785dab42"
+      "bytes": 4446,
+      "sha256": "caaae234a26a1ce0072c7fac445f85888aea0721489a3e40957f45b5d74cf60e"
     },
     {
       "path": "cases/03-substrate-salvage/case.json",
@@ -85,18 +85,18 @@
     },
     {
       "path": "cases/04-authority-bound-write-lane/README.md",
-      "bytes": 4206,
-      "sha256": "f922e5c425f462e9927287fe3d6d6aeec51f288db958c7b8e9a564f8a8afecf6"
+      "bytes": 4246,
+      "sha256": "8a88d48ab7aa595bfe325024b9ef4590d7234d00a9cc157d5531a86a7553aaec"
     },
     {
       "path": "cases/04-authority-bound-write-lane/case.json",
-      "bytes": 40515,
-      "sha256": "cdb6a6d48621a4048090bbfa91f542b9b367c43a84593ea28819215b965095b0"
+      "bytes": 40535,
+      "sha256": "806ebc8bc5b619019202aa4fe44335791752470f3bc0503285d23970c85039b9"
     },
     {
       "path": "cases/05-gated-release-review/README.md",
-      "bytes": 4186,
-      "sha256": "6b766962a637c228923afbd2bba203117db27e5a5c77de8262e1c5ea80efbbc8"
+      "bytes": 4226,
+      "sha256": "83199755dc865bcbac23778183eccdd1832c8a5f67ac34e39b7dd8ef9209300c"
     },
     {
       "path": "cases/05-gated-release-review/case.json",

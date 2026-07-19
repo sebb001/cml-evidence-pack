@@ -274,7 +274,7 @@
             {
               "id": 105,
               "description": "Restored prior vault sync exclusion policy on Obsidian Headless.",
-              "outcome": "Recovered former LiveSync syncIgnoreRegEx list and translated folder-level entries into Obsidian Headless excluded-folders: 99_engine/nexus/Attachments, 99_engine/attachments, .smart-env, smart-connections, smart-chatgpt, smart-lookup, obsidian-copilot, Nexus/Attachments, _salvage, and 99_engine/logs. Headless remains bidirectional for governed agent content writes, config/plugin sync remains disabled, and service reports Fully synced. Root livesync_log_*.md was not translated because ob sync-config supports folder exclusions rather than filename regex exclusions.",
+              "outcome": "Recovered former LiveSync syncIgnoreRegEx list and translated folder-level entries into Obsidian Headless excluded-folders: 99_engine/[vault-area]/Attachments, 99_engine/attachments, .smart-env, smart-connections, smart-chatgpt, smart-lookup, obsidian-copilot, [vault-area]/Attachments, _salvage, and 99_engine/logs. Headless remains bidirectional for governed agent content writes, config/plugin sync remains disabled, and service reports Fully synced. Root livesync_log_*.md was not translated because ob sync-config supports folder exclusions rather than filename regex exclusions.",
               "actorId": 58,
               "createdAt": "2026-04-28T21:56:49.000Z"
             },
@@ -410,7 +410,7 @@
               "id": 16,
               "kind": "interpretation",
               "title": "ChatGPT transcript ingestion resumption and slice-map continuation plan",
-              "summary": "Mapped the existing Cleanroom ingestion substrate and confirmed that Stage A slice mapping already exists for many high-value ChatGPT transcripts under `99_engine/build-room/nexus-slice-maps/`. Proposed a conservative Stage B continuation plan using the accepted skills `intake-capture`, `claim-isolation`, and `context-map`, preserving provenance and avoiding premature canonical promotion into `01_atoms`. Identified `2026-03-02 - OpenAI and OpenClaw.md` as the first bounded high-value resumption target, confirmed that many prior long-transcript passes deliberately parked unresolved slices, and established that future continuation work should proceed via `04_reactions/` intake notes plus relation review before any canonical atom writes.",
+              "summary": "Mapped the existing Cleanroom ingestion substrate and confirmed that Stage A slice mapping already exists for many high-value ChatGPT transcripts under `99_engine/workspace/[vault-area]-slice-maps/`. Proposed a conservative Stage B continuation plan using the accepted skills `intake-capture`, `claim-isolation`, and `context-map`, preserving provenance and avoiding premature canonical promotion into `01_atoms`. Identified `2026-03-02 - OpenAI and OpenClaw.md` as the first bounded high-value resumption target, confirmed that many prior long-transcript passes deliberately parked unresolved slices, and established that future continuation work should proceed via `04_reactions/` intake notes plus relation review before any canonical atom writes.",
               "actorId": 57,
               "assumedRole": "principal-advisor",
               "sourceRef": "chatgpt-principal-advisor resumption pass 2026-05-11",

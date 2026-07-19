@@ -1,6 +1,6 @@
 # Paperclip peer correction
 
-*Case 1 `01-paperclip-peer-correction` — presentation layer rehomed from the original pack reader. The [archived case JSON](case.json) and the raw records it references are authoritative.*
+*Case 1 `01-paperclip-peer-correction`. The [case JSON](case.json) is authoritative; this brief is navigation.*
 
 ## Governance situation
 
@@ -18,21 +18,21 @@ The system records the original interpretation, the review request, the reviewer
 
 ## Selected evidence spine
 
-- **Time: 11:46 · Type: CML · Record: `CML-13` · State: active · Emitter: Seb**
+- **Time: 2026-04-02 11:46 · Type: CML · Record: `CML-13` · State: active · Emitter: Seb**
   Seb opens the Paperclip assessment with a broad mandate: inspect the repository directly, test whether the substrate is reusable, and assess whether its governance model should be adopted or avoided.
-- **Time: 11:53 · Type: INT · Record: `INT-36` · State: superseded · Emitter: codex-build**
+- **Time: 2026-04-02 11:53 · Type: INT · Record: `INT-36` · State: superseded · Emitter: codex-build**
   codex-build files the first substantive reading. The interpretation separates Paperclip's execution substrate from its governance ontology and recommends conceptual extraction rather than adopting the product shape wholesale.
-- **Time: 11:59 · Type: ACT · Record: `ACT-14` · State: recorded · Emitter: codex-build**
+- **Time: 2026-04-02 11:59 · Type: ACT · Record: `ACT-14` · State: recorded · Emitter: codex-build**
   codex-build records the handoff into peer review, creating a correction lane for INT-36 instead of leaving the first interpretation as final.
-- **Time: 11:59 · Type: CML · Record: `CML-15` · State: closed · Emitter: Seb**
+- **Time: 2026-04-02 11:59 · Type: CML · Record: `CML-15` · State: closed · Emitter: Seb**
   Seb opens the review lane and constrains it to comments only. The review is not an implementation task; it is a pressure test against the existing interpretation.
-- **Time: 12:12 · Type: INT · Record: `INT-37` · State: proposed · Emitter: code-framework**
+- **Time: 2026-04-02 12:12 · Type: INT · Record: `INT-37` · State: proposed · Emitter: code-framework**
   code-framework accepts the substrate-over-ontology thesis, then narrows the correction to three checkable points: plugin trust model, phantom adapter, and fork feasibility.
-- **Time: 12:16 · Type: INT · Record: `INT-38` · State: proposed · Emitter: codex-build**
+- **Time: 2026-04-02 12:16 · Type: INT · Record: `INT-38` · State: proposed · Emitter: codex-build**
   codex-build responds by accepting the peer-review findings. The response preserves the original assessment as historical matter while agreeing that its practical evidence basis needs revision.
-- **Time: 12:17 · Type: INT · Record: `INT-40` · State: proposed · Emitter: codex-build**
+- **Time: 2026-04-02 12:17 · Type: INT · Record: `INT-40` · State: proposed · Emitter: codex-build**
   codex-build files the corrected assessment back on the original matter. The revised record keeps the central substrate thesis intact while strengthening the plugin/runtime evidence.
-- **Time: 12:17 · Type: ACT · Record: `ACT-15` · State: recorded · Emitter: codex-build**
+- **Time: 2026-04-02 12:17 · Type: ACT · Record: `ACT-15` · State: recorded · Emitter: codex-build**
   codex-build records the correction loop as complete: the review was received, the material corrections were accepted, and the revised interpretation became the operative reading.
 
 ## Trust movement
@@ -45,4 +45,4 @@ This is judgment under correction pressure. The record shows a preference for tr
 
 ## Verification links
 
-[Case JSON](case.json) · `CML-13.json`, `CML-15.json`
+[Case JSON](case.json) — embeds the full context packets for `CML-13` and `CML-15`.

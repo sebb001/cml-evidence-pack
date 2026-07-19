@@ -1,6 +1,6 @@
 # Baseline recovery
 
-*Origin case `00-baseline-recovery-notion-prototype` — presentation layer rehomed from the original pack reader. The [archived case JSON](case.json) and the raw records it references are authoritative.*
+*Origin case `00-baseline-recovery-notion-prototype`. The [case JSON](case.json) is authoritative; this brief is navigation.*
 
 ## Governance situation
 
@@ -51,4 +51,4 @@ This is the failure mode 3M-LAYER was built to handle: not lack of intelligence,
 
 ## Verification links
 
-[Case JSON](case.json) · `origin/notion/notion-prototype-records.json`, `origin/notion-prototype-cml-inventory.md`, `origin/vault/STATUS-COLLECTION.md`, `origin/vault/STATUS-SYNTHESIS.md`, `origin/vault/LN-027-cml-instantiation-exploration.md`, `origin/vault/HANDOFF.md`
+[Case JSON](case.json) — the prototype-era Notion and vault sources for this case are embedded within it; the standalone source exports remain in the private record.

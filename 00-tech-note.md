@@ -4,9 +4,9 @@ Copyright 2026 Sebastian Bohle. Licensed under CC BY-NC-ND 4.0; see LICENSE.txt.
 
 ## What this is
 
-This package contains one baseline recovery case from the Notion prototype instantiation and five raw Context Mediation Layer (CML) case packets from a live CML prototype instance (working name `3M-LAYER` at the time, preserved inside the records). The HTML reader provides orientation and navigation; the JSON records remain the source matter.
+This package contains one baseline recovery case from the Notion prototype instantiation and five raw Context Mediation Layer (CML) case packets from a live CML prototype instance (working name `3M-LAYER` at the time, preserved inside the records). The case briefs provide orientation; the `case.json` records remain the source matter.
 
-It also contains compact architecture references for orientation: the component slice map and governance schema source. Fuller architecture and contract doctrine are intentionally left for the repository review gate after the conversation.
+Architecture and schema documentation is not part of this package; it lives in the runtime repository.
 
 ## Origin context
 
@@ -34,6 +34,10 @@ The five later case records and the live origin anchors were retrieved from the 
 - `alignment`: The relation an interpretation declares to the matter it addresses: aligned, uncertain, divergent, or superseded.
 - `supersession`: A replacement relation where a newer record takes over from an older one without deleting the old record.
 - `scope`: The named operating area a record belongs to.
+- `session`: The execution context that produced a trace. No standalone session records appear in these packets; sessions surface through record provenance fields.
+
+These definitions align with the concepts documentation in the runtime
+repository.
 
 ## Architecture references
 
