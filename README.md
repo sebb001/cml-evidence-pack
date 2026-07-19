@@ -3,6 +3,8 @@
 Coordination records from the lab where the Context Mediation Layer (CML)
 was built and first used.
 
+![An assortment of three states of epistemic certainty](assets/ce-chat-la.png)
+
 ## What this is
 
 One origin case and five later governance cases from a live CML instance.
