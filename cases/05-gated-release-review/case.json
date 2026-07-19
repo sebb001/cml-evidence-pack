@@ -7,7 +7,7 @@
     "thesis": "Presentation pressure was converted into explicit release gates. A clean-publication effort grew into source custody, live topology, external review readiness, and claim-verification records.",
     "story": "The governance situation is a deadline with reputational weight. It would be easy to optimise for presentation: clean the repo, show the demo, move quickly. Instead the matter becomes a governed release lane. The record distinguishes polish from proof, documents what is deployed, captures gate decisions, and packages evidence for an outside technical reader.",
     "orgExperience": "The evidence shows readiness becoming inspectable. The governing question is not whether the work can be made impressive; it is whether the claims behind it have been checked, what remains unresolved, and what evidence can be shared without creating avoidable risk.",
-    "mechanism": "Publication work, OAuth/write deployment, CEO review context, gate decisions, source-harvest results, and external review handoff remain linked across the release matter.",
+    "mechanism": "Publication work, OAuth/write deployment, client-executive review context, gate decisions, source-harvest results, and external review handoff remain linked across the release matter.",
     "transition": "CML-36 -> RPT-12 -> CML-38 -> RPT-33 -> RPT-39 -> RPT-41",
     "demonstrates": "This is restraint under external pressure. The record shows a clean-release effort being slowed down by gates for naming, custody, actor identity, service topology, live deployment, and review readiness before the work is shown to outsiders."
   },
@@ -332,7 +332,7 @@
           "intent": {
             "id": 36,
             "scope": "lab",
-            "description": "Publish 3M-LAYER as a clean, history-free private GitHub pilot repo for a technical CEO review with a fintech seed-board context. The repo should remain free of internal prose and secrets, preserve neutral docs/setup/config and MIT license posture, separate internal contract matter, document Claude Code CLI and chat MCP review paths, and pass a QA shakedown before release.",
+            "description": "Publish 3M-LAYER as a clean, history-free private GitHub pilot repo for a technical review by a client executive with a board context. The repo should remain free of internal prose and secrets, preserve neutral docs/setup/config and MIT license posture, separate internal contract matter, document Claude Code CLI and chat MCP review paths, and pass a QA shakedown before release.",
             "status": "active",
             "version": 3,
             "source": "seb",
@@ -373,7 +373,7 @@
               "id": 41,
               "kind": "status",
               "title": "3M-LAYER Claude Code review handoff",
-              "summary": "Observed: CML-36 is active and now includes the fintech CEO technical-review scenario. A local internal review handoff was written at [local-workspace]/3m-layer/docs/internal/claude-code-review-report.md; docs/internal is ignored by Git and should not be published. The handoff instructs the reviewer to use CLI/local stdio MCP for Claude Code and hosted OAuth MCP only for chat-style clients, and it defines review criteria for uniform naming, no secrets or private material, documentation accuracy, minimal generic contract matter, universal MCP/OAuth posture, write-action safety, component slices, QA, ignored files, and release readiness. Inferred: the repo is ready for an external Claude-assisted review, while the review artifact itself remains internal. Unresolved: Claude Code previously hung in Codex on non-interactive prompts, so the human reviewer should run Claude Code interactively or document tool unavailability. Proposed: run the review, fix any critical/high findings before the CEO-facing walkthrough, and accept or resolve medium findings explicitly.",
+              "summary": "Observed: CML-36 is active and now includes the client-executive technical-review scenario. A local internal review handoff was written at [local-workspace]/3m-layer/docs/internal/claude-code-review-report.md; docs/internal is ignored by Git and should not be published. The handoff instructs the reviewer to use CLI/local stdio MCP for Claude Code and hosted OAuth MCP only for chat-style clients, and it defines review criteria for uniform naming, no secrets or private material, documentation accuracy, minimal generic contract matter, universal MCP/OAuth posture, write-action safety, component slices, QA, ignored files, and release readiness. Inferred: the repo is ready for an external Claude-assisted review, while the review artifact itself remains internal. Unresolved: Claude Code previously hung in Codex on non-interactive prompts, so the human reviewer should run Claude Code interactively or document tool unavailability. Proposed: run the review, fix any critical/high findings before the executive-facing walkthrough, and accept or resolve medium findings explicitly.",
               "actorId": 22,
               "sourceRef": "codex:3m-layer-claude-review-handoff-2026-05-17",
               "createdAt": "2026-05-17T11:26:49.000Z"
@@ -403,7 +403,7 @@
             {
               "id": 440,
               "type": "intent_updated",
-              "reason": "Seb added the CEO technical review scenario and Claude-oriented repo review as part of the release intent.",
+              "reason": "Seb added the client-executive technical review scenario and Claude-oriented repo review as part of the release intent.",
               "createdAt": "2026-05-17T11:25:17.000Z"
             },
             {

@@ -14,7 +14,7 @@ The evidence shows readiness becoming inspectable. The governing question is not
 
 ## Operating pattern in the records
 
-Publication work, OAuth/write deployment, CEO review context, gate decisions, source-harvest results, and external review handoff remain linked across the release matter.
+Publication work, OAuth/write deployment, client-executive review context, gate decisions, source-harvest results, and external review handoff remain linked across the release matter.
 
 ## Selected evidence spine
 
@@ -35,7 +35,7 @@ Publication work, OAuth/write deployment, CEO review context, gate decisions, so
 - **Time: 2026-05-12 17:11 · Type: RPT · Record: `RPT-39` · State: implementation-result · Emitter: codex-build**
   codex-build records the non-destructive source-harvest implementation result. The report shows how live internal material was harvested without directly polluting the public-intended repo.
 - **Time: 2026-05-17 11:26 · Type: RPT · Record: `RPT-41` · State: status · Emitter: codex-build**
-  codex-build files the Claude Code review handoff for the CEO walkthrough scenario. This closes the loop between pilot publication, external technical review, and the meeting context that raised the quality bar.
+  codex-build files the Claude Code review handoff for the client-executive walkthrough scenario. This closes the loop between pilot publication, external technical review, and the meeting context that raised the quality bar.
 
 ## Trust movement
 
