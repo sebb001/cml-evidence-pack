@@ -34,10 +34,10 @@ The five later case records and the live origin anchors were retrieved from the 
 - `alignment`: The relation an interpretation declares to the matter it addresses: aligned, uncertain, divergent, or superseded.
 - `supersession`: A replacement relation where a newer record takes over from an older one without deleting the old record.
 - `scope`: The named operating area a record belongs to.
-- `session`: The execution context that produced a trace. No standalone session records appear in these packets; sessions surface through record provenance fields.
+- `session`: The execution context that produced a trace. No standalone session records appear in these packets; sessions surface through record provenance fields and action outcomes.
 
-These definitions align with the concepts documentation in the runtime
-repository.
+Definitions align with the runtime repository's
+[Concepts and Limitations](https://github.com/sebb001/context-mediation-layer/blob/main/docs/concepts-and-limitations.md).
 
 ## Architecture references
 
