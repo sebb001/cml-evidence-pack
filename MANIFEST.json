@@ -1,0 +1,113 @@
+{
+  "packageName": "cml-evidence-pack",
+  "packageVersion": "v0.3-public-lean",
+  "createdAt": "2026-05-18T00:19:26.365Z",
+  "updatedAt": "2026-07-19",
+  "copyright": "Copyright 2026 Sebastian Bohle",
+  "license": "CC BY-NC-ND 4.0. See LICENSE.txt.",
+  "source": {
+    "system": "live CML instance",
+    "resolver": "neutral read access",
+    "exactCommandShape": "server-side neutral context resolver against the live CML store",
+    "note": "Prototype-era vault and Notion sources were used only after live resolver checks showed the origin reconciliation was not preserved as a complete JSON-backed case. Historical command names are not product authority for this package."
+  },
+  "redactions": "See REDACTIONS.md \u2014 v0.2 private-release pass plus v0.3 public-release pass (client identifiers, internal system pseudonyms, audio omitted, hashes regenerated).",
+  "files": [
+    {
+      "path": ".gitignore",
+      "bytes": 16,
+      "sha256": "7a14492ee00cc73c1b9253102df335fe6440c8ab1d62bc49974ebee06978c416"
+    },
+    {
+      "path": "00-tech-note.md",
+      "bytes": 3809,
+      "sha256": "f0e43ff20780ece5e58d09538a96077c44127f1c810a0cae2a424b7e2cb09d21"
+    },
+    {
+      "path": "LICENSE.txt",
+      "bytes": 561,
+      "sha256": "0db713aa47df9bdfc49fe484d1490acf4f1be228db673b9b9e969275c5500a3e"
+    },
+    {
+      "path": "README.md",
+      "bytes": 3954,
+      "sha256": "622f675ac849ae930141302041e45ccab0dd1d90f4eae340b9a89dd0216e0560"
+    },
+    {
+      "path": "REDACTIONS.md",
+      "bytes": 2633,
+      "sha256": "2b24094e34f1007edde071c2da13659ec9cc4f6ad1a2b4a3c41cd83f55d48437"
+    },
+    {
+      "path": "assets/ce-chat-la.png",
+      "bytes": 1340762,
+      "sha256": "8208da4004f5d5aa48030d4685009b8f0a77e3e897abce523c2c7b2309b0f994"
+    },
+    {
+      "path": "cases/00-baseline-recovery-notion-prototype/README.md",
+      "bytes": 5830,
+      "sha256": "0330b8b606880a2d21796b302855febb7cba8a9af111aed84153c92ab6c95534"
+    },
+    {
+      "path": "cases/00-baseline-recovery-notion-prototype/case.json",
+      "bytes": 27382,
+      "sha256": "50ab9a186cd6e0f984d04a7afbedae593ae58ca611592c554ffbe93b91507c54"
+    },
+    {
+      "path": "cases/01-paperclip-peer-correction/README.md",
+      "bytes": 3925,
+      "sha256": "022f223f4bce99fcde20bda957f52b91bc66fc125a5df92b66a6bd9ac233d14c"
+    },
+    {
+      "path": "cases/01-paperclip-peer-correction/case.json",
+      "bytes": 13686,
+      "sha256": "8c248d2ffbe269357c05f623d9e63e46c1687ea67dbff0da3d00505610a847ae"
+    },
+    {
+      "path": "cases/02-repo-separation-build-loop/README.md",
+      "bytes": 4069,
+      "sha256": "20af322be6019e6a2c0d95bafc5c75f51fddf908ca320c2803732b4b18029ca8"
+    },
+    {
+      "path": "cases/02-repo-separation-build-loop/case.json",
+      "bytes": 24250,
+      "sha256": "64e0a6e38bfa5b12d83d3657d11861c883a43e0c98bf4b15bdbd171b5618d56a"
+    },
+    {
+      "path": "cases/03-substrate-salvage/README.md",
+      "bytes": 4392,
+      "sha256": "33bc3ecc4f1b4ebf2af1bd239e29e1db4c7fef12a4fea52107f361fa785dab42"
+    },
+    {
+      "path": "cases/03-substrate-salvage/case.json",
+      "bytes": 41459,
+      "sha256": "8cc2e77c993b1565311fc9348f94c9ed53d8604218657834be057574a4ef2ccf"
+    },
+    {
+      "path": "cases/04-authority-bound-write-lane/README.md",
+      "bytes": 4206,
+      "sha256": "f922e5c425f462e9927287fe3d6d6aeec51f288db958c7b8e9a564f8a8afecf6"
+    },
+    {
+      "path": "cases/04-authority-bound-write-lane/case.json",
+      "bytes": 40515,
+      "sha256": "cdb6a6d48621a4048090bbfa91f542b9b367c43a84593ea28819215b965095b0"
+    },
+    {
+      "path": "cases/05-gated-release-review/README.md",
+      "bytes": 4186,
+      "sha256": "6b766962a637c228923afbd2bba203117db27e5a5c77de8262e1c5ea80efbbc8"
+    },
+    {
+      "path": "cases/05-gated-release-review/case.json",
+      "bytes": 51596,
+      "sha256": "43a931ccc50ce34d3a60f9b5cab75e6946f913ca64d988cc0ea8994be89ddde8"
+    },
+    {
+      "path": "docs/how-to-read-this-pack.md",
+      "bytes": 1858,
+      "sha256": "6fb6186871c7676078b779387d21eaeb170eeb29530ddffb205aa2d73931570f"
+    }
+  ],
+  "note": "Lean public dataset: six case packets with case-relevant records only. See REDACTIONS.md."
+}

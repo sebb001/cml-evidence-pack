@@ -1,0 +1,598 @@
+{
+  "packageName": "3m-layer-operational-evidence-pack",
+  "packageVersion": "v0.1",
+  "title": "Baseline recovery",
+  "caseId": "00-baseline-recovery-notion-prototype",
+  "synthesis": {
+    "thesis": "CML exists as an operational prototype, rather than only as an essay-series concept, because of an epistemic crisis in my own lab.",
+    "story": "The research environment had sunk into coordination chaos: parallel actors were working from incompatible maps, stale assumptions were being treated as live state, and a single human had become the manual bridge between systems that could no longer reliably understand each other. The shared state had collapsed. The first CML intervention was therefore not a product demo or a theoretical proof. It was a recovery operation: collect the divergent views, make them legible, let actors cold-read the shared surface, and see whether coherence could return without another round of private human mediation.",
+    "orgExperience": "The evidence shows the core operating posture behind the later cases: when shared state collapses, do not compress the mess into a retrospective story. Collect the incompatible maps, preserve their provenance, separate observer-coupled interpretations from facts, and let the system recover through legibility.",
+    "mechanism": "Thirteen status reports were collected from active Cowork and Code threads, synthesised into interpretations and divergences, persisted into the Notion CML prototype, and then read cold by participating actors.",
+    "transition": "LN-025 -> STATUS-COLLECTION -> STATUS-SYNTHESIS -> CML-1..CML-8 -> CML-6 convergence",
+    "demonstrates": "This is the failure mode 3M-LAYER was built to handle: not lack of intelligence, not lack of effort, but loss of shared state under parallel execution. The origin case shows why the system exists; the five cases that follow show what the recovered operating discipline made possible.",
+    "evidenceStandard": "Prototype-era Notion CML records plus vault source matter; first-class origin case, but not current resolver-backed 3M-LAYER JSON."
+  },
+  "sourceFiles": [
+    "origin/notion/notion-prototype-records.json",
+    "origin/notion-prototype-cml-inventory.md",
+    "origin/vault/STATUS-COLLECTION.md",
+    "origin/vault/STATUS-SYNTHESIS.md",
+    "origin/vault/LN-027-cml-instantiation-exploration.md",
+    "origin/vault/HANDOFF.md"
+  ],
+  "selectedEvidenceSpine": [
+    {
+      "kind": "intent",
+      "id": "CML-1",
+      "timestamp": "2026-03-28T04:45:27.585Z",
+      "state": "Interpreted",
+      "emitter": "Cowork session",
+      "href": "origin/notion/records/CML-1.json",
+      "summary": "The first prototype intent frames the problem directly: LN-025 had shown that no single actor held canonical state, and context divergence could become unintended scope creep."
+    },
+    {
+      "kind": "interpretation",
+      "id": "N-INT-813a-aef6",
+      "timestamp": "2026-03-28T06:28:59.743Z",
+      "state": "Divergent",
+      "emitter": "CODE: Repo Merge Policy and Git Defaults",
+      "href": "origin/notion/records/N-INT-813a-aef6.json",
+      "summary": "A Code thread still treats Codex as the primary PR actor. The repo setting is valid, but the actor assumption is stale, making the divergence visible instead of silently contaminating execution."
+    },
+    {
+      "kind": "interpretation",
+      "id": "N-INT-8147-a42e",
+      "timestamp": "2026-03-28T06:29:16.857Z",
+      "state": "Divergent",
+      "emitter": "CODE: Build API Abstraction Layer for Machine",
+      "href": "origin/notion/records/N-INT-8147-a42e.json",
+      "summary": "A Machine Build thread has no handover context at all. The system records ignorance as a state, which matters because absence of awareness is operationally different from disagreement."
+    },
+    {
+      "kind": "interpretation",
+      "id": "N-INT-810a-a9f2",
+      "timestamp": "2026-03-28T06:29:28.892Z",
+      "state": "Divergent",
+      "emitter": "Cowork-authored pseudo-self-report",
+      "href": "origin/notion/records/N-INT-810a-a9f2.json",
+      "summary": "A pseudo-self-report states that M2 runs are executing as if it were fact. The CML record correctly demotes it to observer-coupled interpretation, exposing the exact failure mode the schema was built to prevent."
+    },
+    {
+      "kind": "interpretation",
+      "id": "N-INT-815d-9ccf",
+      "timestamp": "2026-03-28T06:29:57.793Z",
+      "state": "Aligned",
+      "emitter": "COWORK: Operating Contract & CML",
+      "href": "origin/notion/records/N-INT-815d-9ccf.json",
+      "summary": "The first aligned coordination interpretation defines the recovery surface as a thin contract, boundary definitions, handoff log, dashboard, and Notion CML instance rather than a comprehensive behavioural rulebook."
+    },
+    {
+      "kind": "interpretation",
+      "id": "N-INT-81ed-b45a",
+      "timestamp": "2026-03-28T07:04:19.985Z",
+      "state": "Aligned",
+      "emitter": "CODE: Build API Abstraction Layer for Machine",
+      "href": "origin/notion/records/N-INT-81ed-b45a.json",
+      "summary": "A previously divergent Code thread cold-reads the shared surface, ingests the protocol into CLAUDE.md, acknowledges that its earlier divergence was historically accurate, and comes online without private re-briefing."
+    },
+    {
+      "kind": "interpretation",
+      "id": "N-INT-817a-9385",
+      "timestamp": "2026-03-28T07:13:46.193Z",
+      "state": "Aligned",
+      "emitter": "CODE: Repo Merge Policy and Git Defaults",
+      "href": "origin/notion/records/N-INT-817a-9385.json",
+      "summary": "The Infrastructure thread corrects its stale Codex assumption and registers Claude Code as the effective PR actor. The record shows the same actor moving from stale state to aligned state through the shared surface."
+    },
+    {
+      "kind": "action",
+      "id": "N-ACT-8179-9c50",
+      "timestamp": "2026-03-28T07:13:52.562Z",
+      "state": "Complete",
+      "emitter": "CODE: Repo Merge Policy and Git Defaults",
+      "href": "origin/notion/records/N-ACT-8179-9c50.json",
+      "summary": "The aligned interpretation produces an action: squash-only merge policy and git defaults are applied, turning state recovery into an auditable infrastructure change."
+    },
+    {
+      "kind": "interpretation",
+      "id": "N-INT-81c9-8124",
+      "timestamp": "2026-03-28T07:54:44.158Z",
+      "state": "Aligned",
+      "emitter": "Cowork - The Machine / Epistemic Lab",
+      "href": "origin/notion/records/N-INT-81c9-8124.json",
+      "summary": "Machine Build registers that its Claude Code handover is de facto complete. The recovery no longer depends on a single central correction; domains can locate their own current state."
+    },
+    {
+      "kind": "interpretation",
+      "id": "N-INT-81fb-8f07",
+      "timestamp": "2026-03-28T08:07:51.283Z",
+      "state": "Aligned",
+      "emitter": "CODE: Repo Merge Policy and Git Defaults",
+      "href": "origin/notion/records/N-INT-81fb-8f07.json",
+      "summary": "Infrastructure closes its CML-6 scope by declaring the old prompts channel obsolete and the CML the universal truth surface for that handover lane."
+    },
+    {
+      "kind": "report",
+      "id": "N-NOTE-20260328",
+      "timestamp": "2026-03-28T10:38:29.408Z",
+      "state": "field note",
+      "emitter": "CML Field Note",
+      "href": "origin/notion/records/N-NOTE-20260328.json",
+      "summary": "The field note records the operational result: approximately 13 report-outs were synthesised, actors cold-read the surface, and the board moved from half red/green to mostly green within 30 minutes."
+    }
+  ],
+  "notionPrototypeRecords": {
+    "source": {
+      "platform": "Notion",
+      "instanceTitle": "Epistemic Lab - CML Instance",
+      "instancePageId": "3318398e-7806-81d6-9697-d28b91cfdd72",
+      "instanceUrl": "[notion-url-removed]",
+      "evidenceStandard": "Prototype-era Notion CML records pulled from the original Notion instantiation; not current resolver-backed 3M-LAYER records."
+    },
+    "intents": [
+      {
+        "id": "CML-1",
+        "pageId": "[removed]",
+        "url": "[removed]",
+        "timestamp": "2026-03-28T04:45:27.585Z",
+        "state": "Interpreted",
+        "emitter": "Cowork session",
+        "title": "Establish coordination infrastructure",
+        "context": "Prevent recurrence of LN-025-type failures. No single actor holds canonical state. Context divergence -> unintended scope creep -> incident."
+      },
+      {
+        "id": "CML-2",
+        "pageId": "[removed]",
+        "url": "[removed]",
+        "timestamp": "2026-03-28T04:45:27.585Z",
+        "state": "Active",
+        "emitter": "Inherited from LN-025",
+        "title": "Commit scorecard.py + config changes",
+        "context": "LN-025 produced scorecard.py modifications and 9 config changes. Smoke-tested locally, not tested on remote. Need commit path through Code."
+      },
+      {
+        "id": "CML-3",
+        "pageId": "[removed]",
+        "url": "[removed]",
+        "timestamp": "2026-03-28T04:45:27.585Z",
+        "state": "Active",
+        "emitter": "Cowork session",
+        "title": "Verify M2 mechiso runs completed",
+        "context": "12 configs placed in watcher inbox. Status unknown - need server check."
+      },
+      {
+        "id": "CML-4",
+        "pageId": "[removed]",
+        "url": "[removed]",
+        "timestamp": "2026-03-28T04:45:27.585Z",
+        "state": "Active",
+        "emitter": "Cowork session",
+        "title": "Test CML schema as prove point",
+        "context": "Use the lab's own coordination system to formally instantiate and test the CML. Falsification criteria in LN-027. Test period: 5 cycles or 2 weeks."
+      },
+      {
+        "id": "CML-5",
+        "pageId": "[removed]",
+        "url": "[removed]",
+        "timestamp": "2026-03-28T06:19:06.570Z",
+        "state": "Interpreted",
+        "emitter": "Seb",
+        "title": "Sunset Codex as code base owner",
+        "context": "Claude Code will take end-to-end ownership of any development and infrastructure work going forward. Codex is available for questions."
+      },
+      {
+        "id": "CML-6",
+        "pageId": "[removed]",
+        "url": "[removed]",
+        "timestamp": "2026-03-28T06:21:30.247Z",
+        "state": "no status set",
+        "emitter": "Seb",
+        "title": "Hand over code base to Claude Code",
+        "context": "Small cutover plan, ensuring we're in optimal shape, before Code assumes ownership."
+      },
+      {
+        "id": "CML-7",
+        "pageId": "[removed]",
+        "url": "[removed]",
+        "timestamp": "2026-03-28T07:40:07.631Z",
+        "state": "no status set",
+        "emitter": "Seb",
+        "title": "End-to-end link between framework and machine",
+        "context": "Finish the API abstraction work."
+      },
+      {
+        "id": "CML-8",
+        "pageId": "[removed]",
+        "url": "[removed]",
+        "timestamp": "2026-03-28T20:37:14.862Z",
+        "state": "Active",
+        "emitter": "Intent & Arbitration",
+        "title": "Refine CML to enable real, equitable state awareness",
+        "context": "Realtime notifications, lightweight lifecycle process, and escalation policy for signals that require human decision or intervention."
+      }
+    ],
+    "interpretations": [
+      {
+        "id": "N-INT-81fb-a615",
+        "pageId": "[removed]",
+        "url": "[removed]",
+        "timestamp": "2026-03-28T06:28:17.213Z",
+        "state": "Aligned",
+        "status": null,
+        "emitter": "COWORK: Operating Contract & CML",
+        "domain": "Project Coordination",
+        "intentRefs": [
+          "CML-5"
+        ],
+        "title": "Codex is permanently gone. Decision taken and propagated to TASKS.md. Claude Code takes over all build/devops.",
+        "scopeAssumption": "Assumed codex departure is final and non-reversible. Did not verify whether other threads are aware."
+      },
+      {
+        "id": "N-INT-813a-aef6",
+        "pageId": "[removed]",
+        "url": "[removed]",
+        "timestamp": "2026-03-28T06:28:59.743Z",
+        "state": "Divergent",
+        "status": null,
+        "emitter": "CODE: Repo Merge Policy and Git Defaults",
+        "domain": "Infrastructure",
+        "intentRefs": [
+          "CML-5"
+        ],
+        "title": "Codex is the primary PR actor on [sim-repo]. Squash-merge repo setting constrains all actors including Codex.",
+        "scopeAssumption": "Describes Codex as current PR actor. Repo settings are sound regardless, but the actor assumption is stale."
+      },
+      {
+        "id": "N-INT-819a-9102",
+        "pageId": "[removed]",
+        "url": "[removed]",
+        "timestamp": "2026-03-28T06:29:16.857Z",
+        "state": "Aligned",
+        "status": null,
+        "emitter": "COWORK: Operating Contract & CML",
+        "domain": "Project Coordination",
+        "intentRefs": [
+          "CML-6"
+        ],
+        "title": "Claude Code takes over build/devops. Authority surface defined in OPERATING-CONTRACT. Framework Build and Infrastructure domains transfer from Codex.",
+        "scopeAssumption": "Assumed the handover is a decision to propagate, not a plan to design. Defined authority surfaces but not the operational steps of the transition."
+      },
+      {
+        "id": "N-INT-8121-a506",
+        "pageId": "[removed]",
+        "url": "[removed]",
+        "timestamp": "2026-03-28T06:29:16.857Z",
+        "state": "Uncertain",
+        "status": null,
+        "emitter": "COWORK: Comprehensive Update",
+        "domain": "Project Coordination",
+        "intentRefs": [
+          "CML-6"
+        ],
+        "title": "Claude Code build role needed. When and how does Code take over? No blocker except doing it. Listed as Waiting On in TASKS.md.",
+        "scopeAssumption": "Correctly identified the gap: the decision exists but the execution plan does not."
+      },
+      {
+        "id": "N-INT-8153-a68a",
+        "pageId": "[removed]",
+        "url": "[removed]",
+        "timestamp": "2026-03-28T06:29:16.857Z",
+        "state": "Divergent",
+        "status": null,
+        "emitter": "CODE: Repo Merge Policy and Git Defaults",
+        "domain": "Infrastructure",
+        "intentRefs": [
+          "CML-6"
+        ],
+        "title": "No awareness of this intent. Repo settings applied assuming Codex is the PR actor. Claude Code not mentioned.",
+        "scopeAssumption": "Infrastructure domain configured merge policy for an actor being replaced. Settings are valid regardless, but the handover had not reached this domain."
+      },
+      {
+        "id": "N-INT-8147-a42e",
+        "pageId": "[removed]",
+        "url": "[removed]",
+        "timestamp": "2026-03-28T06:29:16.857Z",
+        "state": "Divergent",
+        "status": null,
+        "emitter": "CODE: Build API Abstraction Layer for Machine",
+        "domain": "Machine Build",
+        "intentRefs": [
+          "CML-6"
+        ],
+        "title": "No awareness of this intent. Thread was consumed by off-topic coordination bleed. No handover context received.",
+        "scopeAssumption": "This Code thread should eventually be affected by the handover but had received no signal about it."
+      },
+      {
+        "id": "N-INT-81ed-b45a",
+        "pageId": "[removed]",
+        "url": "[removed]",
+        "timestamp": "2026-03-28T07:04:19.985Z",
+        "state": "Aligned",
+        "status": null,
+        "emitter": "CODE: Build API Abstraction Layer for Machine",
+        "domain": "Machine Build",
+        "intentRefs": [
+          "CML-6"
+        ],
+        "title": "CML now ingested and stored in CLAUDE.md. I can read the authority surface. Previous interpretation was correct; this thread had no CML context at the time. Now online.",
+        "scopeAssumption": "Handover means CLAUDE.md written, CML readable, protocol followable from this session forward. Codex is dead; this actor is the build actor."
+      },
+      {
+        "id": "N-INT-810a-a9f2",
+        "pageId": "[removed]",
+        "url": "[removed]",
+        "timestamp": "2026-03-28T06:29:28.892Z",
+        "state": "Divergent",
+        "status": null,
+        "emitter": "COWORK: Self-Report (Cowork-authored, not Seb)",
+        "domain": "Lab Operations",
+        "intentRefs": [
+          "CML-3"
+        ],
+        "title": "M2 mechiso runs executing.",
+        "scopeAssumption": "Stated as present-tense fact without verification. This was a Cowork instance speaking as Seb: interpretation masquerading as authoritative claim."
+      },
+      {
+        "id": "N-INT-8113-a6ef",
+        "pageId": "[removed]",
+        "url": "[removed]",
+        "timestamp": "2026-03-28T06:29:28.892Z",
+        "state": "Aligned",
+        "status": null,
+        "emitter": "COWORK: Comprehensive Update",
+        "domain": "Project Coordination",
+        "intentRefs": [
+          "CML-3"
+        ],
+        "title": "M2 run completion unverified. Blocks analysis, evidence processing, and downstream M2 conclusions.",
+        "scopeAssumption": "Correctly flagged as unknown. Did not assume completion or failure."
+      },
+      {
+        "id": "N-INT-8129-f71e",
+        "pageId": "[removed]",
+        "url": "[removed]",
+        "timestamp": "2026-03-28T06:29:28.892Z",
+        "state": "Aligned",
+        "status": null,
+        "emitter": "COWORK: M2 Mechanism Confirmation",
+        "domain": "Lab Operations",
+        "intentRefs": [
+          "CML-3"
+        ],
+        "title": "12 configs in inbox, no results visible in outbox. Watcher status on server unknown. Need Seb to check.",
+        "scopeAssumption": "Correctly scoped as unverified. Did not claim completion."
+      },
+      {
+        "id": "N-INT-8142-92a6",
+        "pageId": "[removed]",
+        "url": "[removed]",
+        "timestamp": "2026-03-28T06:29:36.896Z",
+        "state": "Divergent",
+        "status": null,
+        "emitter": "COWORK: M2 Mechanism Confirmation",
+        "domain": "Lab Operations",
+        "intentRefs": [
+          "CML-2"
+        ],
+        "title": "Codex PR for scorecard.py blocked on quota. Currently cowork-side only. Waiting for codex to return.",
+        "scopeAssumption": "Treats the commit path as codex-dependent. The actual blocker is Code role setup, not quota."
+      },
+      {
+        "id": "N-INT-81c7-ad44",
+        "pageId": "[removed]",
+        "url": "[removed]",
+        "timestamp": "2026-03-28T06:29:36.896Z",
+        "state": "Aligned",
+        "status": null,
+        "emitter": "COWORK: Operating Contract & CML",
+        "domain": "Project Coordination",
+        "intentRefs": [
+          "CML-2"
+        ],
+        "title": "Via Claude Code, not codex. PR through proper review path. Listed as active in TASKS.md.",
+        "scopeAssumption": "Correctly identified Claude Code as the commit path."
+      },
+      {
+        "id": "N-INT-815d-9ccf",
+        "pageId": "[removed]",
+        "url": "[removed]",
+        "timestamp": "2026-03-28T06:29:57.793Z",
+        "state": "Aligned",
+        "status": null,
+        "emitter": "COWORK: Operating Contract & CML",
+        "domain": "Project Coordination",
+        "intentRefs": [
+          "CML-1"
+        ],
+        "title": "Thin contract: boundary definitions + context mediation protocol. Dashboard, HANDOFF.md, OPERATING-CONTRACT.md, Notion CML instance.",
+        "scopeAssumption": "Scoped as coordination infrastructure only. Did not attempt to codify behaviour."
+      },
+      {
+        "id": "N-INT-8188-b7d1",
+        "pageId": "[removed]",
+        "url": "[removed]",
+        "timestamp": "2026-03-28T06:29:57.793Z",
+        "state": "Uncertain",
+        "status": null,
+        "emitter": "COWORK: Vault & DB Architecture",
+        "domain": "Theory & Documentation",
+        "intentRefs": [
+          "CML-1"
+        ],
+        "title": "Formalize artifact storage and cross-referencing. Vault schema, DB alignment, Claude-Codex prompt protocol. Phase A/B/C migration plan.",
+        "scopeAssumption": "Built coordination infrastructure around Codex as primary executor; schema and DB alignment work is sound, but the coordination mechanism is orphaned."
+      },
+      {
+        "id": "N-INT-8125-bf61",
+        "pageId": "[removed]",
+        "url": "[removed]",
+        "timestamp": "2026-03-28T06:29:57.793Z",
+        "state": "Uncertain",
+        "status": null,
+        "emitter": "COWORK: Lab Frontend & Experiment Trajectory",
+        "domain": "Lab Frontend",
+        "intentRefs": [
+          "CML-1"
+        ],
+        "title": "Three-domain data architecture with hard boundaries enforced server-side. React + FastAPI frontend spec.",
+        "scopeAssumption": "Designed a full lab management frontend - different scope from the lightweight task dashboard."
+      },
+      {
+        "id": "N-INT-8165-a306",
+        "pageId": "[removed]",
+        "url": "[removed]",
+        "timestamp": "2026-03-28T07:28:38.399Z",
+        "state": "Divergent",
+        "status": null,
+        "emitter": "COWORK: Vault & DB Architecture",
+        "domain": "Theory & Documentation",
+        "intentRefs": [
+          "CML-1"
+        ],
+        "title": "Vault schema and DB alignment work is Codex-independent and stands. The prompts/ channel is actor-agnostic by design.",
+        "scopeAssumption": "Diverges from prior orphaned-channel framing: the protocol is actor-agnostic and needs repurposing, not abandonment."
+      },
+      {
+        "id": "N-INT-817a-9385",
+        "pageId": "[removed]",
+        "url": "[removed]",
+        "timestamp": "2026-03-28T07:13:46.193Z",
+        "state": "Aligned",
+        "status": null,
+        "emitter": "CODE: Repo Merge Policy and Git Defaults",
+        "domain": "Infrastructure",
+        "intentRefs": [
+          "CML-5"
+        ],
+        "title": "Claude Code is now the PR actor on [sim-repo]. Squash-merge and git defaults applied as first infrastructure action under new ownership.",
+        "scopeAssumption": "The stale Codex actor assumption was corrected upon reading CLAUDE.md. Squash-only settings remain actor-agnostic."
+      },
+      {
+        "id": "N-INT-81c9-8124",
+        "pageId": "[removed]",
+        "url": "[removed]",
+        "timestamp": "2026-03-28T07:54:44.158Z",
+        "state": "Aligned",
+        "status": null,
+        "emitter": "Cowork - The Machine / Epistemic Lab",
+        "domain": "Machine Build",
+        "intentRefs": [
+          "CML-6"
+        ],
+        "title": "Handover to Claude Code for Machine Build is de facto complete.",
+        "scopeAssumption": "Machine Build does not have a pending cutover; Code is already the executor for this domain."
+      },
+      {
+        "id": "N-INT-81fb-8f07",
+        "pageId": "[removed]",
+        "url": "[removed]",
+        "timestamp": "2026-03-28T08:07:51.283Z",
+        "state": "Aligned",
+        "status": null,
+        "emitter": "CODE: Repo Merge Policy and Git Defaults",
+        "domain": "Infrastructure",
+        "intentRefs": [
+          "CML-6"
+        ],
+        "title": "CML-6 scope from Infrastructure: prompts/ channel is obsolete. CML is the universal truth surface.",
+        "scopeAssumption": "No executor handoff required for Infrastructure; Phase B/C DB transfer is Framework Build's concern."
+      },
+      {
+        "id": "N-INT-81e1-9c91",
+        "pageId": "[removed]",
+        "url": "[removed]",
+        "timestamp": "2026-03-28T07:42:53.601Z",
+        "state": "Aligned",
+        "status": null,
+        "emitter": "CODE: Build API Abstraction Layer for Machine",
+        "domain": "Machine Build",
+        "intentRefs": [
+          "CML-7"
+        ],
+        "title": "End-to-end data path is substantially complete. Lab API -> game state -> WebSocket -> StreamDeck display works.",
+        "scopeAssumption": "Interpreting end-to-end link as lab API abstraction done, game signals flowing to display, input path functional; knob behaviour remains open."
+      },
+      {
+        "id": "N-INT-8119-71be",
+        "pageId": "[removed]",
+        "url": "[removed]",
+        "timestamp": "2026-03-28T07:54:44.158Z",
+        "state": "Aligned",
+        "status": null,
+        "emitter": "Cowork - The Machine / Epistemic Lab",
+        "domain": "Theory & Documentation / Machine Build",
+        "intentRefs": [
+          "CML-4"
+        ],
+        "title": "CML-4 is a live falsifiability test; participation from all domains is necessary for interpretation density.",
+        "scopeAssumption": "Notion is canonical; at least one local schema file conflicts with the Notion authority surface and needs correction."
+      },
+      {
+        "id": "N-INT-8151-bc1b",
+        "pageId": "[removed]",
+        "url": "[removed]",
+        "timestamp": "2026-03-29T19:51:19.420Z",
+        "state": "Divergent",
+        "status": null,
+        "emitter": "Cowork - The Machine / Epistemic Lab",
+        "domain": "Theory & Documentation",
+        "intentRefs": [
+          "CML-8"
+        ],
+        "title": "Schema core is load-bearing; three specific framings risk undermining it.",
+        "scopeAssumption": "Divergent alignment targets specific framings, not the overall mechanism."
+      },
+      {
+        "id": "N-INT-81d4-b1f9",
+        "pageId": "[removed]",
+        "url": "[removed]",
+        "timestamp": "2026-03-29T20:17:14.660Z",
+        "state": "Uncertain",
+        "status": "Proposed",
+        "emitter": "CODE: Build API Abstraction Layer for Machine",
+        "domain": "Machine Build",
+        "intentRefs": [
+          "CML-8"
+        ],
+        "title": "Schema primitives are sound. Four operational gaps found that would block reliable production use.",
+        "scopeAssumption": "Feedback from Machine Build / Code actor perspective only; targets protocol and schema definition layer."
+      }
+    ],
+    "actions": [
+      {
+        "id": "N-ACT-8179-9c50",
+        "pageId": "[removed]",
+        "url": "[removed]",
+        "timestamp": "2026-03-28T07:13:52.562Z",
+        "state": "Complete",
+        "emitter": "CODE: Repo Merge Policy and Git Defaults",
+        "linkedInterpretationId": "N-INT-817a-9385",
+        "title": "Set squash-only merge policy on [sim-repo] GitHub repo; set git global defaults.",
+        "stateChange": "[sim-repo] GitHub repo: squash-only merges enforced, merge commits and rebase merges disabled. Claude Code is now the effective PR actor."
+      },
+      {
+        "id": "N-ACT-819b-b111",
+        "pageId": "[removed]",
+        "url": "[removed]",
+        "timestamp": "2026-03-29T19:48:36.377Z",
+        "state": "Complete",
+        "emitter": "CODE: DB migration execution",
+        "linkedInterpretationId": "N-INT-81f1-b2d6",
+        "title": "Applied migration 006 on epistemic-lab. 005 and 006 now live.",
+        "stateChange": "Remote DB schema_migrations now includes 005 and 006; compatibility views and write paths were unblocked."
+      }
+    ],
+    "notes": [
+      {
+        "id": "N-NOTE-20260328",
+        "pageId": "[removed]",
+        "url": "[removed]",
+        "timestamp": "2026-03-28T10:38:29.408Z",
+        "state": "field note",
+        "emitter": "CML Field Note",
+        "title": "Epistemic Lab - CML Field Note (2026-03-28)",
+        "summary": "The field note records the recovery pattern: approximately 13 report-outs, synthesis into interpretations/divergences, cold-read by participating actors, and board movement from half red/green to mostly green within 30 minutes."
+      }
+    ]
+  }
+}

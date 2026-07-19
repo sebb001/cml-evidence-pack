@@ -1,0 +1,385 @@
+{
+  "packageName": "3m-layer-operational-evidence-pack",
+  "packageVersion": "v0.1",
+  "title": "Repo separation build loop",
+  "caseId": "02-repo-separation-build-loop",
+  "synthesis": {
+    "thesis": "An architectural boundary was turned into executable work, kept aligned across actors, and later corrected when the repository state diverged from the narrative.",
+    "story": "The governance situation is a common failure point: a boundary decision sounds right, implementation begins, and the narrative can drift away from the repo. Here the decision is decomposed into work that can be built and inspected. When later verification finds the narrative stale, the correction lands back on the same operational thread.",
+    "orgExperience": "The evidence shows a healthier operating cadence: architecture is not allowed to float above execution, and execution is not allowed to silently rewrite strategy. The record preserves whether a decision became a working capability, and whether later evidence changed the decision basis.",
+    "mechanism": "The record keeps decision, scaffold, implementation, vertical-slice proof, CLI inspection, and later ground-truth correction in one operational chain.",
+    "transition": "CML-17 -> INT-47 -> CML-22 -> ACT-27 -> INT-98",
+    "demonstrates": "This is execution discipline plus correction discipline. The record does not stop at architecture intent; it follows whether the intent produced working surfaces, then accepts later ground truth when the implementation story needs updating."
+  },
+  "sourceRefs": [
+    "CML-17",
+    "CML-22"
+  ],
+  "records": [
+    {
+      "ok": true,
+      "data": {
+        "ref": {
+          "kind": "intent",
+          "id": 17,
+          "canonical": "CML-17",
+          "entityTable": "intents"
+        },
+        "context": {
+          "intent": {
+            "id": 17,
+            "scope": "lab",
+            "description": "Execute the repo-separation recommendation for CML-16. Context: Codex has now recommended on CML-16 that the CML-native operating framework should be developed in its own repository rather than inside the current epistemic governance simulation repo. The purpose is to make the isolation strategy real from day one: simulation engine stays here; operating framework/prototype gets its own repo boundary.\n\nYour task is to carry this forward as an execution plan and initial implementation move. Do not yet build the full framework. First establish the repo-level separation and the initial architecture scaffolding in the new repo.\n\nExecution objectives:\n1. Define what stays in the current repo and what belongs in the new operating-framework repo.\n2. Create the new repo structure or local scaffold if appropriate.\n3. Draft the initial architecture contract in the new repo: three spheres, allowed dependencies, canonical state ownership, anti-corruption rule, forbidden ontology leakage.\n4. Draft the first interface inventory for Phase 1: AgentRuntime, HeartbeatScheduler, WorkspaceService, EventAuditBus, KnowledgeContextProvider.\n5. Keep the current repo focused on simulation concerns. No broad migration or entangling refactor.\n\nConstraints:\n- Treat repo separation as architecture, not housekeeping.\n- The governance layer must remain original and CML-native.\n- Paperclip-derived components may only enter through clean interfaces in the new repo.\n- Avoid premature shared-package extraction; only propose it where absolutely necessary.\n\nDeliverable:\nRegister an interpretation and/or action plan describing the proposed execution steps, risks, and first concrete moves. If you create the repo scaffold or docs, log that explicitly.",
+            "status": "active",
+            "version": 2,
+            "source": "seb",
+            "addressedTo": 5,
+            "createdAt": "2026-04-02T12:51:47.000Z",
+            "updatedAt": "2026-04-02T12:51:53.000Z"
+          },
+          "interpretations": [
+            {
+              "id": 98,
+              "title": "LabRuntime main ground truth \u2014 governance/orchestration core is on main and passing; CLI control plane was never instantiated",
+              "status": "proposed",
+              "alignment": "aligned",
+              "actorId": 5,
+              "domainId": 4,
+              "createdAt": "2026-04-25T17:28:35.000Z"
+            },
+            {
+              "id": 63,
+              "title": "Next parcel for Code after 853cbc1: move from lifecycle proof to canonical CLI-backed execution over existing governance state; no new seams, no new transport layer.",
+              "status": "proposed",
+              "alignment": "aligned",
+              "actorId": 22,
+              "domainId": 4,
+              "createdAt": "2026-04-05T12:41:24.000Z"
+            },
+            {
+              "id": 62,
+              "title": "Sync for codex-build: vertical slice deepened on main at 853cbc1 (100 tests). Governance validation tightened, service\u2192orchestrator lifecycle proven. Ready for next direction from Seb.",
+              "status": "fyi",
+              "alignment": "aligned",
+              "actorId": 5,
+              "domainId": 4,
+              "createdAt": "2026-04-05T12:38:35.000Z"
+            },
+            {
+              "id": 61,
+              "title": "Update for Code: execution-base consolidation is complete on main; continue from af24c65 and deepen the existing vertical slice rather than creating new seams.",
+              "status": "proposed",
+              "alignment": "aligned",
+              "actorId": 22,
+              "domainId": 4,
+              "createdAt": "2026-04-05T12:32:44.000Z"
+            },
+            {
+              "id": 60,
+              "title": "LabRuntime main now has one canonical execution architecture base: governance service + execution orchestrator + runtime provider substrate are unified on main at af24c65, with 89 tests passing.",
+              "status": "proposed",
+              "alignment": "aligned",
+              "actorId": 22,
+              "domainId": 4,
+              "createdAt": "2026-04-05T12:31:59.000Z"
+            },
+            {
+              "id": 59,
+              "title": "Architecture diagram corrections for round-robin update \u2014 five specific changes with exact values from current build state.",
+              "status": "proposed",
+              "alignment": "aligned",
+              "actorId": 5,
+              "domainId": 4,
+              "createdAt": "2026-04-05T12:22:32.000Z"
+            },
+            {
+              "id": 58,
+              "title": "Architecture diagram review (#57): five corrections needed \u2014 status markers stale, vertical slice flow missing orchestrator, knowledge boundary misplaced, ExecutionOrchestrator absent, sub-intent tree incomplete.",
+              "status": "proposed",
+              "alignment": "uncertain",
+              "actorId": 5,
+              "domainId": 4,
+              "createdAt": "2026-04-05T12:18:00.000Z"
+            },
+            {
+              "id": 57,
+              "title": "Architecture diagram produced (ARCHITECTURE-DIAGRAM.html in repo). Requesting accuracy review from codex-build and code-framework against current build state.",
+              "status": "proposed",
+              "alignment": "uncertain",
+              "actorId": 2,
+              "domainId": 8,
+              "createdAt": "2026-04-05T12:14:31.000Z"
+            },
+            {
+              "id": 56,
+              "title": "CLI-first architecture correction is now implemented in labruntime, and the first governance-owned execution slice exists as a committed application-service + CLI path on branch codex/runtime-extraction-phase1 at fb52c05.",
+              "status": "proposed",
+              "alignment": "aligned",
+              "actorId": 22,
+              "domainId": 4,
+              "createdAt": "2026-04-05T12:03:01.000Z"
+            },
+            {
+              "id": 55,
+              "title": "Code is clear to start the next phase now, but the old MCP-parity sequencing is stale; the correct next move is the CLI-first vertical slice over application services.",
+              "status": "proposed",
+              "alignment": "aligned",
+              "actorId": 22,
+              "domainId": 4,
+              "createdAt": "2026-04-05T11:52:45.000Z"
+            },
+            {
+              "id": 53,
+              "title": "LabRuntime should adopt a CLI-first native control plane as the canonical default; MCP should be retained only as an optional compatibility adapter and must not remain the primary orchestration boundary.",
+              "status": "proposed",
+              "alignment": "aligned",
+              "actorId": 22,
+              "domainId": 4,
+              "createdAt": "2026-04-05T11:43:19.000Z"
+            },
+            {
+              "id": 51,
+              "title": "Next-phase plan: CML-19 is unblocked and ready to execute \u2014 governance store 7-change update implements all Bridge gaps identified in #46/#48 plus parent_id from #50",
+              "status": "proposed",
+              "alignment": "aligned",
+              "actorId": 5,
+              "domainId": 4,
+              "createdAt": "2026-04-03T12:59:20.000Z"
+            },
+            {
+              "id": 48,
+              "title": "Five concrete changes needed to make governance store Bridge-faithful before vertical slice integration \u2014 no design decisions required, all changes are direct replications of Bridge behaviour",
+              "status": "proposed",
+              "alignment": "aligned",
+              "actorId": 5,
+              "domainId": 4,
+              "createdAt": "2026-04-03T12:28:56.000Z"
+            },
+            {
+              "id": 47,
+              "title": "First vertical slice plan: a governance-owned execution request flows through a minimal runtime handoff, produces runtime events, and is folded back into canonical CML action/event state without importing Paperclip ontology or premature process semantics.",
+              "status": "proposed",
+              "alignment": "aligned",
+              "actorId": 22,
+              "domainId": 4,
+              "createdAt": "2026-04-02T20:33:48.000Z"
+            },
+            {
+              "id": 46,
+              "title": "Governance core store has five implementation gaps relative to CML Bridge precedent \u2014 all safe to close in a next session without inference",
+              "status": "proposed",
+              "alignment": "aligned",
+              "actorId": 5,
+              "domainId": 4,
+              "createdAt": "2026-04-02T14:19:29.000Z"
+            },
+            {
+              "id": 45,
+              "title": "Code can begin the governance core store in parallel now; the only hard dependency is that governance must build strictly against governance-owned types and interface-owned DTOs, not against any Paperclip-backed runtime implementation.",
+              "status": "proposed",
+              "alignment": "aligned",
+              "actorId": 22,
+              "domainId": 4,
+              "createdAt": "2026-04-02T14:01:39.000Z"
+            },
+            {
+              "id": 44,
+              "title": "Phase 0 complete: labruntime repo initialised with architecture contract, three-sphere directory structure, and five anti-corruption interface definitions. Ready for Phase 1 vertical slice.",
+              "status": "fyi",
+              "alignment": "aligned",
+              "actorId": 5,
+              "domainId": 4,
+              "createdAt": "2026-04-02T13:06:39.000Z"
+            }
+          ],
+          "actions": [
+            {
+              "id": 46,
+              "description": "Registered a repo-ground-truth correction for LabRuntime main after local verification of current code and test state.",
+              "outcome": "CML-17 now records that LabRuntime main@db988a6 contains GovernanceService, ExecutionOrchestrator, and operator-facing compositions with 118 tests passing, but no actual CLI binary or scaffolding. INT-98 is the clean anchor for resolving the contradictory CLI trail.",
+              "actorId": 5,
+              "interpretationId": 98,
+              "createdAt": "2026-04-25T17:28:49.000Z"
+            },
+            {
+              "id": 33,
+              "description": "CLI-facing execute-and-inspect contract implemented per codex #63 parcel (a342a94). ExecuteStepCommand (input) and ExecuteStepReport (output) define the operator-facing contract with plain numbers, no branded types. executeAndInspect() composes ExecutionOrchestrator + GovernanceService reads \u2014 not a new service, thin composition over existing peers. 6 tests prove: complete report shape, works with/without interpretation, validation failures, failed execution with fold-back context, clean JSON serialisation. 106 tests passing across 9 files.",
+              "outcome": "All three items from #63 addressed: (1) existing-state execution path formalized, (2) CLI-facing contract types defined (ExecuteStepCommand/ExecuteStepReport), (3) read-path inspection built into report. No new seams, no transport-specific logic. Commit a342a94 on main.",
+              "actorId": 5,
+              "interpretationId": 63,
+              "createdAt": "2026-04-05T12:45:00.000Z"
+            },
+            {
+              "id": 32,
+              "description": "Fast-forwarded to Code's latest deepening commit and filed the next execution parcel for continuation from the unified mainline.",
+              "outcome": "Code now has an explicit next-parcel note on CML-17: make the canonical execution path operate on existing governance state through the current service/orchestrator seam, without adding new seams or transport layers.",
+              "actorId": 22,
+              "createdAt": "2026-04-05T12:41:24.000Z"
+            },
+            {
+              "id": 30,
+              "description": "Filed a short current-state update for code-framework after the execution-base consolidation on main.",
+              "outcome": "Code now has an explicit on-record update to continue from main at af24c65 and deepen the existing vertical slice rather than creating new seams.",
+              "actorId": 22,
+              "createdAt": "2026-04-05T12:32:44.000Z"
+            },
+            {
+              "id": 29,
+              "description": "Integrated the previously separate runtime provider substrate onto labruntime main and verified the unified execution base.",
+              "outcome": "labruntime main at af24c65 now combines governance service, execution orchestrator, runtime providers, and full test coverage in one canonical architecture base with 89 tests passing.",
+              "actorId": 22,
+              "createdAt": "2026-04-05T12:31:59.000Z"
+            },
+            {
+              "id": 28,
+              "description": "Note for codex-build: ARCHITECTURE-DIAGRAM.html is committed at repo root (labruntime/ARCHITECTURE-DIAGRAM.html, commit d9290c2). Pull main to see it. Review interpretation #58 filed with five corrections \u2014 do not modify the file, flag any additional findings for cowork-theory.",
+              "outcome": "File is on main at path: ARCHITECTURE-DIAGRAM.html (repo root). git pull origin main to access.",
+              "actorId": 5,
+              "interpretationId": 57,
+              "createdAt": "2026-04-05T12:20:09.000Z"
+            },
+            {
+              "id": 26,
+              "description": "Registered the committed repo-state update for the CLI-first architecture correction and first vertical slice, including the handover point for Code.",
+              "outcome": "CML-17 now reflects that labruntime branch codex/runtime-extraction-phase1 at fb52c05 contains a committed CLI-first application-service + CLI execution slice with integration tests and updated handover guidance.",
+              "actorId": 22,
+              "createdAt": "2026-04-05T12:03:01.000Z"
+            },
+            {
+              "id": 24,
+              "description": "Filed an updated execution recommendation on CML-17 correcting the old MCP-oriented sequence and directing Code to start the CLI-first vertical slice now.",
+              "outcome": "CML-17 now explicitly states that Code is unblocked to begin immediately, but should start on the CLI-first application-service vertical slice rather than MCP parity work.",
+              "actorId": 22,
+              "createdAt": "2026-04-05T11:52:45.000Z"
+            },
+            {
+              "id": 23,
+              "description": "Registered a CLI-first control-plane recommendation on CML-17 and set MCP to optional adapter status rather than canonical default.",
+              "outcome": "CML-17 now has an explicit architecture interpretation making native CLI the canonical control plane for LabRuntime and treating MCP as transitional/optional compatibility only.",
+              "actorId": 22,
+              "createdAt": "2026-04-05T11:43:19.000Z"
+            },
+            {
+              "id": 21,
+              "description": "Reviewed the integrated governance/runtime state in labruntime and registered a full first-vertical-slice plan grounded in the combined branch and the HANDOVER sequencing.",
+              "outcome": "CML-17 now contains a concrete integration plan covering DTOs, execution flow, implementation order, success criteria, and test strategy for the first vertical slice.",
+              "actorId": 22,
+              "createdAt": "2026-04-02T20:33:48.000Z"
+            },
+            {
+              "id": 20,
+              "description": "Built governance core store in parallel with Codex's runtime work. Domain model (8 primitives: Intent, Interpretation, Action, Claim, Domain, Actor, ExpertiseSignal, Event) + InMemoryGovernanceRepository with full CRUD. State machine invariants for interpretation transitions. 14 contract tests (all passing). Zero dependencies on runtime or Paperclip ontology. Commits: ab7cbd3 (core), 91e5492 (tests).",
+              "outcome": "Governance sphere ready for vertical slice integration. Parallel work validated against interface contracts. No semantic leakage detected. Ready to join with runtime substrate at agreed interface boundaries.",
+              "actorId": 5,
+              "createdAt": "2026-04-02T14:04:04.000Z"
+            },
+            {
+              "id": 19,
+              "description": "Filed an execution-sequencing interpretation clarifying that governance-core work is unblocked in parallel with runtime substrate pull-in, with interface discipline as the key constraint.",
+              "outcome": "Code now has an on-record basis to claim governance-core work against CML-17 without waiting for full runtime provider completion.",
+              "actorId": 22,
+              "createdAt": "2026-04-02T14:01:39.000Z"
+            },
+            {
+              "id": 18,
+              "description": "Created labruntime repo scaffold: git init, ARCHITECTURE.md (three-sphere contract), CLAUDE.md, 5 TypeScript interface definitions (AgentRuntime, HeartbeatScheduler, WorkspaceService, EventAuditBus, KnowledgeContextProvider), package.json, tsconfig.json, barrel exports. Initial commit at 86d2ed1.",
+              "outcome": "Phase 0 deliverables complete. Repo at mirror/labruntime/ with initial commit. framework-root unchanged. Ready for Phase 1 vertical slice pending Node.js installation.",
+              "actorId": 5,
+              "interpretationId": 44,
+              "createdAt": "2026-04-02T13:06:48.000Z"
+            }
+          ],
+          "reports": [],
+          "claims": [],
+          "expertiseSignals": [],
+          "recentEvents": [
+            {
+              "id": 112,
+              "type": "intent_updated",
+              "reason": "Promoting the repo-separation execution brief so Code can act on the CML-16 recommendation without ambiguity.",
+              "createdAt": "2026-04-02T12:51:53.000Z"
+            },
+            {
+              "id": 111,
+              "type": "intent_created",
+              "createdAt": "2026-04-02T12:51:47.000Z"
+            }
+          ],
+          "summary": {
+            "interpretationCount": 17,
+            "activeClaimCount": 0,
+            "actionCount": 13,
+            "reportCount": 0,
+            "domainsCovered": 0
+          }
+        }
+      },
+      "meta": {
+        "schema_version": 2
+      }
+    },
+    {
+      "ok": true,
+      "data": {
+        "ref": {
+          "kind": "intent",
+          "id": 22,
+          "canonical": "CML-22",
+          "entityTable": "intents"
+        },
+        "context": {
+          "intent": {
+            "id": 22,
+            "scope": "lab",
+            "description": "First vertical slice: prove the labruntime governance engine can coordinate a real execution loop with zero lab-specific code in the engine layer. Test case: M2 verification (CML-3) as data flowing through generic primitives. The loop: sub-intent created under CML-3 addressed to a runtime-capable actor \u2192 actor files interpretation \u2192 invokes runtime via anti-corruption interface (AgentRuntime or WorkspaceService) \u2192 runtime returns operational events \u2192 actor logs CML action with result \u2192 governance fold-back complete. Success criteria: (a) governance engine handled the full loop, (b) no lab-specific code in governance or runtime interface layers, (c) lab-specific knowledge (which server, which outbox, which files) entered only through knowledge provider or plain-language intent description, (d) the same engine code could run a non-lab coordination task without modification. Governing context: CML-17. Sequence: depends on CML-19 + CML-20.",
+            "status": "draft",
+            "version": 1,
+            "source": "seb",
+            "addressedTo": 5,
+            "createdAt": "2026-04-03T12:50:38.000Z",
+            "updatedAt": "2026-04-03T12:50:38.000Z"
+          },
+          "interpretations": [],
+          "actions": [
+            {
+              "id": 31,
+              "description": "Deepened vertical slice after codex consolidation (853cbc1). Tightened DTOs (actorName\u2192agentName, canonical ExecutionRequest constructed internally, typed EventId[]). Added governance validation (intent must be active, interpretation validated when provided). New service\u2192orchestrator lifecycle tests proving: full lifecycle through GovernanceService, sub-intent delegation, supersession blocks execution, intent status gates execution, multi-step accumulation, non-lab portability. 100 tests passing across 8 files.",
+              "outcome": "Vertical slice deepened per codex #61 guidance. Moved from seeded/demo to service-backed governance state. One canonical execution path on main. 100 tests passing.",
+              "actorId": 5,
+              "interpretationId": 61,
+              "createdAt": "2026-04-05T12:36:38.000Z"
+            },
+            {
+              "id": 27,
+              "description": "CML-22 vertical slice implemented and pushed (499af49). ExecutionOrchestrator proves governance\u2192runtime\u2192fold-back loop. 9 integration tests pass: happy path, workspace lifecycle, agent failure, non-fatal workspace failure, no ontology leak, portability (non-lab task uses identical code paths). All 58 tests pass across the suite.",
+              "outcome": "All four success criteria met: (a) governance engine handled full loop, (b) zero lab-specific code in engine, (c) lab knowledge enters only through plain-language intent, (d) non-lab task test proves portability. Commit 499af49 pushed to main.",
+              "actorId": 5,
+              "interpretationId": 55,
+              "createdAt": "2026-04-05T12:08:02.000Z"
+            }
+          ],
+          "reports": [],
+          "claims": [],
+          "expertiseSignals": [],
+          "recentEvents": [
+            {
+              "id": 136,
+              "type": "intent_created",
+              "createdAt": "2026-04-03T12:50:38.000Z"
+            }
+          ],
+          "summary": {
+            "interpretationCount": 0,
+            "activeClaimCount": 0,
+            "actionCount": 2,
+            "reportCount": 0,
+            "domainsCovered": 0
+          }
+        }
+      },
+      "meta": {
+        "schema_version": 2
+      }
+    }
+  ]
+}

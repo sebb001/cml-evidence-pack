@@ -1,0 +1,210 @@
+{
+  "packageName": "3m-layer-operational-evidence-pack",
+  "packageVersion": "v0.1",
+  "title": "Paperclip peer correction",
+  "caseId": "01-paperclip-peer-correction",
+  "synthesis": {
+    "thesis": "A strong initial analysis was treated as provisional, not authoritative. The assessment was peer-reviewed, corrected on specific factual points, and revised without hiding the original record.",
+    "story": "The governance situation is familiar: a thorough technical assessment looks persuasive, but another capable actor finds material flaws. In many organisations, that becomes either an argument, a quiet rewrite, or a loss of confidence in the process. Here the correction gets a formal lane. The original work remains visible, the challenge is attached to the relevant claim, and the revised position becomes inspectable.",
+    "orgExperience": "The evidence shows disagreement becoming useful rather than political. Mistakes do not disappear; they are found, owned, and folded into the decision record without forcing a choice between authority and truth.",
+    "mechanism": "The system records the original interpretation, the review request, the reviewer correction, the author response, and the revised operative interpretation as distinct custody points.",
+    "transition": "INT-36 -> INT-37 -> INT-40",
+    "demonstrates": "This is judgment under correction pressure. The record shows a preference for traceable revision over defensiveness: keep the first analysis, accept the specific correction, and make the revised view the working basis."
+  },
+  "sourceRefs": [
+    "CML-13",
+    "CML-15"
+  ],
+  "records": [
+    {
+      "ok": true,
+      "data": {
+        "ref": {
+          "kind": "intent",
+          "id": 13,
+          "canonical": "CML-13",
+          "entityTable": "intents"
+        },
+        "context": {
+          "intent": {
+            "id": 13,
+            "scope": "lab",
+            "description": "Evaluate Paperclip (github.com/paperclipai/paperclip, MIT) as a potential platform for the lab's coordination infrastructure, using the original full brief rather than the compressed CML-12 summary. This intent is specifically for a detailed analysis of the repository and a feasibility assessment of a forked build, not just a high-level product review. Paperclip is an open-source Node.js + PostgreSQL orchestration platform for AI agent companies. The question is whether and how the lab should incorporate it, given the CML is already live and proving the point.\n\nAddressed to Codex \u2014 latest model, highest reasoning. Inspect the repo directly and produce a single interpretation that answers these exam questions:\n\n1. PLATFORM ASSESSMENT \u2014 Assess the substance of the Paperclip platform as a transport and orchestration layer. What does it actually do well structurally? What are its limitations? Focus on the technical architecture: data model, agent adapter pattern, heartbeat system, plugin surface, governance enforcement mechanisms.\n\n2. GOVERNANCE ANALYSIS \u2014 Analyse the governance layer and decision-making processes in depth. Map authority flows, eligibility structures, approval gate mechanics. Identify all existing truth surfaces and their modular and relational configurations. How does state propagate? Where does it concentrate? Where is it distributed?\n\n3. CML PROJECTION \u2014 Project the conceptual backbone of CML and the current paradigms implemented in the lab onto the Paperclip framework. Separate what can be used as-is, what can be used with adaptations, and what is incompatible with the lab's operating paradigms and systemic imperatives. Name the specific conflict for anything incompatible.\n\n4. FEASIBILITY / EFFORT / BENEFIT \u2014 Provide an overall feasibility and effort-benefit assessment to determine if, and if so how, the lab should incorporate Paperclip under four options: (a) custom configuration of the platform as-is, (b) fork the governance layer and develop an essentially different platform based on the same core, (c) analyse the code and take conceptual pointers only, (d) not at all. For each option: feasibility, effort, benefit, risk. Conclude with an explicit ranked recommendation.\n\nUse current lab state from cml_list_intents(scope='lab', status='active') and relevant cml_list_interpretations to ground the comparison. Register findings as a single interpretation on this intent \u2014 status: proposed, alignment: honest read, source_ref: current Codex session.",
+            "status": "active",
+            "version": 2,
+            "source": "seb",
+            "addressedTo": 22,
+            "createdAt": "2026-04-02T11:46:37.000Z",
+            "updatedAt": "2026-04-02T11:46:43.000Z"
+          },
+          "interpretations": [
+            {
+              "id": 40,
+              "title": "Paperclip's reusable asset is still its execution substrate rather than its governance ontology; the correction is that the plugin/runtime substrate is more mature and more reusable than my original interpretation stated, while custom configuration as-is remains the wrong path.",
+              "status": "proposed",
+              "alignment": "aligned",
+              "actorId": 22,
+              "domainId": 4,
+              "createdAt": "2026-04-02T12:17:03.000Z"
+            },
+            {
+              "id": 36,
+              "title": "Paperclip's reusable asset is its execution substrate, not its governance layer; the best near-term move is conceptual extraction, and any fork should start below the company/issue ontology.",
+              "status": "superseded",
+              "alignment": "superseded",
+              "actorId": 22,
+              "domainId": 4,
+              "createdAt": "2026-04-02T11:53:31.000Z"
+            },
+            {
+              "id": 39,
+              "title": "Paperclip's reusable asset is still its execution substrate rather than its governance ontology, but that substrate is richer than #36 stated; the right correction is to strengthen the plugin/runtime assessment while keeping conceptual extraction first and ontology-level adoption last.",
+              "status": "proposed",
+              "alignment": "uncertain",
+              "actorId": 22,
+              "domainId": 4,
+              "createdAt": "2026-04-02T12:16:00.000Z"
+            }
+          ],
+          "actions": [
+            {
+              "id": 15,
+              "description": "Reviewed code-framework peer review #37, accepted the factual/plugin-substrate corrections, and registered a revised Paperclip assessment.",
+              "outcome": "Interpretation #40 now supersedes the practical role of #36 as the corrected full analysis: same core thesis, stronger plugin/runtime assessment, and a slightly stronger substrate-fork case.",
+              "actorId": 22,
+              "interpretationId": 40,
+              "createdAt": "2026-04-02T12:17:17.000Z"
+            },
+            {
+              "id": 14,
+              "description": "Requested a read-only peer review from Code on interpretation #36, with CML-13 as the authoritative context and comments-only protocol.",
+              "outcome": "Peer review request registered as CML-15 and addressed to code-framework.",
+              "actorId": 22,
+              "interpretationId": 36,
+              "createdAt": "2026-04-02T11:59:16.000Z"
+            },
+            {
+              "id": 13,
+              "description": "Inspected the Paperclip repo directly and registered a detailed interpretation covering platform substance, governance/authority flows, truth surfaces, CML projection, and fork-feasibility assessment.",
+              "outcome": "Interpretation #36 filed on CML-13. Recommendation ranking: conceptual extraction first; substrate-level fork second; no further action third; custom configuration as-is last.",
+              "actorId": 22,
+              "interpretationId": 36,
+              "createdAt": "2026-04-02T11:53:40.000Z"
+            }
+          ],
+          "reports": [],
+          "claims": [],
+          "expertiseSignals": [
+            {
+              "domainId": 4,
+              "actorId": 22,
+              "signal": "concerned",
+              "note": "Framework Build reviewed the Paperclip repo directly. Strong concern/interest in adapter, heartbeat, workspace, and audit substrate reuse; low confidence in the business-task ontology as a fit for canonical CML governance."
+            }
+          ],
+          "recentEvents": [
+            {
+              "id": 85,
+              "type": "intent_updated",
+              "reason": "Promoting the replacement Paperclip analysis brief so Codex can respond to the full-fidelity intent rather than the compressed CML-12 summary.",
+              "createdAt": "2026-04-02T11:46:43.000Z"
+            },
+            {
+              "id": 84,
+              "type": "intent_created",
+              "createdAt": "2026-04-02T11:46:37.000Z"
+            }
+          ],
+          "summary": {
+            "interpretationCount": 3,
+            "activeClaimCount": 0,
+            "actionCount": 3,
+            "reportCount": 0,
+            "domainsCovered": 1
+          }
+        }
+      },
+      "meta": {
+        "schema_version": 2
+      }
+    },
+    {
+      "ok": true,
+      "data": {
+        "ref": {
+          "kind": "intent",
+          "id": 15,
+          "canonical": "CML-15",
+          "entityTable": "intents"
+        },
+        "context": {
+          "intent": {
+            "id": 15,
+            "scope": "lab",
+            "description": "Read-only peer review request for Code on the Paperclip analysis. Context: CML-13 is now the active full-fidelity Paperclip evaluation brief, and Codex has filed interpretation #36 on that intent. Your task is to review interpretation #36 as a peer reviewer and register comments only. Do not implement anything, do not rewrite the analysis, and do not extend the brief into new work. The review should focus on whether the interpretation is technically defensible against the Paperclip repo and whether any important repo-level evidence, risks, or counterarguments were missed.\n\nMaterials:\n- Primary context intent: CML-13\n- Target interpretation: #36 on CML-13\n\nReview questions:\n1. Does interpretation #36 accurately characterise the Paperclip repo as it exists, especially around adapters, heartbeat execution, approvals, budgets, plugins, workspaces, and truth surfaces?\n2. Is the claim that the reusable asset is the execution substrate rather than the governance ontology well supported?\n3. Is the feasibility assessment of a substrate-level fork vs custom configuration vs conceptual extraction sound?\n4. What material corrections, caveats, or missing evidence should be added?\n\nProtocol:\n- Register comments only as interpretation(s) on this intent.\n- Status: proposed if you recommend changes; fyi if you mostly agree but want to add caveats.\n- Alignment: your honest read.\n- This is a read-only peer review. No code changes, no schema changes, no implementation actions.",
+            "status": "closed",
+            "version": 3,
+            "source": "seb",
+            "addressedTo": 5,
+            "createdAt": "2026-04-02T11:59:03.000Z",
+            "updatedAt": "2026-04-02T12:17:17.000Z",
+            "resolutionNotes": "Code-framework filed interpretation #37. Codex responded with interpretation #38 on CML-15 and revised the substantive Paperclip assessment on CML-13 via interpretation #40."
+          },
+          "interpretations": [
+            {
+              "id": 38,
+              "title": "Code's peer review is materially correct on the factual fixes: the core thesis holds, but #36 should be corrected for the phantom hermes adapter, a stronger plugin trust/runtime description, and a slightly stronger substrate-fork case.",
+              "status": "proposed",
+              "alignment": "aligned",
+              "actorId": 22,
+              "domainId": 4,
+              "createdAt": "2026-04-02T12:16:00.000Z"
+            },
+            {
+              "id": 37,
+              "title": "Interpretation #36 is technically defensible and well-grounded in repo evidence. The core thesis (substrate over ontology) holds. Three material corrections: plugin trust model understated, one phantom adapter listed, and the feasibility gap between Options C and B is narrower than presented.",
+              "status": "proposed",
+              "alignment": "aligned",
+              "actorId": 5,
+              "domainId": 4,
+              "createdAt": "2026-04-02T12:12:59.000Z"
+            }
+          ],
+          "actions": [],
+          "reports": [],
+          "claims": [],
+          "expertiseSignals": [],
+          "recentEvents": [
+            {
+              "id": 103,
+              "type": "intent_updated",
+              "reason": "Peer review completed and answered on-record by Codex.",
+              "createdAt": "2026-04-02T12:17:17.000Z"
+            },
+            {
+              "id": 94,
+              "type": "intent_updated",
+              "reason": "Promoting the read-only peer review request so Code can review interpretation #36 with CML-13 as the authoritative Paperclip context.",
+              "createdAt": "2026-04-02T11:59:16.000Z"
+            },
+            {
+              "id": 92,
+              "type": "intent_created",
+              "createdAt": "2026-04-02T11:59:03.000Z"
+            }
+          ],
+          "summary": {
+            "interpretationCount": 2,
+            "activeClaimCount": 0,
+            "actionCount": 0,
+            "reportCount": 0,
+            "domainsCovered": 0
+          }
+        }
+      },
+      "meta": {
+        "schema_version": 2
+      }
+    }
+  ]
+}

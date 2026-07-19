@@ -1,0 +1,534 @@
+{
+  "packageName": "3m-layer-operational-evidence-pack",
+  "packageVersion": "v0.1",
+  "title": "Substrate salvage",
+  "caseId": "03-substrate-salvage",
+  "synthesis": {
+    "thesis": "An attractive architecture gathered momentum, was challenged against the real requirements, then superseded without losing the learning it produced.",
+    "story": "The governance situation is not a simple mistake. The vault-centered plan had real attractions: editability, local durability, and familiar human workflows. The harder judgment was recognising when those attractions started to overdetermine the substrate. The salvage thread turns the previous work into evidence for a corrected basis instead of pretending the detour did not happen.",
+    "orgExperience": "The evidence shows momentum with an escape hatch. A promising direction can be explored, learned from, stopped, and converted into a cleaner decision basis before sunk cost becomes governance.",
+    "mechanism": "Supersession links preserve the abandoned vault-centered path while moving the active decision basis to a substrate derived from CML requirements.",
+    "transition": "CML-26 + CML-29 -> CML-30 -> INT-85 -> INT-87",
+    "demonstrates": "This is sunk-cost resistance made visible. The record shows a willingness to abandon a plausible path after it has accumulated work, while preserving enough evidence for future actors to understand why the path changed."
+  },
+  "sourceRefs": [
+    "CML-26",
+    "CML-29",
+    "CML-30"
+  ],
+  "records": [
+    {
+      "ok": true,
+      "data": {
+        "ref": {
+          "kind": "intent",
+          "id": 26,
+          "canonical": "CML-26",
+          "entityTable": "intents"
+        },
+        "context": {
+          "intent": {
+            "id": 26,
+            "scope": "lab",
+            "description": "Move LabRuntime agent coordination architecture to a dedicated Obsidian vault as the shared persistent state and human inspection layer, replacing the custom LabRuntime runtime build. The vault substrate \u2014 CouchDB (LiveSync) + typed markdown frontmatter + Obsidian UI \u2014 provides distributed state, revision tracking, human inspectability, and a plugin ecosystem for transformation without the maintenance cost of a custom runtime. The coordination layer (Lab Bridge) shifts from context mediator to transport/orchestration, with the vault as the persistent shared state agents read from and write to. This vault is completely separate from Cleanroom, which remains a personal metacognition cleanroom.",
+            "status": "superseded",
+            "version": 2,
+            "source": "seb",
+            "createdAt": "2026-04-13T07:29:31.000Z",
+            "updatedAt": "2026-04-14T22:21:23.000Z",
+            "resolutionNotes": "Superseded by CML-30. See interpretation filed by code-framework on CML-30 for the diagnosis, the R1\u2013R11 substrate-requirement derivation, the candidate evaluation (Git as leading; CouchDB+LiveSync fails R11/R6), and the proposed salvage shape. Salvageable artifacts (CleanroomCode CouchDB feasibility findings, Cowork ergonomics inventory) to be preserved as Reports against CML-30. Vault-schema-v2 paused indefinitely; v1 not to be refined. Misfiled architecture sketches in Cleanroom/workspace/architecture/ to be relocated. CLI-first compute-economy goal preserved but decoupled \u2014 implementable as LabRuntime + SqliteBridgeRepository + CLI binary against existing Bridge SQLite."
+          },
+          "interpretations": [
+            {
+              "id": 91,
+              "title": "Vault REST API \u2014 browser client setup guide and Cowork sandbox diagnostics",
+              "status": "fyi",
+              "alignment": "aligned",
+              "actorId": 43,
+              "domainId": 6,
+              "createdAt": "2026-04-23T18:04:47.000Z"
+            },
+            {
+              "id": 81,
+              "title": "Bridge schema changes 2026-04-14 \u2014 parent_id on intents, new Report record type, vault schema v1 updated",
+              "status": "superseded",
+              "alignment": "superseded",
+              "actorId": 5,
+              "domainId": 4,
+              "createdAt": "2026-04-14T18:06:13.000Z"
+            },
+            {
+              "id": 79,
+              "title": "Infrastructure response to LabCode #75 \u2014 validate_doc_update covers both write paths, database named cml-vault, bootstrap ready pending vault schema spec, code-cleanroom registered",
+              "status": "superseded",
+              "alignment": "superseded",
+              "actorId": 43,
+              "domainId": 6,
+              "createdAt": "2026-04-13T19:37:25.000Z"
+            },
+            {
+              "id": 75,
+              "title": "LabCode answers to CleanroomCode's five joint-resolution questions \u2014 interface contract, test classification, solution design stage, sub-intent trees, and actor disambiguation",
+              "status": "superseded",
+              "alignment": "superseded",
+              "actorId": 5,
+              "domainId": 4,
+              "createdAt": "2026-04-13T08:49:25.000Z"
+            },
+            {
+              "id": 72,
+              "title": "Cleanroom compression layer \u2014 schema, governance boundary, and Copilot integration constraints for vault-based architecture",
+              "status": "superseded",
+              "alignment": "superseded",
+              "actorId": 2,
+              "domainId": 8,
+              "createdAt": "2026-04-13T08:16:19.000Z"
+            },
+            {
+              "id": 73,
+              "title": "Architecture resolved \u2014 CML primitives map cleanly to vault schema, dual write path is the key new constraint, five questions for joint LabCode resolution",
+              "status": "superseded",
+              "alignment": "superseded",
+              "actorId": 5,
+              "domainId": 4,
+              "createdAt": "2026-04-13T08:40:43.000Z"
+            },
+            {
+              "id": 71,
+              "title": "CML v4 compression layer \u2014 carry-forward primitives, contracts, design constraints, and active logic requirements for vault-based architecture",
+              "status": "superseded",
+              "alignment": "superseded",
+              "actorId": 2,
+              "domainId": 8,
+              "createdAt": "2026-04-13T08:16:14.000Z"
+            },
+            {
+              "id": 70,
+              "title": "Vault-as-state is sound \u2014 Cowork perspective on the three open questions and the plugin ecosystem as execution substrate",
+              "status": "superseded",
+              "alignment": "superseded",
+              "actorId": 2,
+              "domainId": 6,
+              "createdAt": "2026-04-13T07:48:07.000Z"
+            },
+            {
+              "id": 68,
+              "title": "LabRuntime scope answer and risk assessment against vault-as-state proposal",
+              "status": "superseded",
+              "alignment": "superseded",
+              "actorId": 5,
+              "domainId": 4,
+              "createdAt": "2026-04-13T07:34:32.000Z"
+            },
+            {
+              "id": 67,
+              "title": "Architecture viable \u2014 three open questions before build can begin",
+              "status": "superseded",
+              "alignment": "superseded",
+              "actorId": 5,
+              "domainId": 4,
+              "createdAt": "2026-04-13T07:31:13.000Z"
+            },
+            {
+              "id": 66,
+              "title": "Three design questions before architecture can be committed",
+              "status": "superseded",
+              "alignment": "superseded",
+              "actorId": 5,
+              "domainId": 4,
+              "createdAt": "2026-04-13T07:29:37.000Z"
+            }
+          ],
+          "actions": [
+            {
+              "id": 37,
+              "description": "Bridge poll: checked CML-25 (5 interps), CML-26 (9 interps), CML-27 (0 interps), CML-28 (1 interp). No new interpretations since last check at 19:37.",
+              "outcome": "No action required. All intents stable.",
+              "actorId": 43,
+              "createdAt": "2026-04-13T20:04:41.000Z"
+            },
+            {
+              "id": 36,
+              "description": "Bridge poll: found new interpretation #75 from LabCode answering all five joint-resolution questions. Filed response interpretation #79 with infrastructure-side decisions (validate_doc_update as unified enforcement, database cml-vault, credentials isolation plan, bootstrap readiness). Registered code-cleanroom as distinct actor id:43.",
+              "outcome": "Interpretation #79 filed. Actor id:43 (code-cleanroom) registered. Joint resolution complete from infrastructure side. Blocker for next phase: vault schema spec.",
+              "actorId": 43,
+              "interpretationId": 79,
+              "createdAt": "2026-04-13T19:37:30.000Z"
+            },
+            {
+              "id": 34,
+              "description": "Scheduled Bridge poll \u2014 checked interpretations on CML-25, CML-26, CML-28. No new interpretations since last active cycle. CML-26 joint exchange with LabCode complete (#73/#75). CML-28 filed and awaiting other actors. No response interpretation warranted.",
+              "outcome": "No action required. All three intents stable.",
+              "actorId": 5,
+              "createdAt": "2026-04-13T19:15:19.000Z"
+            }
+          ],
+          "reports": [],
+          "claims": [],
+          "expertiseSignals": [],
+          "recentEvents": [
+            {
+              "id": 197,
+              "type": "intent_updated",
+              "reason": "Salvage brainstorm 2026-04-15: CML-26 collapsed three concerns (LabRuntime persistence, CML read/write surface, Cleanroom-parallel substrate) into one architecture (Obsidian on CouchDB+LiveSync). The collapse propagated cyclical inference-by-toolchain into LabRuntime's contract surface (VaultGovernanceRepository pulling CouchDB _rev / validate_doc_update semantics) and forced governance enforcement into a storage validator. Superseded by CML-30, which re-derives substrate requirements from the v0.1/v0.2 CML schemas before any substrate commitment.",
+              "createdAt": "2026-04-14T22:21:23.000Z"
+            },
+            {
+              "id": 167,
+              "type": "intent_created",
+              "createdAt": "2026-04-13T07:29:31.000Z"
+            }
+          ],
+          "summary": {
+            "interpretationCount": 11,
+            "activeClaimCount": 0,
+            "actionCount": 3,
+            "reportCount": 0,
+            "domainsCovered": 0
+          }
+        }
+      },
+      "meta": {
+        "schema_version": 2
+      }
+    },
+    {
+      "ok": true,
+      "data": {
+        "ref": {
+          "kind": "intent",
+          "id": 29,
+          "canonical": "CML-29",
+          "entityTable": "intents"
+        },
+        "context": {
+          "intent": {
+            "id": 29,
+            "scope": "lab",
+            "description": "Vault schema spec v1 \u2014 frontmatter contracts for the coordination vault (cml-vault CouchDB database). Sub-intent of CML-26. Deliverable: a single spec document that defines frontmatter for all 8 entity types (intent, interpretation, action, claim, expertise-signal, event, actor, domain), the state machines, the invariants that must hold on any backend, and a directory layout. Purpose: unblocks CleanroomCode's validate_doc_update design doc + bootstrap-couchdb-cml.sh, and unblocks LabCode's VaultGovernanceRepository TypeScript mapping. Review cycle: CleanroomCode (infra feasibility, CouchDB specifics) \u2192 Cowork (Dataview/Templater/human-editing ergonomics) \u2192 Seb (governance vocabulary sign-off) \u2192 v2 accepted \u2192 bootstrap runs. Seed artifact at mirror/vault-schema-v1.md.",
+            "status": "superseded",
+            "version": 2,
+            "source": "LabCode session 2026-04-14, sub-intent of CML-26 per Seb direction",
+            "parentId": 26,
+            "createdAt": "2026-04-14T17:05:14.000Z",
+            "updatedAt": "2026-04-14T22:25:34.000Z",
+            "resolutionNotes": "Superseded transitively via CML-26 \u2192 CML-30. Vault schema v1 at mirror/vault-schema-v1.md is paused; not to be refined into v2. Salvageable artifacts (CleanroomCode CouchDB feasibility on Q1\u2013Q6 in INT-82, Cowork ergonomics review on kebab-case + Dataview + Templater + human-editing frictions in INT-84) to be preserved as Reports against CML-30 if/when a future iteration warrants vault-as-state on its own terms. Child interpretations INT-80, INT-82, INT-84 closed via individual updates citing INT-85."
+          },
+          "interpretations": [
+            {
+              "id": 82,
+              "title": "CleanroomCode infra review \u2014 validate_doc_update feasibility pass, Q1-Q6 answered, intent sketch, four schema change requests",
+              "status": "superseded",
+              "alignment": "superseded",
+              "actorId": 43,
+              "domainId": 6,
+              "createdAt": "2026-04-14T18:37:38.000Z"
+            },
+            {
+              "id": 84,
+              "title": "Cowork ergonomics review \u2014 kebab-case OK, Dataview/Templater surface inventory, human-editing friction list, three soft schema asks",
+              "status": "superseded",
+              "alignment": "superseded",
+              "actorId": 54,
+              "domainId": 8,
+              "createdAt": "2026-04-14T19:48:16.000Z"
+            },
+            {
+              "id": 80,
+              "title": "Handover to CleanroomCode \u2014 v1 vault schema seed complete, six infra questions, review cycle defined",
+              "status": "superseded",
+              "alignment": "superseded",
+              "actorId": 5,
+              "domainId": 4,
+              "createdAt": "2026-04-14T17:05:57.000Z"
+            }
+          ],
+          "actions": [
+            {
+              "id": 39,
+              "description": "Filed stage-3 ergonomics review (#84) on CML-29, self-registered as actor cowork-cleanroom (id:54). Review additive to CleanroomCode #82; three soft schema asks (F1-F3), no objections. Ball moves to Seb for stage 4 governance sign-off.",
+              "outcome": "success",
+              "actorId": 54,
+              "interpretationId": 84,
+              "createdAt": "2026-04-14T19:48:30.000Z"
+            },
+            {
+              "id": 38,
+              "description": "Scheduled Bridge poll \u2014 CML-25, CML-26, CML-27, CML-28, CML-29.",
+              "outcome": "No new interpretations since last cycle. CML-29 ball is with Cowork (Stage 3 ergonomics review). CML-28: LabCode's #76 proposes sequence diagrams as first deliverable, targeted at code-cleanroom. No new assignments.",
+              "actorId": 43,
+              "createdAt": "2026-04-14T18:41:36.000Z"
+            }
+          ],
+          "reports": [],
+          "claims": [],
+          "expertiseSignals": [],
+          "recentEvents": [
+            {
+              "id": 200,
+              "type": "intent_updated",
+              "reason": "Sub-intent of CML-26, which was superseded by CML-30 (salvage brainstorm 2026-04-15). The vault schema v1 spec is paused indefinitely per INT-85 step 3; v1 is not to be refined and v2 is not in scope.",
+              "createdAt": "2026-04-14T22:25:34.000Z"
+            },
+            {
+              "id": 188,
+              "type": "intent_created",
+              "createdAt": "2026-04-14T17:05:14.000Z"
+            }
+          ],
+          "summary": {
+            "interpretationCount": 3,
+            "activeClaimCount": 0,
+            "actionCount": 2,
+            "reportCount": 0,
+            "domainsCovered": 0
+          }
+        }
+      },
+      "meta": {
+        "schema_version": 2
+      }
+    },
+    {
+      "ok": true,
+      "data": {
+        "ref": {
+          "kind": "intent",
+          "id": 30,
+          "canonical": "CML-30",
+          "entityTable": "intents"
+        },
+        "context": {
+          "intent": {
+            "id": 30,
+            "scope": "lab",
+            "description": "Supersedes CML-26. Pursue the next CML primitives layer by deriving substrate requirements from the v0.1/v0.2 CML schemas, then choosing a substrate against that requirement list. Out of scope until requirements are validated: any commitment to Obsidian / CouchDB / LiveSync as the substrate, and any change to LabRuntime's GovernanceRepository contract surface to accommodate a specific backend. In scope: (1) specify the missing v0.1 primitives the Bridge does not yet model \u2014 Conflict Expression and Authority Surface, with associated diagnostic states (Divergence Count, Resolution Lag, Interpretation Density, Version Pressure); (2) derive an explicit substrate-requirement list from v0.1/v0.2 and validate it with Seb; (3) evaluate substrate candidates (filesystem-markdown, git-as-substrate, event-log+projection, CouchDB+LiveSync) against that list before committing to one. The compute-economy goal of replacing the MCP Bridge with a CLI-first surface is preserved but decoupled from the substrate decision and may proceed in parallel via LabRuntime + a SqliteBridgeRepository reading the existing Bridge SQLite directly, no vault required for that step.",
+            "status": "draft",
+            "version": 1,
+            "source": "seb (via code-framework session 2026-04-15 \u2014 salvage brainstorm)",
+            "createdAt": "2026-04-14T22:19:36.000Z",
+            "updatedAt": "2026-04-14T22:19:36.000Z"
+          },
+          "interpretations": [
+            {
+              "id": 100,
+              "title": "Flag: LabRuntime actor-topology PR creates a temporary schema-asymmetry with Python cml-bridge during cutover",
+              "status": "flagged",
+              "alignment": "uncertain",
+              "actorId": 22,
+              "domainId": 4,
+              "createdAt": "2026-04-26T15:26:05.000Z"
+            },
+            {
+              "id": 97,
+              "title": "Authoritative plan: CLI-first CML mobility layer as the shared substrate for Codex, Claude Code, Cowork, ChatGPT, and browser-arbiter workflows",
+              "status": "proposed",
+              "alignment": "aligned",
+              "actorId": 22,
+              "domainId": 4,
+              "createdAt": "2026-04-25T17:16:54.000Z"
+            },
+            {
+              "id": 89,
+              "title": "Bridge-topology discovery \u2014 the CML Bridge is Tailscale-remote on an LXC co-tenant with Cleanroom CouchDB; INT-87's \"SqliteBridgeRepository reading Bridge's SQLite directly\" language needs revision in CML-30.1",
+              "status": "proposed",
+              "alignment": "uncertain",
+              "actorId": 5,
+              "domainId": 4,
+              "createdAt": "2026-04-15T10:46:22.000Z"
+            },
+            {
+              "id": 88,
+              "title": "v4 design resolution on RPT-4 brief \u2014 which v3 patterns survive, which refine, Q1\u2013Q10 resolved with concrete decisions and structural additions (supersession chain, divergence block, split reason/body, actor roster, sub-intents, reports inline, unread, drafts, shortcuts, read-cold fallback)",
+              "status": "proposed",
+              "alignment": "aligned",
+              "actorId": 2,
+              "domainId": 8,
+              "createdAt": "2026-04-15T10:00:18.000Z"
+            },
+            {
+              "id": 87,
+              "title": "CML-30 aligned position \u2014 R1\u2013R14 derived, purpose-built substrate (5%+1 of Git), path A + sub-intent split 30.1/30.2/30.3",
+              "status": "proposed",
+              "alignment": "aligned",
+              "actorId": 5,
+              "domainId": 4,
+              "createdAt": "2026-04-15T09:18:13.000Z"
+            },
+            {
+              "id": 85,
+              "title": "CML-26 supersession analysis \u2014 substrate must derive from v0.1/v0.2 requirements; specify Conflict Expression + Authority Surface first; Git is leading substrate candidate",
+              "status": "superseded",
+              "alignment": "superseded",
+              "actorId": 5,
+              "domainId": 4,
+              "createdAt": "2026-04-14T22:21:56.000Z"
+            },
+            {
+              "id": 86,
+              "title": "Reaction to CML-30 salvage brainstorm: R1-R11 is the load-bearing move, three items Code did not push on (R10 as possible Cleanroom leakage, shared cognition layer undefined, mediation-vs-ledger tension unresolved), plus observations on how the session was run",
+              "status": "proposed",
+              "alignment": "aligned",
+              "actorId": 2,
+              "domainId": 8,
+              "createdAt": "2026-04-15T08:00:51.000Z"
+            }
+          ],
+          "actions": [
+            {
+              "id": 58,
+              "description": "Retired Python cml-bridge service and Cloudflared tunnel after LabRuntime CLI cutover.",
+              "outcome": "Final checkpoint copied to [server-path]/cml/cml.sqlite. cml-bridge.service and cloudflared.service are stopped and disabled. LabRuntime runtime is staged at [server-path]/app, canonical DB is [server-path]/cml/cml.sqlite, helper wrapper is /usr/local/bin/labruntime-cml, and rollback backups are in [server-path]/backups. Post-stop smoke passed for status, CML-33, INT-99, actor codex-build, and cutover audit with 0 dangling actor references.",
+              "actorId": 22,
+              "interpretationId": 100,
+              "createdAt": "2026-04-26T16:27:51.000Z"
+            },
+            {
+              "id": 57,
+              "description": "Staged LabRuntime runtime on cml-bridge LXC and prepared final bridge retirement cutover.",
+              "outcome": "Installed Node v22.22.2/npm 10.9.7 on Debian 12 LXC. Deployed LabRuntime CLI to [server-path]/app and linked /usr/local/bin/labruntime. Live DB schema was migrated by LabRuntime and audited cleanly: actor provisioning columns present, actor_sessions present, 0 dangling actor references. Created staged canonical DB at [server-path]/cml/cml.sqlite plus backup [server-path]/backups/cml_bridge_pre_labruntime_cutover_20260426T162639Z.db. Smoke tests against canonical DB passed for audit, CML-33, INT-99, and actor codex-build.",
+              "actorId": 22,
+              "interpretationId": 100,
+              "createdAt": "2026-04-26T16:27:08.000Z"
+            },
+            {
+              "id": 56,
+              "description": "Ran fresh post-merge cutover rehearsal and checked cml-bridge host runtime readiness.",
+              "outcome": "Fresh copied DB at /tmp/cml-live-cutover-20260426-2/cml_bridge.db audited before migration: actor provisioning columns absent, actor_sessions absent, reports present, 10 actors, 33 intents, 100 interpretations, 55 actions, 257 events, 0 dangling actor references. LabRuntime CLI status against the copy migrated actor topology successfully; post-migration audit preserved row counts and references. Remote cml-bridge host is Debian 12 with active cml-bridge.service/cloudflared.service, but no node/npm/git installed. Runtime blocker for bridge retirement: LabRuntime CLI needs Node 22+ for node:sqlite before services can be retired safely.",
+              "actorId": 22,
+              "interpretationId": 100,
+              "createdAt": "2026-04-26T16:14:54.000Z"
+            },
+            {
+              "id": 55,
+              "description": "Verified LabRuntime PR #3 merged into main.",
+              "outcome": "PR #3 https://github.com/sebb001/labruntime/pull/3 is MERGED. Merge commit 6585458c7e8de7dba362b76752a3e3bce65841ed at 2026-04-26T16:12:56Z. Cutover audit tooling is now on main.",
+              "actorId": 22,
+              "interpretationId": 100,
+              "createdAt": "2026-04-26T16:13:27.000Z"
+            },
+            {
+              "id": 54,
+              "description": "Prepared faster cml-bridge retirement rehearsal after PR #2 merge: confirmed live bridge host/path, copied live SQLite via Python backup API, validated LabRuntime CLI against the copied DB, added a reproducible read-only cutover audit script, pushed feat/cutover-reconciliation, and opened PR #3.",
+              "outcome": "Live host/path observed: cml-bridge:[server-path]/cml_bridge.db with cml-bridge.service and cloudflared.service active. Copied snapshot to /tmp/cml-live-cutover-20260426/cml_bridge.db. LabRuntime smoke on copy passed for status, CML-33, INT-99, CML-33 actions, actor get codex-build, and session open/heartbeat/close. Audit on migrated copy found 10 actors, 33 intents, 100 interpretations, 53 actions, 5 reports, 0 dangling actor references, and legacy session_id rows on code-cleanroom/cowork-cleanroom/codex-cleanroom. PR #3: https://github.com/sebb001/labruntime/pull/3. No live services stopped and no production DB migrated by this step.",
+              "actorId": 22,
+              "interpretationId": 100,
+              "createdAt": "2026-04-26T16:01:03.000Z"
+            },
+            {
+              "id": 53,
+              "description": "Confirmed merge of LabRuntime PR #2 actor topology cutover substrate.",
+              "outcome": "PR https://github.com/sebb001/labruntime/pull/2 merged to main at 2026-04-26T15:37:20Z with merge commit c27cf5b058e012763a79b4ddbfba028f7c0e82b3. Actor topology, context provisioning metadata, actor_sessions, report support, expanded CLI parity groups, and migration gating are now on origin/main. Next step is faster bridge retirement path: validate against copied live DB, reconcile actor manifest, then move authoritative DB and stop Python cml-bridge writers.",
+              "actorId": 22,
+              "interpretationId": 100,
+              "createdAt": "2026-04-26T15:37:59.000Z"
+            },
+            {
+              "id": 52,
+              "description": "Addressed Claude Code PR #2 review conditions for actor topology branch.",
+              "outcome": "Pushed follow-up commit 9ecc447 to feat/actor-topology. Local fixes: gated SqliteBridgeRepository schema evolution behind a schema-current check so normal CLI calls avoid repeated ALTER probes; wrapped actor topology schema evolution and timestamp backfill in BEGIN/COMMIT/ROLLBACK; added CLI test for idempotent actor session re-open exercising ON CONFLICT update. Strategic coordination: filed flagged INT-100 on CML-30 for Python cml-bridge vs LabRuntime schema bifurcation during cutover. Verification: npm run build passed; npm test passed with 137 tests across 11 files.",
+              "actorId": 22,
+              "interpretationId": 100,
+              "createdAt": "2026-04-26T15:27:13.000Z"
+            },
+            {
+              "id": 51,
+              "description": "Implemented LabRuntime actor topology cutover slice with provisioned actor identity, ephemeral actor sessions, context provisioning metadata, CLI identity-by-name resolution, report promotion support, and expanded CLI parity commands.",
+              "outcome": "Created branch feat/actor-topology and pushed commit 40b853c. Added actor lifecycle/status plus contract_ref, context_ref, context_policy, actor_sessions table, report support, actor/session/report/domain/scope/expertise/event CLI groups, --actor/LABRUNTIME_ACTOR resolution with correct precedence, inactive actor write rejection, and tests for actor-name resolution, retired actor rejection, session liveness/accountability separation, report promotion source_ref, and context contract metadata. Verification: npm run build passed; npm test passed with 136 tests across 11 files.",
+              "actorId": 22,
+              "createdAt": "2026-04-26T15:15:09.000Z"
+            },
+            {
+              "id": 45,
+              "description": "Registered INT-97 as the currently authoritative plan for a CLI-first CML mobility layer, created child intent CML-33 addressed to code-framework for Claude Code refinement, and superseded the narrower Playwright/browser intent CML-32 after ingesting usable substrate from INT-93/94/95/96.",
+              "outcome": "CML-30 now carries the authoritative plan; CML-33 requests Claude Code functional-requirements refinement before Codex build execution; CML-32 status is superseded with resolution notes pointing to INT-97.",
+              "actorId": 22,
+              "interpretationId": 97,
+              "createdAt": "2026-04-25T17:17:34.000Z"
+            },
+            {
+              "id": 43,
+              "description": "Built v4 of the Lab Bridge sidebar as the design-agent response to RPT-4 (design brief). File: cml-sidebar-v4.html. Structural additions beyond v3: supersession chain visualization (collapsed ghost-card stack); divergence-as-tension block (bracketed group, first-class focus target); split reason/body Logger layout for update/supersede/resolve ops; bottom actor roster with drag-to-address wired; sub-intent tree rendering with indent+connector-line and \u21b3 prefix; inline reports per intent card plus + menu entry for register_report; unread dots; 'NEW' slide-in animation for Activity; keyboard shortcut overlay with pending-prefix model (n\u2192i/r/a/p); click-status-pip state picker; read-cold \u2197 copy-as-markdown action on all cards; localStorage-backed draft persistence keyed by entity+op with 24h TTL. Enriched focus event payload with parent_intent_id, alignment, has_draft, and divergence_group entity_type. Q1\u2013Q10 from the brief resolved inline in Interpretation #88.",
+              "outcome": "v4 prototype delivered and filed against CML-30. Awaiting Seb resolver action on Interpretation #88 before v5 scope. Known deferrals named: CML-30.3 escalation surface (blocked on dispatcher), bulk gestures, breadcrumbs, Conflict Expression + Authority Surface rendering (blocked on INT-87 Q2 schema work). One flag for resolver attention: the 'resolve' pill on divergence-group selection maps to cml_register_intent (not a dedicated op) \u2014 treating as schema-legal but flagged in Interpretation #88.",
+              "actorId": 2,
+              "interpretationId": 88,
+              "createdAt": "2026-04-15T10:00:36.000Z"
+            },
+            {
+              "id": 42,
+              "description": "Filed INT-87 as the aligned position on CML-30, superseding INT-85. Synthesizes INT-86 (cowork-theory sharpening of R10 / shared-cognition / mediation-vs-ledger) and Seb's Q1\u2013Q4 answers: R1\u2013R14 as final derived requirement set with R10 split (a/b), R12 active-awareness added, R13 retrospective reinterpretation added, R14 expertise matching added; real-time latency explicitly rejected; Conflict Expression + Authority Surface deferred; lab grows into mediation surface (R10b binds); single substrate (Q4). Substrate recommendation shifted from Git to purpose-built \u2014 keeping \u22485% of Git (content-addressable append-only log, multi-device replication, attribution, legible projection, linear history), adding native push/notify (the 1 thing), dropping \u224895% (branches, merges, rebase, force-push, refs namespace, index, submodules, etc.). R11 preserved via Git-compatible read projection. Path A confirmed with target = purpose-built. CML-30 split into 30.1 (CLI-first compute-economy via SqliteBridgeRepository), 30.2 (substrate spec + build, likely further split 30.2a/30.2b), 30.3 (dispatcher \u2014 matcher + 80/20 autonomy, with agent-backlog as tie-break for equal-capability matches). INT-87 alignment bumped to `aligned` per Seb directive. Mirror written to mirror/cml-30-aligned-position-2026-04-15.md per R9 discipline.",
+              "outcome": "success \u2014 INT-85 superseded by INT-87 (aligned/proposed). Three sub-intents (CML-30.1/.2/.3) ready to be seeded when work on each begins. Seb pivots to #1 priority: scaffold a human-legible surface supporting CML read, write, and direct.",
+              "actorId": 5,
+              "interpretationId": 87,
+              "createdAt": "2026-04-15T09:19:18.000Z"
+            },
+            {
+              "id": 41,
+              "description": "Closed the CML-26 / CML-29 interpretation chain following CML-26 supersession by CML-30. Updated CML-29 (status=superseded, v2; transitive supersession via parent). Marked 11 downstream interpretations as superseded with reason citing INT-85 on CML-30: on CML-26 \u2014 INT-68, 70, 71, 72, 73, 75, 79, 81; on CML-29 \u2014 INT-80, 82, 84. Already-superseded INT-66 and INT-67 unchanged. INT-71/72 (and arguably INT-70) were reference compressions; closure notes flag them for migration to Reports against CML-30 in a follow-up cleanup pass per the schema's own \u00a72A intent.",
+              "outcome": "success \u2014 13 entities updated (CML-26, CML-29, INT-68/70/71/72/73/75/79/80/81/82/84). Trace closed. Bridge state reflects: CML-26 chain fully superseded into CML-30; salvageable artifacts (CleanroomCode CouchDB feasibility in INT-82, Cowork ergonomics inventory in INT-84) flagged in INT-85 for preservation as Reports against CML-30 if a future iteration warrants.",
+              "actorId": 5,
+              "interpretationId": 85,
+              "createdAt": "2026-04-14T22:26:23.000Z"
+            },
+            {
+              "id": 40,
+              "description": "Superseded CML-26 (status=superseded, v2; resolution_notes reference CML-30). Registered CML-30 with corrected scope. Filed INT-85 (code-framework / Framework Build) against CML-30 capturing the salvage brainstorm: cyclicality diagnosis, R1\u2013R11 substrate-requirement derivation from v0.1/v0.2, candidate evaluation (Git leading; CouchDB+LiveSync fails R11/R6), R3 soft-spot reasoning, empirical state of LabRuntime and cross-system contamination, proposed salvage shape, and three open questions for Seb (Q1: R1\u2013R11 completeness; Q2: Conflict Expression + Authority Surface scope this iteration; Q3: confirm lab-as-test-case framing for substrate generality).",
+              "outcome": "success \u2014 CML-26 closed at the intent level; corrected pursuit captured in CML-30; salvage analysis recorded as INT-85 awaiting Seb's response on Q1\u2013Q3 to determine alignment",
+              "actorId": 5,
+              "interpretationId": 85,
+              "createdAt": "2026-04-14T22:22:13.000Z"
+            }
+          ],
+          "reports": [
+            {
+              "id": 4,
+              "kind": "brief",
+              "title": "CML Legibility Surface \u2014 Design Brief (Shneiderman-grounded) for the design agent",
+              "summary": "Input brief for the design agent resuming the in-flight CML-legibility-surface design, grounded in Shneiderman's 8 Golden Rules + Direct Manipulation principles. Scopes a local human-legible surface giving Seb (primary user) the ability to (a) read-cold CML state without an agent in the loop, (b) write CML primitives directly through the UI, and (c) direct work via direct-manipulation gestures \u2014 all three bounded by \"solvable in interface design with minimal added backend affordances\" per Seb's 2026-04-15 direction. Constraints inherited from INT-87: R9 binding (legibility via underlying markdown/text); no new backend primitives for UI convenience; append-only semantics (undo = supersession); deliberate slowness (design for quality-of-decision, not speed-of-click); interface stable across substrate transition (Bridge SQLite today \u2192 LabRuntime CLI post-30.1 \u2192 purpose-built substrate post-30.2). Enumerates the CML primitives as first-class objects (intent, interpretation, action, claim, actor, domain, expertise signal, event, report) and derived diagnostic states (R4). Decomposes the three verbs into concrete read/write/direct gestures that compose existing primitives only. Applies Shneiderman's 8 rules to the CML domain \u2014 notably the tension between Rule 6 (easy reversal) and append-only semantics, resolved via lightweight supersession UI + pre-commit drafting. Flags six known interface-design challenges (append-only vs reversal, divergence preservation per R6, deliberate-slowness calibration, cross-reference density, R12 active-awareness without real-time, escalation surface for CML-30.3 dispatcher). Lists six open questions for the design agent to surface recommendations on (primary nav metaphor, divergence rendering, supersession UI weight, write-time deliberation, information density, continuity with the prior in-flight design). Full body at mirror/cml-legibility-surface-design-brief.md.",
+              "actorId": 5,
+              "sourceRef": "code-framework session 2026-04-15, at Seb direction; distilled from CML-26 \u2192 CML-30 salvage brainstorm + INT-87 aligned position",
+              "createdAt": "2026-04-15T09:36:35.000Z"
+            },
+            {
+              "id": 3,
+              "kind": "compression",
+              "title": "Salvage session patterns \u2014 four working-practice observations from the CML-26 \u2192 CML-30 brainstorm",
+              "summary": "Compression of the session-pattern observations from Cowork-theory's INT-86, extracted from the interpretation body into a discoverable Report. Four patterns load-bearing in the CML-26 salvage, worth preserving as lab working practice: (1) Diagnostic-sharpening hierarchy \u2014 cowork/code/seb reason from artifacts/code/intent respectively; the deepest read comes from the level closest to originating intent, so when diagnostics feel stuck, push UP toward intent rather than DOWN toward implementation. (2) Empirical-first grounding is load-bearing \u2014 Code's filesystem grep against labruntime/src (zero matches for CouchDB/vault terms) converted the salvage from painful to afternoon-of-cleanup; agents reasoning from descriptions without verification must flag the limitation explicitly. (3) Derivation from source breaks cycles \u2014 R1\u2013R11 worked because it dropped past planning docs into v0.1/v0.2 theory; when plans feel entangled, re-derive from source rather than tidy the plan. (4) Legibility dramatized itself live \u2014 the operator's live legibility failure after Bridge writes is empirical evidence that R9 binds for the actual workflow; any substantial analysis should get a human-openable mirror at filing time. Plus two session-structure practices worth keeping: sequential premise introduction (Seb added compute-economy \u2192 legibility \u2192 broader-theory one at a time, forcing re-grounding rather than papered-over synthesis), and explicit push-back invitation (the briefing's \"push back where I'm wrong\" produced actual pushback). Source attribution: cowork-theory INT-86. Full body at mirror/reports/2026-04-15-salvage-session-patterns.md.",
+              "actorId": 5,
+              "sourceRef": "distilled from INT-86 (cowork-theory, 2026-04-15); filed by code-framework at Seb direction",
+              "createdAt": "2026-04-15T08:36:25.000Z"
+            },
+            {
+              "id": 2,
+              "kind": "session-log",
+              "title": "CML-26 to CML-30 Salvage Brainstorm \u2014 Code Session Transcript (clean)",
+              "summary": "Full transcript of the salvage brainstorm session between Seb and code-framework (Claude Code via Superpowers /brainstorming) on 2026-04-15 that produced CML-30, INT-85, and the closure of the CML-26 chain. Preserves the reasoning trace that justified the supersession: the empirical grounding pass confirming LabRuntime src is clean of vault contamination (paper-only ontology leak), the diagnostic sharpening across rounds (three-system collapse to cyclical inference by toolchain to false-flag inference via Obsidian package deal with LiveSync), the architectural tension between v0.2 mediation-layer scope and the current Bridge ledger shape, the R1-R11 substrate-requirement derivation from v0.1/v0.2 theory documents, the candidate evaluation putting Git as leading and exposing CouchDB+LiveSync failure on R6 and R11, the R3 soft-spot reasoning placing Authority Surface enforcement in the writer not storage, and the live cameo of the legibility problem when the operator could not read the Bridge interpretations and Code wrote the markdown mirror. Also captures post-hoc observations from cowork-theory: the diagnostic-sharpening hierarchy cowork to Code to Seb, three things Code did not push on (R10 may be Cleanroom leakage, shared cognition layer undefined, mediation-vs-ledger tension unresolved), and sequential premise introduction as a deliberate pattern. Body at mirror/cml-30-salvage-brainstorm-transcript.md. Filed as historical reference because the Bridge state alone does not communicate the reasoning chain, and Q1-Q3 on INT-85 will need this trace to be answered well. Supersedes Report id 1 which was malformed at registration.",
+              "actorId": 2,
+              "sourceRef": "cowork session 2026-04-15, post-salvage-brainstorm review",
+              "createdAt": "2026-04-14T22:44:07.000Z"
+            }
+          ],
+          "claims": [],
+          "expertiseSignals": [],
+          "recentEvents": [
+            {
+              "id": 196,
+              "type": "intent_created",
+              "createdAt": "2026-04-14T22:19:36.000Z"
+            }
+          ],
+          "summary": {
+            "interpretationCount": 7,
+            "activeClaimCount": 0,
+            "actionCount": 13,
+            "reportCount": 3,
+            "domainsCovered": 0
+          }
+        }
+      },
+      "meta": {
+        "schema_version": 2
+      }
+    }
+  ]
+}

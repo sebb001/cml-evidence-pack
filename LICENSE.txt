@@ -1,0 +1,16 @@
+Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International
+(CC BY-NC-ND 4.0)
+
+Copyright (c) 2026 Sebastian Bohle
+
+This work is licensed under the Creative Commons
+Attribution-NonCommercial-NoDerivatives 4.0 International License.
+
+You are free to copy and redistribute this material in any medium or format
+for non-commercial purposes, provided that you give appropriate credit and do
+not distribute modified versions of it.
+
+Full legal code:
+https://creativecommons.org/licenses/by-nc-nd/4.0/legalcode
+
+SPDX-License-Identifier: CC-BY-NC-ND-4.0

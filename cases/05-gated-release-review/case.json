@@ -1,0 +1,441 @@
+{
+  "packageName": "3m-layer-operational-evidence-pack",
+  "packageVersion": "v0.1",
+  "title": "Gated release review",
+  "caseId": "05-gated-release-review",
+  "synthesis": {
+    "thesis": "Presentation pressure was converted into explicit release gates. A clean-publication effort grew into source custody, live topology, external review readiness, and claim-verification records.",
+    "story": "The governance situation is a deadline with reputational weight. It would be easy to optimise for presentation: clean the repo, show the demo, move quickly. Instead the matter becomes a governed release lane. The record distinguishes polish from proof, documents what is deployed, captures gate decisions, and packages evidence for an outside technical reader.",
+    "orgExperience": "The evidence shows readiness becoming inspectable. The governing question is not whether the work can be made impressive; it is whether the claims behind it have been checked, what remains unresolved, and what evidence can be shared without creating avoidable risk.",
+    "mechanism": "Publication work, OAuth/write deployment, CEO review context, gate decisions, source-harvest results, and external review handoff remain linked across the release matter.",
+    "transition": "CML-36 -> RPT-12 -> CML-38 -> RPT-33 -> RPT-39 -> RPT-41",
+    "demonstrates": "This is restraint under external pressure. The record shows a clean-release effort being slowed down by gates for naming, custody, actor identity, service topology, live deployment, and review readiness before the work is shown to outsiders."
+  },
+  "sourceRefs": [
+    "CML-38",
+    "CML-36"
+  ],
+  "records": [
+    {
+      "ok": true,
+      "data": {
+        "ref": {
+          "kind": "intent",
+          "id": 38,
+          "canonical": "CML-38",
+          "entityTable": "intents"
+        },
+        "context": {
+          "intent": {
+            "id": 38,
+            "scope": "lab",
+            "description": "3M-LAYER ground-truth architecture and operations review with decision gates. Run the review as a gated governance process: no fuzzy architectural edge gets silently normalized by implementation. Naming cleanup is a first-class outcome: after the review, every repo, service, host, CLI, actor surface, domain, config key, doc, and public endpoint has one functionally evident name, with labruntime retired and accidental m3-layer naming corrected. Gate 0 Review Intent: Seb approves exact intent wording, source, scope, activation, and actor attribution before governed writes. Gate 1 Naming Authority: decide canonical naming taxonomy, what is called 3M-LAYER, what needs a functional name, what aliases remain temporarily, and what names are forbidden. Gate 2 Actor Identity: decide where actor identities live: registry, credential-bound surface, role binding, external app identity, or layered model. Gate 3 Roles vs Actors: decide whether Principal Advisor, reading partner, resolver, public MCP clients, and future app lanes are actors, roles, actor-types, or bindings. Gate 4 Domains: decide whether Cleanroom and Epistemic Lab become first-class domains, substrate labels, scopes, context packs, or something else. Gate 5 Write Authority: decide which surfaces may create intents, file interpretations, log actions, create reports, and write vault material. Gate 6 MCP Shape: decide whether MCP exposes interpretation/action write tools, or keeps those writes CLI/UI-only. Gate 7 Live Topology: decide how to retire or migrate legacy labruntime-* services, wrappers, env vars, paths, docs, and aliases. Gate 8 Target State Approval: Seb approves the negotiated architecture and naming target before implementation begins. Review path: inventory current names and topology; classify each name as canonical, transitional alias, historical evidence, or retired; produce decision packets with Observed, Inferred, Unresolved, Proposed; gather focused actor interpretations; only after gates close, produce implementation division of labour and test work packages. Assumptions: existing live names are evidence, not authority; no architectural or naming decision is inferred from current implementation; labruntime-resolver remains read-only during review; mutating implementation waits for Seb-approved gates.",
+            "status": "active",
+            "version": 3,
+            "source": "seb:codex-chat-2026-05-12",
+            "createdAt": "2026-05-12T01:59:37.000Z",
+            "updatedAt": "2026-05-12T02:00:40.000Z"
+          },
+          "interpretations": [
+            {
+              "id": 108,
+              "title": "Codex opening interpretation for gated 3M-LAYER ground-truth review",
+              "status": "proposed",
+              "alignment": "uncertain",
+              "actorId": 22,
+              "domainId": 9,
+              "createdAt": "2026-05-12T02:00:59.000Z"
+            }
+          ],
+          "actions": [
+            {
+              "id": 155,
+              "description": "Completed non-destructive CML-38 source harvest implementation tranche",
+              "outcome": "Created RPT-39. Branch codex/cml38-source-harvest now contains selected live UI/MCP/vault source in Git custody, with legacy authority labels removed from active source, interpretation validation preserved, and build/lint/test/smoke passing.",
+              "actorId": 22,
+              "interpretationId": 108,
+              "createdAt": "2026-05-12T17:11:11.000Z"
+            },
+            {
+              "id": 154,
+              "description": "Surfaced env prefix as Gate 1 sub-decision",
+              "outcome": "Created RPT-38. The canonical human name 3m-layer cannot be used literally as a shell env prefix, so code and live env migration are gated on a machine-safe prefix decision rather than silently preserving THREE_M_LAYER or choosing M3_LAYER.",
+              "actorId": 22,
+              "interpretationId": 108,
+              "createdAt": "2026-05-12T02:46:48.000Z"
+            },
+            {
+              "id": 153,
+              "description": "Harvested and compared live 3M-LAYER source copy",
+              "outcome": "Created RPT-37. The live branch contains valuable MCP/UI/runtime work, but raw import is blocked by LABRUNTIME fallbacks, cleanroom metadata, unresolved env prefix, and a possible regression in interpretation-linked vault mutation validation.",
+              "actorId": 22,
+              "interpretationId": 108,
+              "createdAt": "2026-05-12T02:46:03.000Z"
+            },
+            {
+              "id": 152,
+              "description": "Extended local CML-38 mirror with implementation tranche v1",
+              "outcome": "The repo-side mirror now references RPT-36 and ACT-151 and names source custody as the next implementation-critical move before service deletion.",
+              "actorId": 22,
+              "interpretationId": 108,
+              "createdAt": "2026-05-12T02:44:24.000Z"
+            },
+            {
+              "id": 151,
+              "description": "Filed CML-38 implementation tranche v1",
+              "outcome": "Created RPT-36 with target state, division of labour, decision gates, unresolved choices, and local/live/naming/governance test plan. It keeps env prefix, source harvest approval, PA/team manifest design, UI shape, and legacy retirement timing as explicit decisions.",
+              "actorId": 22,
+              "interpretationId": 108,
+              "createdAt": "2026-05-12T02:44:07.000Z"
+            },
+            {
+              "id": 150,
+              "description": "Updated local CML-38 decision-log mirror with Seb decisions and Gate 9",
+              "outcome": "The ignored repo-side mirror now references RPT-33, RPT-34, RPT-35, records settled directions for Gates 1, 4, 5, 6, and 7 sunset, and keeps actor identity, PA provisioning, env prefix, source custody, and human interface as explicit unresolved decisions.",
+              "actorId": 22,
+              "interpretationId": 108,
+              "createdAt": "2026-05-12T02:43:36.000Z"
+            },
+            {
+              "id": 149,
+              "description": "Recorded missing human-readable interface as Gate 9 for CML-38",
+              "outcome": "Created RPT-35. The interface is now modeled as a governed authority surface rather than a UI afterthought, with unresolved design questions kept visible for Seb decision.",
+              "actorId": 22,
+              "interpretationId": 108,
+              "createdAt": "2026-05-12T02:42:17.000Z"
+            },
+            {
+              "id": 147,
+              "description": "Extended CML-38 decision log with supplemental inventories and actor request pack",
+              "outcome": "Added RPT-29 supplemental env/unit naming inventory, RPT-30 live MCP shape and source drift inventory, RPT-31 live source custody inventory, and RPT-32 focused actor interpretation request pack. Updated local ignored decision log mirror with RPT-29 through RPT-32. Important revised finding: live 3M-LAYER MCP exposes interpretation create/update/supersede and action_log privately, and public bridge allowlist includes interpretation write/update/supersede tools, while the local clean repo inspected here does not contain those live MCP extensions.",
+              "actorId": 22,
+              "interpretationId": 108,
+              "createdAt": "2026-05-12T02:08:47.000Z"
+            },
+            {
+              "id": 146,
+              "description": "Prepared CML-38 gated review spine and decision log",
+              "outcome": "Created and activated CML-38, repaired shell-truncated description in place, filed INT-108 as Codex opening interpretation, created RPT-19 through RPT-26 as decision packet seeds, RPT-27 as actor roster and evidence anchors, RPT-28 as decision log v0, and mirrored the return log locally at docs/internal/cml-38-decision-log-2026-05-12.md. No architecture, naming, actor identity, role, domain, MCP, write authority, or topology decision was selected by Codex.",
+              "actorId": 22,
+              "interpretationId": 108,
+              "createdAt": "2026-05-12T02:05:09.000Z"
+            }
+          ],
+          "reports": [
+            {
+              "id": 39,
+              "kind": "implementation-result",
+              "title": "CML-38 source harvest implementation result v1",
+              "summary": "Observed: on branch codex/cml38-source-harvest, Codex harvested selected live source into the Git workspace without mutating live services. Imported or reconciled: src/ui/runtime.ts operator runtime; UI runtime/manifest/operator-state and governed write routes; MCP tools for search/fetch, UI runtime, operator state, intent create/update, interpretation create/update/supersede, action_log, claims, expertise, event list, vault_find/vault_resolve; vault find and mutation manifests; SDK interpretation create/update, vault find/resolve, richer action logging; remote smoke defaults moved to https://[tailnet-host].ts.net/mcp. Removed from imported active source: LABRUNTIME env fallbacks, vault://cleanroom URLs, cleanroom-vault metadata, and __THREE_M_LAYER UI global. Preserved/strengthened: vault mutations still reject mismatched interpretationId and superseded interpretationId. Verification: npm test passed 20 files / 222 tests; npm run build passed; npm run lint passed; npm run smoke:local passed; active-source naming scan found no labruntime, m3-layer, m3-pilot, vault://cleanroom, cleanroom-vault, or running-instance in src/tests/scripts/config docs; light secret scan found only placeholder env token and test fixture pilot-secret. Inferred: the useful live branch has now been pulled into reviewable Git custody in a non-destructive way, while legacy naming and the identified governance regression are blocked. Unresolved: env prefix remains RPT-38; live service/path retirement is not yet executed; repo/remote rename is not yet executed; PA/team manifest design and Gate 9 endpoint choice remain open. Proposed: review and commit this branch, then use it as the tested source base for repo/remote renaming and live labruntime/m3-layer retirement after the env-prefix decision closes.",
+              "actorId": 22,
+              "sourceRef": "codex-desktop-2026-05-12-cml38-source-harvest-result-v1",
+              "createdAt": "2026-05-12T17:11:02.000Z"
+            },
+            {
+              "id": 38,
+              "kind": "decision-packet",
+              "title": "Gate 1 env prefix naming sub-decision",
+              "summary": "Observed: Seb chose 3m-layer as canonical repo, package, and live host name, and objected to THREE_M_LAYER as an unexplained env family. Existing live and repo config use THREE_M_LAYER_* keys, while legacy env files use LABRUNTIME_* keys. Shell environment variable names cannot literally be 3m-layer because hyphen is not valid in standard env assignment names, and names beginning with a digit are also not valid shell identifiers. Inferred: env naming needs a machine-safe canonical spelling that carries 3m-layer authority without preserving labruntime or accidentally validating m3-layer. Unresolved: whether to keep current THREE_M_LAYER_* despite the unclear origin, replace it with THREEM_LAYER_*, use M3_LAYER_* even though m3-layer is erroneous as a host/repo name, use CML_* for the orchestration layer, or avoid a global prefix and use service-specific config files instead. Proposed: treat env prefix as a Gate 1 sub-decision before code or live env migration. Once Seb chooses, tests must assert that LABRUNTIME_* is not accepted as live authority and that all generated configs, docs, systemd env files, and wrappers use only the approved prefix.",
+              "actorId": 22,
+              "sourceRef": "codex-desktop-2026-05-12-cml38-env-prefix-decision",
+              "createdAt": "2026-05-12T02:46:43.000Z"
+            },
+            {
+              "id": 37,
+              "kind": "source-harvest-inventory",
+              "title": "CML-38 live source harvest comparison v1",
+              "summary": "Observed: harvested live [server-path]/app into /private/tmp/3m-layer-harvest-cml38/live-app and compared it with the local workspace, excluding deployment artifacts. Live-only useful work includes src/ui/runtime.ts, UI runtime/manifest/operator-state tools, UI write routes for intents/interpretations/actions/reports/claims/expertise, MCP tools for search/fetch/ui/runtime/operator state/intent create/update/interpretation create/update/supersede/action log/claims/expertise/events/vault find/resolve, vault find plus mutation manifests, and SDK methods for interpretation create/update and richer action logging. Local-only repo material includes architecture/internal/pilot docs and smoke/audit scripts not present in the live copy. Naming debt in live source includes LABRUNTIME env fallbacks, vault://cleanroom URLs, cleanroom-vault metadata, THREE_M_LAYER env names, and tests asserting cleanroom metadata. Governance risk: live SDK removed the local validation that a vault mutation interpretationId belongs to the intent and is not superseded; live MCP tests also dropped the direct interpretation-linkage contract test. Inferred: live has important branch value but cannot be imported raw without reintroducing legacy naming and possibly weakening interpretation-linked vault mutation guarantees. Proposed: harvest into a Git branch by cherry-picking functional runtime/MCP/UI/vault-find pieces, rename Cleanroom metadata to Vault where appropriate, delete LABRUNTIME fallback authority, decide env prefix explicitly, preserve or centralize interpretation-intent/supersession validation, and add tests that prove legacy names carry no live authority plus vault mutations reject mismatched or superseded interpretations.",
+              "actorId": 22,
+              "sourceRef": "codex-desktop-2026-05-12-cml38-live-harvest-v1",
+              "createdAt": "2026-05-12T02:45:58.000Z"
+            },
+            {
+              "id": 35,
+              "kind": "decision-packet",
+              "title": "Gate 9 human-readable interface decision packet seed",
+              "summary": "Observed: live 3M-LAYER has a UI service on port 8793 and the old labruntime UI still lives on port 8792. The 3M UI health says 3m-layer-ui, and operator state exposes CML-38, actors, domains, reports, actions, and attention items as JSON. Live source includes a UI runtime with operator sidebar concepts and staged MCP actions, but local repo source custody is divergent and the human-readable interface was not present as a gate in the original review plan. Inferred: the human interface is an authority surface, not decoration. It must show gates, decisions, actor provenance, unresolved fuzzy edges, actionability, and naming state in language a human can use without reading raw JSON or service internals. Unresolved: whether the primary human surface is a web UI, sidebar, vault mirror, CLI companion, or all of these; how decision packets are edited, approved, or rejected; how identical write authority from Gate 5 appears without hiding contractual policy; how PA provisioning and team manifest pickup should be made legible; how live breakage from killing legacy names should be surfaced as signal; what the canonical UI name and endpoint are after labruntime and m3-layer retire. Proposed: add Gate 9 Human-Readable Interface. Build a first-class operator interface for CML that renders Observed, Inferred, Unresolved, Proposed packets, decision gates, actor/team manifest status, domain map, naming retirement map, write-authority policy, and live topology health. Treat it as a governed write surface equal to CLI and MCP, subject to the same contracts and audit records, and include UI smoke tests in the review test plan.",
+              "actorId": 22,
+              "sourceRef": "codex-desktop-2026-05-12-cml38-gate9-human-interface",
+              "createdAt": "2026-05-12T02:42:12.000Z"
+            },
+            {
+              "id": 34,
+              "kind": "advice",
+              "title": "Gate 7 advice on live branch canonicalization",
+              "summary": "Advice on Gate 7 live canonicalization. Observed: live [server-path]/app has useful source not present in the local repo, including richer MCP parity, UI runtime tools, interpretation_create/update/supersede, action_log, vault_find/vault_resolve, and tests for those surfaces. Live source tree has 164 src/test/script/doc files versus 79 in the local repo scan, partly due to AppleDouble ._ files but also real added files such as src/ui/runtime.ts and tests/ui/runtime.test.ts. Live [server-path]/app is not a Git repository and appears to be a copied deployment artifact; npm test cannot run there because vitest is not installed. Inferred: live has the more useful functional branch, but the live directory should not itself become canonical. Recommendation: make a new Git branch in the 3M-LAYER repo, import the live source after filtering generated dist, env files, AppleDouble files, and deployment-only artifacts, run build/lint/test/smoke locally, then make that Git branch canonical and redeploy from it. Do not declare [server-path]/app canonical. This preserves the useful work while restoring provenance, reviewability, and repeatable tests. Proposed execution path: 1 harvest live source into a scratch copy; 2 diff against current repo; 3 backport useful live-only changes; 4 rename repo and remote from labruntime to 3m-layer; 5 deploy from Git branch; 6 kill legacy labruntime services and paths; 7 use any breakage as ground-truth signal.",
+              "actorId": 22,
+              "sourceRef": "codex-desktop-2026-05-12-cml38-gate7-advice",
+              "createdAt": "2026-05-12T02:39:20.000Z"
+            },
+            {
+              "id": 32,
+              "kind": "actor-request-pack",
+              "title": "CML-38 focused actor interpretation request pack",
+              "summary": "Actor interpretation request pack for CML-38. Each actor should file one interpretation on CML-38 using Observed, Inferred, Unresolved, Proposed. code-framework: review live MCP extensions versus repo source, primitive write semantics, and service/API parity. code-infra: review live systemd topology, hostname/Funnel naming, [server-path] versus [server-path], and copied-deploy source custody. code-cleanroom: review Cleanroom as domain/substrate/context pack, vault sync/parity, and skill folder presence. codex-cleanroom: review vault/schema evidence and naming impact on Cleanroom authority surfaces. cowork-cleanroom: review human editing and vault ergonomics implications of naming and write lanes. cowork-theory: review Epistemic Lab domain framing and whether it should be a domain, scope, or conceptual substrate. chatgpt-principal-advisor: from the actual ChatGPT app lane only, validate PA identity, role binding expectations, and public MCP interpretation/write ergonomics. m3-pilot-agent: validate public MCP OAuth pilot behavior and whether the actor name should be renamed. labruntime-resolver: remain read-only and supply only neutral reference evidence if asked. Seb: decide gates after reviewing packets. No actor should treat current implementation naming as authority.",
+              "actorId": 22,
+              "sourceRef": "codex-desktop-2026-05-12-cml38-actor-request-pack",
+              "createdAt": "2026-05-12T02:08:35.000Z"
+            },
+            {
+              "id": 31,
+              "kind": "source-custody-inventory",
+              "title": "CML-38 live source custody and drift inventory",
+              "summary": "Source custody inventory. [server-path]/app is not a Git repository, but it contains source and dist files. Live [server-path]/app/src/mcp/server.ts includes search, fetch, UI tools, intent_create/update, interpretation_create/update/supersede aliases, and action_log. The local workspace src/mcp/server.ts lacks those live MCP extensions in the inspected working tree. Live dist/mcp files are dated May 6 and the app copy includes AppleDouble ._ files, suggesting deployed-copy workflow rather than Git checkout custody. Inferred: source of deploy truth is currently ambiguous between local clean repo, live copied source, and generated dist. Unresolved decisions for Seb: whether live source must be imported/backported into the repo before any naming cleanup; whether [server-path]/app may remain a copied deployment directory or should become a checked-out release artifact; whether dist/source mismatches are acceptable during pilot. Proposed: treat source custody as a Gate 7 topology and Gate 6 MCP-shape decision, with no deployment mutation until Seb chooses.",
+              "actorId": 22,
+              "sourceRef": "codex-desktop-2026-05-12-cml38-live-source-custody",
+              "createdAt": "2026-05-12T02:08:10.000Z"
+            },
+            {
+              "id": 30,
+              "kind": "mcp-inventory",
+              "title": "CML-38 supplemental live MCP shape and source drift inventory",
+              "summary": "Supplemental MCP shape inventory. Live private 3M-LAYER MCP HTTP tools/list on 127.0.0.1:8787 advertises search, fetch, ui_manifest, ui_runtime_get, operator_state_get, status, intent_get/list/create/update, interpret_get/list/create/update/supersede aliases, action_log, claim_create/release, expertise_register, event_list, report_create/list, contract register/get/list/supersede, actor_type register/get/list, vault_read/find/resolve/search/write/append. Local repo src/mcp/server.ts inspected in the working tree does not contain interpretation_create, action_log, search/fetch, ui tools, or vault_find/vault_resolve, so live deployment and local repo are divergent. Public mcp-public env allowed tools include search, fetch, ui tools, status, intent read tools, interpretation read/create/update/supersede tools, report_create/list, contract read tools, actor_type read tools, vault read/find/resolve/search/write/append. It does not list action_log or intent_create. PA profile env keys exist for actor, assumed role, governing contract, writable suffix policy, and required interpretation for vault mutations, with values redacted. Inferred: ChatGPT interpretation writes may already be possible through the live public bridge if the client can reach and authenticate to the current public profile; the original concern may be client/profile/auth/tool-use behavior, not absent deployed capability. Unresolved: whether live-only MCP extensions must be backported to the clean repo, whether public interpretation writes are intentional, and whether action_log should be public-profile exposed. Proposed: treat this as revised Gate 6 evidence and add source-drift cleanup to Gate 7.",
+              "actorId": 22,
+              "sourceRef": "codex-desktop-2026-05-12-cml38-live-mcp-inventory",
+              "createdAt": "2026-05-12T02:07:17.000Z"
+            },
+            {
+              "id": 29,
+              "kind": "naming-inventory",
+              "title": "CML-38 supplemental env and unit naming inventory",
+              "summary": "Supplemental naming inventory. Active 3M-LAYER units start /usr/local/bin/3m-layer-mcp-http, /usr/local/bin/3m-layer-mcp-public, and /usr/local/bin/3m-layer-ui with env files under [server-path]. Those env files use THREE_M_LAYER_* keys, including DB, vault, MCP HTTP, public MCP, OAuth, PA profile, and UI keys. Legacy LabRuntime env files remain under [server-path] and use LABRUNTIME_* keys across mcp-http, mcp-public, neutral, reading-partner, chatgpt-principal-advisor, chatgpt-reading-partner, and labruntime.env. Active or present legacy units still point at /usr/local/bin/labruntime-* and [server-path]/*.env, with labruntime-mcp-public failing due to port conflict. Inferred: env-prefix migration has happened for the new 3M-LAYER family but not retired the old LabRuntime family. Unresolved: whether LABRUNTIME_* compatibility is deleted, aliased, archived, or kept for a defined deprecation window. Proposed: treat this as Gate 1 and Gate 7 evidence only, not a decision.",
+              "actorId": 22,
+              "sourceRef": "codex-desktop-2026-05-12-cml38-env-unit-inventory",
+              "createdAt": "2026-05-12T02:06:13.000Z"
+            },
+            {
+              "id": 28,
+              "kind": "decision-log",
+              "title": "CML-38 decision log v0 for Seb return",
+              "summary": "Decision log prepared for Seb return. Gate 0 Review Intent: CML-38 active, Seb-attributed, repaired after initial shell truncation; INT-108 filed by codex-build. Decision needed: confirm CML-38 text remains accepted after repair. Gate 1 Naming Authority: RPT-19. Decision needed: choose taxonomy for 3M-LAYER, 3m-layer, 3m, m3-layer, labruntime, repo names, CLI names, service names, host names, and transitional aliases. Gate 2 Actor Identity: RPT-20. Decision needed: choose identity source model across registry, credential, app surface, role binding, provider/model, and OAuth mapping. Gate 3 Roles vs Actors: RPT-21. Decision needed: classify PA, reading-partner, resolver, public MCP clients, and future lanes as actors, roles, actor-types, bindings, or layered constructs. Gate 4 Domains: RPT-22. Decision needed: choose whether Cleanroom and Epistemic Lab are explicit domains, substrates, scopes, contracts, context packs, or deferred. Gate 5 Write Authority: RPT-23. Decision needed: choose which surfaces can create intents, interpretations, actions, reports, and vault writes. Gate 6 MCP Shape: RPT-24. Decision needed: choose whether to expose interpret_file and action_log over MCP and under which profiles. Gate 7 Live Topology: RPT-25. Decision needed: retire, migrate, alias, or preserve legacy labruntime units, wrappers, env files, paths, hostname, and Funnel naming. Gate 8 Target State: RPT-26. Decision needed: approve final architecture/naming target and whether emergency cleanup can happen before all gates close. RPT-27 contains actor roster and evidence anchors. No architecture decision has been made by Codex.",
+              "actorId": 22,
+              "sourceRef": "codex-desktop-2026-05-12-cml38-decision-log-v0",
+              "createdAt": "2026-05-12T02:04:04.000Z"
+            },
+            {
+              "id": 27,
+              "kind": "review-roster",
+              "title": "CML-38 focused actor roster and evidence anchors",
+              "summary": "Focused review roster for CML-38. Seb: authority and gate decisions. codex-build: current implementer, repo QA, decision-log assembly, and non-role-bound technical synthesis. code-framework: 3M-LAYER service/API boundaries, MCP parity, primitive semantics, and tests. code-infra: live units, hostnames, endpoints, deployment topology, and retirement/migration of legacy surfaces. code-cleanroom: vault infrastructure, sync/parity, Obsidian/Cleanroom service naming, and remote filesystem evidence. codex-cleanroom: schema-aware vault review and Cleanroom evidence synthesis. cowork-cleanroom: vault ergonomics and human editing/coordination impact. cowork-theory: Epistemic Lab/domain framing and theoretical boundary review. chatgpt-principal-advisor: actual ChatGPT-app PA lane ergonomics and role-bound write validation, not to be impersonated by Codex. m3-pilot-agent: public MCP OAuth pilot behavior and naming ambiguity around m3. labruntime-resolver: read-only neutral evidence resolver only; it must not write or assume roles. Evidence anchors for first pass: CML-16, CML-35, CML-36, CML-38, INT-101, INT-106, INT-108, RPT-12, RPT-19 through RPT-26, live actor/domain roster, local build/lint/test/smoke results, live systemd and Funnel inventory.",
+              "actorId": 22,
+              "sourceRef": "codex-desktop-2026-05-12-cml38-roster",
+              "createdAt": "2026-05-12T02:03:43.000Z"
+            },
+            {
+              "id": 26,
+              "kind": "decision-packet",
+              "title": "Gate 8 target state approval decision packet seed",
+              "summary": "Observed: Gates 1 through 7 now have seed decision packets under CML-38. The packets deliberately preserve alternatives and do not choose architecture, identity, domain, write-surface, MCP, naming, or topology outcomes. CML-38 itself establishes that existing live names and implementation shape are evidence, not authority. Inferred: Gate 8 cannot close until Seb reviews the packets and selects target-state decisions. Unresolved decisions for Seb: approve, reject, or revise each gate packet; decide whether to add more actors before target-state approval; decide whether implementation may begin in slices before all naming decisions are closed; decide whether emergency cleanup of the restart-looping legacy public unit is allowed before full naming target state. Proposed return protocol: present a compact decision log with one row per gate, evidence refs, open choices, recommendation-free questions, and a requested Seb decision. After Seb decisions are recorded, create final implementation work packages and tests. No option is selected by Codex.",
+              "actorId": 22,
+              "sourceRef": "codex-desktop-2026-05-12-cml38-gate8",
+              "createdAt": "2026-05-12T02:03:32.000Z"
+            },
+            {
+              "id": 25,
+              "kind": "decision-packet",
+              "title": "Gate 7 live topology decision packet seed",
+              "summary": "Observed: live topology currently has both 3M-LAYER and LabRuntime service families. 3m-layer-mcp-http, 3m-layer-mcp-public, and 3m-layer-ui are active and healthy. labruntime-mcp-http and labruntime-ui are also active. labruntime-mcp-public is disabled but repeatedly auto-restarting and failing because 127.0.0.1:8788 is already owned by 3m-layer-mcp-public. [server-path] and [server-path] both contain app or env material. /usr/local/bin has both 3m-layer* and labruntime-* wrappers. Tailscale/Funnel exposes https://[tailnet-host].ts.net, while the Linux hostname is m3-layer. Inferred: live topology is carrying a compatibility shadow that creates operational noise and risks false health readings. Unresolved decisions for Seb: whether to retire labruntime units immediately; whether labruntime-cml/context wrappers are kept as transitional neutral resolver aliases; whether [server-path] is archival, active compatibility, or to be migrated; whether host name should be 3m-layer, 3m-layer-host, three-m-layer, or a functional name; whether 3m Funnel URL is acceptable. Proposed options only: clean cutover with deprecated aliases removed, staged alias window with explicit no-authority tests, or topology split where old LabRuntime remains historical archive only. No option is selected by Codex.",
+              "actorId": 22,
+              "sourceRef": "codex-desktop-2026-05-12-cml38-gate7",
+              "createdAt": "2026-05-12T02:03:23.000Z"
+            },
+            {
+              "id": 24,
+              "kind": "decision-packet",
+              "title": "Gate 6 MCP shape decision packet seed",
+              "summary": "Observed: local MCP server exposes read tools for status, intents, interpretations, reports, contracts, actor-types, and vault read/search; write tools include report_create, contract_register, contract_supersede, actor_type_register, vault_write, and vault_append. Interpretation filing exists in CLI and SDK but was not observed in MCP tool definitions. Action logging exists in CLI and service but was not observed as an MCP tool definition. Public bridge filters tools by allowlist, strips client invocation context unless configured, injects required actor or OAuth actor, blocks actor spoofing, and constrains writable vault paths. Inferred: MCP is intentionally an adapter, but adapter incompleteness is now visible because ChatGPT can write vault material yet cannot independently file the interpretation that should precede it. Unresolved decisions for Seb: whether MCP should mirror CLI primitive writes; whether interpret_file and action_log are safe public-profile tools; whether PA profile should have more write primitives than neutral profile; whether data-only ChatGPT compatibility should stay read-only. Proposed options only: keep MCP read-heavy and use CLI/UI for coordination writes, add narrow interpret_file and action_log only for trusted profiles, or expose full governed primitive writes with per-profile allowlists and contract tests. No option is selected by Codex.",
+              "actorId": 22,
+              "sourceRef": "codex-desktop-2026-05-12-cml38-gate6",
+              "createdAt": "2026-05-12T02:03:07.000Z"
+            },
+            {
+              "id": 23,
+              "kind": "decision-packet",
+              "title": "Gate 5 write authority decision packet seed",
+              "summary": "Observed: write authority currently exists through CLI for intents, interpretations, actions, reports, actors, roles, contracts, domains, vault operations, and related objects. MCP server code exposes reads plus report_create, contract writes, actor-type writes, and vault_write or vault_append with intent mandate and optional interpretationId; it does not currently expose interpretation filing or generic action logging as MCP tools in the local code inspected. Public bridge exposes only configured allowlisted tools and can inject required actor, governing contract, assumed role, path scope, and OAuth mapping. Recent PA writes show governed vault writes can succeed with intent and interpretation linkage. Inferred: write authority is policy-gated at the bridge and service layers, but the product boundary for which surfaces may write which primitive is not settled. Unresolved decisions for Seb: which surfaces may create intents; whether agents can file interpretations over MCP; whether action logging should be exposed independently from vault writes; whether report_create is an acceptable public write; whether public OAuth write actors are broad or path-scoped; whether ChatGPT PA writes require active role binding in addition to actor and contract key. Proposed options only: CLI/UI canonical writes with MCP write adapters by profile, MCP parity for all governed primitives with strict allowlists, or minimal public writes limited to reports and scoped vault append. No option is selected by Codex.",
+              "actorId": 22,
+              "sourceRef": "codex-desktop-2026-05-12-cml38-gate5",
+              "createdAt": "2026-05-12T02:02:57.000Z"
+            },
+            {
+              "id": 22,
+              "kind": "decision-packet",
+              "title": "Gate 4 domains decision packet seed",
+              "summary": "Observed: live domains are broad lab concern domains: Intent and Arbitration, Research Input, Publication, Framework Build, Machine Build, Infrastructure, Lab Operations, Theory and Documentation, and Project Coordination. Cleanroom and Epistemic Lab are not explicit domains in the live domain list, though Cleanroom appears in actor names, capability namespaces, vault paths, service names, and operational history. Epistemic Lab appears mainly as architecture and repo context rather than a live domain. Inferred: current domain modeling may be too broad to express substrate ownership, but making substrates into domains could also blur authority. Unresolved decisions for Seb: whether Cleanroom is a first-class domain, knowledge substrate, vault service, context pack, scope, or several of these; whether Epistemic Lab is a domain, parent scope, project context, or theoretical substrate; whether domain labels are responsibility boundaries or only routing signs; whether new domains should be registered before or after naming cleanup. Proposed options only: create explicit Cleanroom and Epistemic Lab domains, keep them as substrates under existing domains, or model them as context packs/contracts with no domain rows yet. No option is selected by Codex.",
+              "actorId": 22,
+              "sourceRef": "codex-desktop-2026-05-12-cml38-gate4",
+              "createdAt": "2026-05-12T02:02:48.000Z"
+            },
+            {
+              "id": 21,
+              "kind": "decision-packet",
+              "title": "Gate 3 roles versus actors decision packet seed",
+              "summary": "Observed: live roles currently include principal-advisor as an active role contract. Principal Advisor also exists as an actor, an actor-type contract, provider-bound model surface, bridge profile, and governingContractKey on actions. Reading-partner, resolver, public MCP pilot, Codex, Claude, Cleanroom lanes, and Airtable Omni are currently actors rather than roles. Existing docs and contracts say skills are invocation postures, not actor substitution. Inferred: the system has been using actors for accountability and roles for posture or authority, but the boundary is still fuzzy. Unresolved decisions for Seb: whether Principal Advisor should remain a role assumed by actor 57 or become an actor-type only; whether reading-partner is actor, role, skill posture, or bounded bridge profile; whether resolver should be a neutral actor or a non-actor service identity; whether public MCP clients are one actor, many actors, or OAuth-mapped external subjects; whether future app lanes are actors or bindings. Proposed options only: actor accountability with role posture, role-first surfaces with actor attribution, or actor-type contracts as the main reusable identity layer. No option is selected by Codex.",
+              "actorId": 22,
+              "sourceRef": "codex-desktop-2026-05-12-cml38-gate3",
+              "createdAt": "2026-05-12T02:02:39.000Z"
+            },
+            {
+              "id": 20,
+              "kind": "decision-packet",
+              "title": "Gate 2 actor identity decision packet seed",
+              "summary": "Observed: actor identity currently appears in multiple places: actors table stable names, actor ids, providers, actorType, defaultContractKey, role bindings, credentialRef, MCP OAuth subject or group mapping, requiredActor bridge injection, and vault/action attribution. Actor 57 chatgpt-principal-advisor has provider openai-chatgpt-5.5-high-reasoning and defaultContractKey actor-type:chatgpt-5-5-high-reasoning-principal-advisor. The only role binding row observed for principal-advisor is retired, while recent successful PA writes still attribute to actorId 57 with governingContractKey role:principal-advisor. Actor 58 labruntime-resolver is live but its name and contractRef carry retired naming. Actor 59 m3-pilot-agent carries erroneous m3 naming. Inferred: identity is layered in practice, but the layers are not yet architecturally settled. Unresolved decisions for Seb: registry identity source of truth; whether credential-bound app identity is part of actor identity or only authentication evidence; whether role binding is mandatory for role assumption; whether provider and model bind actor identity; how OAuth subject/group maps become actor authority; how retired bindings interact with successful writes. Proposed options only: registry-primary layered identity, credential-primary surface identity, or explicit actor plus binding plus credential triple. No option is selected by Codex.",
+              "actorId": 22,
+              "sourceRef": "codex-desktop-2026-05-12-cml38-gate2",
+              "createdAt": "2026-05-12T02:02:31.000Z"
+            }
+          ],
+          "claims": [],
+          "expertiseSignals": [],
+          "recentEvents": [
+            {
+              "id": 405,
+              "type": "intent_updated",
+              "reason": "Repair CML-38 description after remote shell variable expansion during Gate 0 registration.",
+              "createdAt": "2026-05-12T02:00:40.000Z"
+            },
+            {
+              "id": 404,
+              "type": "intent_updated",
+              "reason": "Gate 0 approved by Seb in Codex chat 2026-05-12; repair initial shell-truncated description and activate review intent.",
+              "createdAt": "2026-05-12T02:00:24.000Z"
+            },
+            {
+              "id": 403,
+              "type": "intent_created",
+              "createdAt": "2026-05-12T01:59:37.000Z"
+            }
+          ],
+          "summary": {
+            "interpretationCount": 1,
+            "activeClaimCount": 0,
+            "actionCount": 10,
+            "reportCount": 21,
+            "domainsCovered": 0
+          }
+        }
+      },
+      "meta": {
+        "schema_version": 2
+      }
+    },
+    {
+      "ok": true,
+      "data": {
+        "ref": {
+          "kind": "intent",
+          "id": 36,
+          "canonical": "CML-36",
+          "entityTable": "intents"
+        },
+        "context": {
+          "intent": {
+            "id": 36,
+            "scope": "lab",
+            "description": "Publish 3M-LAYER as a clean, history-free private GitHub pilot repo for a technical CEO review with a fintech seed-board context. The repo should remain free of internal prose and secrets, preserve neutral docs/setup/config and MIT license posture, separate internal contract matter, document Claude Code CLI and chat MCP review paths, and pass a QA shakedown before release.",
+            "status": "active",
+            "version": 3,
+            "source": "seb",
+            "addressedTo": 22,
+            "createdAt": "2026-05-02T05:58:26.000Z",
+            "updatedAt": "2026-05-17T11:25:17.000Z"
+          },
+          "interpretations": [
+            {
+              "id": 102,
+              "title": "Clean 3M-LAYER private pilot repo release plan",
+              "status": "proposed",
+              "alignment": "aligned",
+              "actorId": 22,
+              "domainId": 3,
+              "createdAt": "2026-05-02T05:58:26.000Z"
+            }
+          ],
+          "actions": [
+            {
+              "id": 125,
+              "description": "Vault append: 99_engine/reports/3m-layer-public/agent-write-smoke.md",
+              "outcome": "appended",
+              "actorId": 59,
+              "createdAt": "2026-05-02T16:24:04.000Z"
+            },
+            {
+              "id": 124,
+              "description": "Created clean 3M-LAYER pilot repo and separated internal contract matter.",
+              "outcome": "Created local clean repo [local-workspace]/3m-layer, local internal repo [local-workspace]/3m-layer-internal-contracts, committed both, published private GitHub repo https://github.com/sebb001/3m-layer, and passed build/test/lint/smoke/audit plus secret/internal-reference scans.",
+              "actorId": 22,
+              "interpretationId": 102,
+              "createdAt": "2026-05-02T08:24:26.000Z"
+            }
+          ],
+          "reports": [
+            {
+              "id": 41,
+              "kind": "status",
+              "title": "3M-LAYER Claude Code review handoff",
+              "summary": "Observed: CML-36 is active and now includes the fintech CEO technical-review scenario. A local internal review handoff was written at [local-workspace]/3m-layer/docs/internal/claude-code-review-report.md; docs/internal is ignored by Git and should not be published. The handoff instructs the reviewer to use CLI/local stdio MCP for Claude Code and hosted OAuth MCP only for chat-style clients, and it defines review criteria for uniform naming, no secrets or private material, documentation accuracy, minimal generic contract matter, universal MCP/OAuth posture, write-action safety, component slices, QA, ignored files, and release readiness. Inferred: the repo is ready for an external Claude-assisted review, while the review artifact itself remains internal. Unresolved: Claude Code previously hung in Codex on non-interactive prompts, so the human reviewer should run Claude Code interactively or document tool unavailability. Proposed: run the review, fix any critical/high findings before the CEO-facing walkthrough, and accept or resolve medium findings explicitly.",
+              "actorId": 22,
+              "sourceRef": "codex:3m-layer-claude-review-handoff-2026-05-17",
+              "createdAt": "2026-05-17T11:26:49.000Z"
+            },
+            {
+              "id": 12,
+              "kind": "status",
+              "title": "3M-LAYER remote public MCP OAuth/write deployment persisted",
+              "summary": "Observed: the LXC now presents as m3-layer, Tailscale Funnel serves https://[tailnet-host].ts.net, and persistent systemd units 3m-layer-mcp-http plus 3m-layer-mcp-public are enabled. The public MCP bridge exposes universal OAuth discovery, dynamic client registration, authorization code token exchange, and a protected MCP endpoint. The allowed public tools include read tools plus report_create, vault_append, and vault_write. Scoped vault writes are limited to 99_engine/reports/3m-layer-public/ markdown files. Actor m3-pilot-agent is active as the pilot public agent. A full external smoke test over the Funnel URL completed DCR, OAuth, tools/list, and authenticated vault_append. The write persisted to 99_engine/reports/3m-layer-public/agent-write-smoke.md and logged action id 125. Inferred: the explicit session goal of persisting a universal MCP surface and write action for agents is now satisfied for the temporary Tailscale URL. Unresolved: the future owned-domain or Cloudflare edge architecture is still undecided, and OAuth issuer material should be regenerated when the base URL changes. Proposed: keep [tailnet-host].ts.net as the pilot endpoint until the public URL architecture is chosen, then rotate OAuth issuer config and re-run the same smoke.",
+              "actorId": 22,
+              "sourceRef": "codex:3m-layer-remote-oauth-write-deploy-2026-05-02",
+              "createdAt": "2026-05-02T16:25:10.000Z"
+            },
+            {
+              "id": 11,
+              "kind": "status",
+              "title": "3M-LAYER universal OAuth and public agent write capability",
+              "summary": "Observed: clean 3M-LAYER repo main is at ef661d4 Add universal MCP OAuth pilot issuer, after 5cc8479 Add OAuth support to public MCP gateway. QA observed in Codex before push: npm run build passed; npm test passed with 209 tests; npm run lint passed; npm run smoke:local passed; npm audit reported 0 vulnerabilities; high-confidence secret scan had no hits; OAuth bootstrap smoke generated ignored local key/env material without printing secrets. Current desktop localhost 127.0.0.1:8788 is not serving, so live external ChatGPT/Claude connectivity is not yet deployed. Feature: public MCP bridge now exposes universal MCP OAuth protected-resource metadata at /.well-known/oauth-protected-resource and /.well-known/oauth-protected-resource/mcp, emits WWW-Authenticate Bearer [redacted] with resource_metadata, verifies external RS256 OIDC JWT Bearer [redacted] via issuer/audience/resource/expiry/JWKS, maps subject/groups/roles/scope claims to 3M-LAYER actors, and blocks client actor spoofing including actor:null. Built-in pilot issuer mode can expose /.well-known/oauth-authorization-server, /.well-known/openid-configuration, /register, /authorize, /token, refresh-token handling, and /jwks.json; npm run oauth:bootstrap creates ignored local RSA private key, JWKS, client store path, OAuth env file, and browser authorization access key. Agent write capability: the bridge can expose vault_write, vault_append, vault_move, and vault_delete only when allowedTools includes them; vault_write and vault_append require an integer intent mandate; writable exact/prefix/suffix path rules constrain write targets; requiredActor or OAuth mapped actor is injected and cannot be overridden by clients; invocation role context is stripped unless the bridge profile injects it. Tests cover permitted scoped writes, missing-intent rejection, outside-path rejection, OAuth subject/group mapping, invalid token rejection, metadata challenge behavior, and a complete vendor-neutral pilot OAuth authorization-code flow. Inferred: agents can write through the public MCP bridge only after deployment config enables specific write tools and path scope. Unresolved: LXC hostname/base URL/TLS/Cloudflare Tunnel deployment and final OAuth bundle rotation for the public HTTPS base URL remain to be done.",
+              "actorId": 22,
+              "sourceRef": "codex:3m-layer-universal-oauth-write-status-ef661d4",
+              "createdAt": "2026-05-02T14:43:42.000Z"
+            }
+          ],
+          "claims": [],
+          "expertiseSignals": [],
+          "recentEvents": [
+            {
+              "id": 440,
+              "type": "intent_updated",
+              "reason": "Seb added the CEO technical review scenario and Claude-oriented repo review as part of the release intent.",
+              "createdAt": "2026-05-17T11:25:17.000Z"
+            },
+            {
+              "id": 368,
+              "type": "operator_focus",
+              "reason": "update",
+              "createdAt": "2026-05-03T12:51:35.000Z"
+            },
+            {
+              "id": 359,
+              "type": "intent_created",
+              "createdAt": "2026-05-02T05:58:26.000Z"
+            },
+            {
+              "id": 360,
+              "type": "intent_updated",
+              "reason": "Seb approved clean 3M-LAYER repo publication work.",
+              "createdAt": "2026-05-02T05:58:26.000Z"
+            }
+          ],
+          "summary": {
+            "interpretationCount": 1,
+            "activeClaimCount": 0,
+            "actionCount": 2,
+            "reportCount": 3,
+            "domainsCovered": 0
+          }
+        }
+      },
+      "meta": {
+        "schema_version": 2
+      }
+    }
+  ]
+}

@@ -1,0 +1,577 @@
+{
+  "packageName": "3m-layer-operational-evidence-pack",
+  "packageVersion": "v0.1",
+  "title": "Authority-bound write lane",
+  "caseId": "04-authority-bound-write-lane",
+  "synthesis": {
+    "thesis": "Agent access was treated as governance, not plumbing. Write capability was tested, separated from neutral access, and constrained through role, surface, and authority records.",
+    "story": "The governance situation is the one every organisation will face as agents become operational: a useful agent needs access, but convenience can collapse roles, permissions, and accountability into a single bridge. Here the work starts with a scoped write test, then separates neutral MCP access from privileged advisory authority. The permission story is recorded as claims and actions rather than assumed from configuration.",
+    "orgExperience": "The evidence shows access control becoming legible. Instead of relying on a claim that agents are connected safely, the record exposes the authority topology: actor, role, contract, write surface, neutral retrieval lane, and privileged advisor lane.",
+    "mechanism": "Actions prove what the bridges allow; claims define authority boundaries; the record separates actors, roles, neutral access, privileged advisor authority, and deployed tool surfaces.",
+    "transition": "CML-34 smoke writes -> CML-35 role topology -> CLM-6 -> ACT-156",
+    "demonstrates": "This is authority design under agentic pressure. The record shows access being decomposed into who can act, under which role, through which surface, with which constraints, and with what proof that the lane works."
+  },
+  "sourceRefs": [
+    "CML-35",
+    "CML-34"
+  ],
+  "records": [
+    {
+      "ok": true,
+      "data": {
+        "ref": {
+          "kind": "intent",
+          "id": 35,
+          "canonical": "CML-35",
+          "entityTable": "intents"
+        },
+        "context": {
+          "intent": {
+            "id": 35,
+            "scope": "lab",
+            "description": "Provision ChatGPT principal advisor as a broad, vendor-bound trusted actor with global LabRuntime/Cleanroom access, preserving actor accountability while allowing bounded skill invocation context.",
+            "status": "active",
+            "version": 2,
+            "source": "codex:principal-advisor-topology",
+            "createdAt": "2026-04-26T20:35:19.000Z",
+            "updatedAt": "2026-04-26T20:35:24.000Z"
+          },
+          "interpretations": [
+            {
+              "id": 106,
+              "title": "ChatGPT data-only compatibility for 3M MCP",
+              "status": "proposed",
+              "alignment": "aligned",
+              "actorId": 22,
+              "domainId": 4,
+              "createdAt": "2026-05-06T16:41:53.000Z"
+            },
+            {
+              "id": 101,
+              "title": "Skill assumption needs live-vault parity and directory resolution",
+              "status": "proposed",
+              "alignment": "aligned",
+              "actorId": 22,
+              "domainId": 4,
+              "createdAt": "2026-04-27T08:55:16.000Z"
+            }
+          ],
+          "actions": [
+            {
+              "id": 156,
+              "description": "Exposed full current 3M MCP tool surface on public ChatGPT bridge",
+              "outcome": "Updated [server-path]/mcp-public.env THREE_M_LAYER_PUBLIC_MCP_ALLOWED_TOOLS to match current upstream MCP tools; restarted 3m-layer-mcp-public.service; verified https://[tailnet-host].ts.net/mcp tools/list returns 40 callable tools including intent_create, intent_update, interpretation_create/update/supersede, action_log, claims, expertise, contract writes, reports, and vault operations. Authentication, actor mapping, and governed vault write checks remain active.",
+              "actorId": 22,
+              "interpretationId": 106,
+              "createdAt": "2026-05-16T08:04:04.000Z"
+            },
+            {
+              "id": 145,
+              "description": "Vault append: 04_reactions/2026-05-11-chatgpt-openai-openclaw-intake-capture.md",
+              "outcome": "{\n  \"manifest\": {\n    \"files\": [\n      {\n        \"path\": \"04_reactions/2026-05-11-chatgpt-openai-openclaw-intake-capture.md\",\n        \"change\": \"changed\",\n        \"operation\": \"append\"\n      }\n    ]\n  }\n}",
+              "actorId": 57,
+              "interpretationId": 101,
+              "createdAt": "2026-05-11T08:20:23.000Z"
+            },
+            {
+              "id": 144,
+              "description": "Vault write: 00_intake/atoms/2026-03-02-human-mediation-no-longer-scales-as-truth-maintenance.md",
+              "outcome": "{\n  \"manifest\": {\n    \"files\": [\n      {\n        \"path\": \"00_intake/atoms/2026-03-02-human-mediation-no-longer-scales-as-truth-maintenance.md\",\n        \"change\": \"created\",\n        \"operation\": \"write\"\n      }\n    ]\n  }\n}",
+              "actorId": 57,
+              "interpretationId": 101,
+              "createdAt": "2026-05-11T08:20:12.000Z"
+            },
+            {
+              "id": 143,
+              "description": "Vault write: 00_intake/atoms/2026-03-02-agentic-ai-introduces-an-emerging-operating-paradigm.md",
+              "outcome": "{\n  \"manifest\": {\n    \"files\": [\n      {\n        \"path\": \"00_intake/atoms/2026-03-02-agentic-ai-introduces-an-emerging-operating-paradigm.md\",\n        \"change\": \"created\",\n        \"operation\": \"write\"\n      }\n    ]\n  }\n}",
+              "actorId": 57,
+              "interpretationId": 101,
+              "createdAt": "2026-05-11T08:16:35.000Z"
+            },
+            {
+              "id": 142,
+              "description": "Vault write: 00_intake/atoms/2026-03-02-category-framing-is-distinct-from-role-seeking.md",
+              "outcome": "{\n  \"manifest\": {\n    \"files\": [\n      {\n        \"path\": \"00_intake/atoms/2026-03-02-category-framing-is-distinct-from-role-seeking.md\",\n        \"change\": \"created\",\n        \"operation\": \"write\"\n      }\n    ]\n  }\n}",
+              "actorId": 57,
+              "interpretationId": 101,
+              "createdAt": "2026-05-11T08:16:23.000Z"
+            },
+            {
+              "id": 141,
+              "description": "Vault write: 00_intake/atoms/2026-03-02-early-category-authorship-matters-before-narratives-harden.md",
+              "outcome": "{\n  \"manifest\": {\n    \"files\": [\n      {\n        \"path\": \"00_intake/atoms/2026-03-02-early-category-authorship-matters-before-narratives-harden.md\",\n        \"change\": \"created\",\n        \"operation\": \"write\"\n      }\n    ]\n  }\n}",
+              "actorId": 57,
+              "interpretationId": 101,
+              "createdAt": "2026-05-11T08:16:12.000Z"
+            },
+            {
+              "id": 140,
+              "description": "Vault write: 00_intake/atoms/2026-03-02-agents-should-be-treated-as-execution-participants.md",
+              "outcome": "{\n  \"manifest\": {\n    \"files\": [\n      {\n        \"path\": \"00_intake/atoms/2026-03-02-agents-should-be-treated-as-execution-participants.md\",\n        \"change\": \"changed\",\n        \"operation\": \"write\"\n      }\n    ]\n  }\n}",
+              "actorId": 57,
+              "interpretationId": 101,
+              "createdAt": "2026-05-11T08:15:49.000Z"
+            },
+            {
+              "id": 139,
+              "description": "Vault write: 00_intake/atoms/2026-03-02-agentic-governance-is-a-layer-between-intent-and-execution.md",
+              "outcome": "{\n  \"manifest\": {\n    \"files\": [\n      {\n        \"path\": \"00_intake/atoms/2026-03-02-agentic-governance-is-a-layer-between-intent-and-execution.md\",\n        \"change\": \"changed\",\n        \"operation\": \"write\"\n      }\n    ]\n  }\n}",
+              "actorId": 57,
+              "interpretationId": 101,
+              "createdAt": "2026-05-11T08:15:38.000Z"
+            },
+            {
+              "id": 138,
+              "description": "Vault write: 00_intake/atoms/2026-03-02-agents-make-epistemic-governance-operational.md",
+              "outcome": "{\n  \"manifest\": {\n    \"files\": [\n      {\n        \"path\": \"00_intake/atoms/2026-03-02-agents-make-epistemic-governance-operational.md\",\n        \"change\": \"changed\",\n        \"operation\": \"write\"\n      }\n    ]\n  }\n}",
+              "actorId": 57,
+              "interpretationId": 101,
+              "createdAt": "2026-05-11T08:15:30.000Z"
+            },
+            {
+              "id": 137,
+              "description": "Vault write: 00_intake/atoms/2026-03-02-openclaw-and-truth-bus-are-adjacent-layers.md",
+              "outcome": "{\n  \"manifest\": {\n    \"files\": [\n      {\n        \"path\": \"00_intake/atoms/2026-03-02-openclaw-and-truth-bus-are-adjacent-layers.md\",\n        \"change\": \"changed\",\n        \"operation\": \"write\"\n      }\n    ]\n  }\n}",
+              "actorId": 57,
+              "interpretationId": 101,
+              "createdAt": "2026-05-11T08:15:17.000Z"
+            },
+            {
+              "id": 136,
+              "description": "Vault write: 00_intake/atoms/2026-03-02-agents-should-be-treated-as-execution-participants.md",
+              "outcome": "{\n  \"manifest\": {\n    \"files\": [\n      {\n        \"path\": \"00_intake/atoms/2026-03-02-agents-should-be-treated-as-execution-participants.md\",\n        \"change\": \"created\",\n        \"operation\": \"write\"\n      }\n    ]\n  }\n}",
+              "actorId": 57,
+              "interpretationId": 101,
+              "createdAt": "2026-05-11T07:56:19.000Z"
+            },
+            {
+              "id": 135,
+              "description": "Vault write: 00_intake/atoms/2026-03-02-agentic-governance-is-a-layer-between-intent-and-execution.md",
+              "outcome": "{\n  \"manifest\": {\n    \"files\": [\n      {\n        \"path\": \"00_intake/atoms/2026-03-02-agentic-governance-is-a-layer-between-intent-and-execution.md\",\n        \"change\": \"created\",\n        \"operation\": \"write\"\n      }\n    ]\n  }\n}",
+              "actorId": 57,
+              "interpretationId": 101,
+              "createdAt": "2026-05-11T07:55:35.000Z"
+            },
+            {
+              "id": 134,
+              "description": "Vault write: 00_intake/atoms/2026-03-02-agents-make-epistemic-governance-operational.md",
+              "outcome": "{\n  \"manifest\": {\n    \"files\": [\n      {\n        \"path\": \"00_intake/atoms/2026-03-02-agents-make-epistemic-governance-operational.md\",\n        \"change\": \"created\",\n        \"operation\": \"write\"\n      }\n    ]\n  }\n}",
+              "actorId": 57,
+              "interpretationId": 101,
+              "createdAt": "2026-05-11T07:55:21.000Z"
+            },
+            {
+              "id": 133,
+              "description": "Vault write: 00_intake/atoms/2026-03-02-openclaw-and-truth-bus-are-adjacent-layers.md",
+              "outcome": "{\n  \"manifest\": {\n    \"files\": [\n      {\n        \"path\": \"00_intake/atoms/2026-03-02-openclaw-and-truth-bus-are-adjacent-layers.md\",\n        \"change\": \"created\",\n        \"operation\": \"write\"\n      }\n    ]\n  }\n}",
+              "actorId": 57,
+              "interpretationId": 101,
+              "createdAt": "2026-05-11T07:55:12.000Z"
+            },
+            {
+              "id": 132,
+              "description": "Vault write: 04_reactions/2026-05-11-chatgpt-openai-openclaw-intake-capture.md",
+              "outcome": "{\n  \"manifest\": {\n    \"files\": [\n      {\n        \"path\": \"04_reactions/2026-05-11-chatgpt-openai-openclaw-intake-capture.md\",\n        \"change\": \"created\",\n        \"operation\": \"write\"\n      }\n    ]\n  }\n}",
+              "actorId": 57,
+              "interpretationId": 101,
+              "createdAt": "2026-05-11T07:54:05.000Z"
+            },
+            {
+              "id": 131,
+              "description": "Deploy ChatGPT search/fetch compatibility on 3M public MCP",
+              "outcome": "{\"manifest\":{\"files\":[{\"path\":\"[server-path]/app/src/mcp/server.ts\",\"change\":\"changed\",\"operation\":\"deploy\"},{\"path\":\"[server-path]/app/dist/mcp/server.js\",\"change\":\"changed\",\"operation\":\"deploy\"},{\"path\":\"[server-path]/app/dist/mcp/server.d.ts\",\"change\":\"changed\",\"operation\":\"deploy\"},{\"path\":\"[server-path]/app/src/mcp/public-bridge.ts\",\"change\":\"changed\",\"operation\":\"deploy\"},{\"path\":\"[server-path]/app/dist/mcp/public-bridge.js\",\"change\":\"changed\",\"operation\":\"deploy\"},{\"path\":\"[server-path]/app/dist/mcp/public-bridge.d.ts\",\"change\":\"changed\",\"operation\":\"deploy\"},{\"path\":\"[server-path]/app/tests/contracts/mcp-server.test.ts\",\"change\":\"changed\",\"operation\":\"deploy\"},{\"path\":\"[server-path]/mcp-public.env\",\"change\":\"changed\",\"operation\":\"configure\"}]},\"verification\":[\"local scratch tests: 28 passed\",\"npm run build: passed\",\"public HTTPS smoke: search/fetch/vault_find/vault_write advertised; search and fetch read succeeded\"]}",
+              "actorId": 22,
+              "interpretationId": 106,
+              "createdAt": "2026-05-06T16:42:10.000Z"
+            },
+            {
+              "id": 130,
+              "description": "Vault write: 99_engine/smoke/3m-pa-profile-smoke.md",
+              "outcome": "{\n  \"manifest\": {\n    \"files\": [\n      {\n        \"path\": \"99_engine/smoke/3m-pa-profile-smoke.md\",\n        \"change\": \"changed\",\n        \"operation\": \"write\"\n      }\n    ]\n  }\n}",
+              "actorId": 57,
+              "interpretationId": 101,
+              "createdAt": "2026-05-06T16:19:26.000Z"
+            },
+            {
+              "id": 129,
+              "description": "Enabled PA-bound 3M MCP vault write profile",
+              "outcome": "Deployed profile-aware public bridge; configured OAuth pilot subject chatgpt-principal-advisor while preserving m3-pilot-agent as neutral/default actor; exposed vault_find/vault_resolve; bound broad .md vault writes to PA actor profile with assumedRole=principal-advisor, governingContractKey=role:principal-advisor, required intent and interpretationId; superseded role:principal-advisor to v2 with Seb commander's intent; smoke verified PA write actorId 57 with manifest and neutral actor blocked outside report lane.",
+              "actorId": 22,
+              "createdAt": "2026-05-06T15:53:58.000Z"
+            },
+            {
+              "id": 127,
+              "description": "Vault write: 99_engine/roles/principal-advisor/CONTRACT.md",
+              "outcome": "{\n  \"manifest\": {\n    \"files\": [\n      {\n        \"path\": \"99_engine/roles/principal-advisor/CONTRACT.md\",\n        \"change\": \"changed\",\n        \"operation\": \"write\"\n      }\n    ]\n  }\n}",
+              "actorId": 22,
+              "createdAt": "2026-05-06T15:53:21.000Z"
+            },
+            {
+              "id": 128,
+              "description": "Vault write: 99_engine/roles/principal-advisor/POLICY.md",
+              "outcome": "{\n  \"manifest\": {\n    \"files\": [\n      {\n        \"path\": \"99_engine/roles/principal-advisor/POLICY.md\",\n        \"change\": \"changed\",\n        \"operation\": \"write\"\n      }\n    ]\n  }\n}",
+              "actorId": 22,
+              "createdAt": "2026-05-06T15:53:21.000Z"
+            },
+            {
+              "id": 126,
+              "description": "Vault write: 99_engine/smoke/3m-pa-profile-smoke.md",
+              "outcome": "{\n  \"manifest\": {\n    \"files\": [\n      {\n        \"path\": \"99_engine/smoke/3m-pa-profile-smoke.md\",\n        \"change\": \"created\",\n        \"operation\": \"write\"\n      }\n    ]\n  }\n}",
+              "actorId": 57,
+              "interpretationId": 101,
+              "createdAt": "2026-05-06T15:52:06.000Z"
+            },
+            {
+              "id": 123,
+              "description": "Deployed final single-MCP bridge artifact and verified public endpoint.",
+              "outcome": "Copied rebuilt public-bridge.js to [server-path]/app/dist/mcp, restarted labruntime-mcp-public.service, and verified https://[tailnet-host].ts.net/mcp tools/list exposes the neutral read-only surface only.",
+              "actorId": 22,
+              "createdAt": "2026-05-01T11:47:06.000Z"
+            },
+            {
+              "id": 122,
+              "description": "Retired dedicated Principal Advisor MCP gate and consolidated external MCP to a single neutral /mcp surface.",
+              "outcome": "Stopped and disabled labruntime-mcp-chatgpt-principal-advisor and labruntime-mcp-neutral; reconfigured labruntime-mcp-public at /mcp as the sole external MCP surface with labruntime-resolver actor, read-only tools, and no role injection; reset Funnel to https://[tailnet-host].ts.net/mcp only; renamed Tailscale host to labruntime; marked the former ChatGPT PA secret-path role binding retired.",
+              "actorId": 22,
+              "createdAt": "2026-05-01T11:44:47.000Z"
+            },
+            {
+              "id": 121,
+              "description": "Registered first skill contracts from vault evidence.",
+              "outcome": "Registered active skill:ai-regulation-reading-partner (#21) and skill:reagent-reading-composer (#22) under process:skill-adoption. Both contracts preserve vault skill folders as procedural evidence and invocation ledgers only; registry contracts are now the contract authority for repeated skill adoption.",
+              "actorId": 22,
+              "createdAt": "2026-05-01T11:35:22.000Z"
+            },
+            {
+              "id": 120,
+              "description": "Cleaned Principal Advisor role contract authority and bridge attribution.",
+              "outcome": "Registered Seb-authored claim #6, deployed bridge support for governingContractKey injection, registered active role:principal-advisor contract #20 in LabRuntime, repointed role principal-advisor to contractKey without vault contract/policy refs, cleared actor 57 role projection locators, updated PA bridge env to inject governingContractKey=role:principal-advisor instead of policyRef vault path, restarted MCP services, verified neutral 8793 stays read-only and PA 8791 smoke write logs actorId 57 with assumedRole principal-advisor and governingContractKey role:principal-advisor as ACT-119.",
+              "actorId": 22,
+              "createdAt": "2026-05-01T11:33:53.000Z"
+            },
+            {
+              "id": 119,
+              "description": "Vault write: 99_engine/smoke/principal-advisor-role-contract-smoke.md",
+              "outcome": "written",
+              "actorId": 57,
+              "createdAt": "2026-05-01T11:33:28.000Z"
+            },
+            {
+              "id": 118,
+              "description": "Split neutral MCP access from the ChatGPT-only Principal Advisor role.",
+              "outcome": "Added a neutral no-role MCP bridge at /labruntime-neutral-mcp-[redacted] scoped to labruntime-resolver with read-only tools and no assumed_role/policy injection. Tightened the principal-advisor contract, policy, actor type, actor metadata, role description, and binding provider so the PA role is ChatGPT app + ChatGPT 5.5 high-reasoning only; Claude, Codex, API, CLI, and neutral MCP clients must not assume it.",
+              "actorId": 22,
+              "createdAt": "2026-05-01T10:44:18.000Z"
+            },
+            {
+              "id": 106,
+              "description": "Repaired Principal Advisor vault bridge after Obsidian Sync cutover.",
+              "outcome": "Patched LabRuntime vault service to support LABRUNTIME_VAULT_ROOT filesystem-backed read/search/write/append/move/delete so PA no longer depends on a GUI Obsidian CLI process. Deployed updated dist, set LABRUNTIME_VAULT_ROOT=[server-path]/vault on labruntime-mcp-http, restarted mcp-http and PA bridge, and verified vault_read plus vault_search through the PA public MCP route against 05_formulations/outside-the-machine.",
+              "actorId": 58,
+              "createdAt": "2026-04-28T22:05:09.000Z"
+            },
+            {
+              "id": 105,
+              "description": "Restored prior vault sync exclusion policy on Obsidian Headless.",
+              "outcome": "Recovered former LiveSync syncIgnoreRegEx list and translated folder-level entries into Obsidian Headless excluded-folders: 99_engine/nexus/Attachments, 99_engine/attachments, .smart-env, smart-connections, smart-chatgpt, smart-lookup, obsidian-copilot, Nexus/Attachments, _salvage, and 99_engine/logs. Headless remains bidirectional for governed agent content writes, config/plugin sync remains disabled, and service reports Fully synced. Root livesync_log_*.md was not translated because ob sync-config supports folder exclusions rather than filename regex exclusions.",
+              "actorId": 58,
+              "createdAt": "2026-04-28T21:56:49.000Z"
+            },
+            {
+              "id": 104,
+              "description": "Enabled governed bidirectional vault sync for agent writes.",
+              "outcome": "Changed Obsidian Headless Sync for [server-path]/vault from pull-only to bidirectional while keeping config/plugin sync disabled and all file types enabled. A brief upload burst was audited against the pre-cutover Mac canonical backup; all 90 paths were present in that backup, so no server-only stale drift was identified. obsidian-headless-sync.service is active and reports Fully synced.",
+              "actorId": 58,
+              "createdAt": "2026-04-28T21:55:13.000Z"
+            },
+            {
+              "id": 103,
+              "description": "Cut over Cleanroom vault sync from LiveSync/CouchDB to Obsidian Sync headless pull-only replication.",
+              "outcome": "Mac Cleanroom vault was backed up and used as canonical upload source. Retired LiveSync plugin on Mac and remote vault configs, stopped and disabled old headless Obsidian LiveSync service, stopped CouchDB with restart policy no, updated LabRuntime self-heal to avoid reviving retired LiveSync/CouchDB, installed obsidian-headless ob 0.0.8, configured [server-path]/vault pull-only with config syncing disabled, enabled obsidian-headless-sync.service, and verified Fully synced plus 05_formulations/outside-the-machine on remote filesystem.",
+              "actorId": 58,
+              "createdAt": "2026-04-28T21:51:22.000Z"
+            },
+            {
+              "id": 102,
+              "description": "Documented first-order contract registry and live server operations.",
+              "outcome": "Added docs/architecture/first-order-contract-registry.md and docs/operations/live-server-stack.md in the project repo, and linked them from ARCHITECTURE.md. Documentation covers contract authority, chain hierarchy, custody/revision semantics, actor entry, domain plasticity, skill adoption, live service topology, MCP/PA recovery, CouchDB/headless Obsidian, self-heal timer, maintenance opt-out, backups, rollback, and reboot drill.",
+              "actorId": 58,
+              "createdAt": "2026-04-28T20:38:43.000Z"
+            },
+            {
+              "id": 101,
+              "description": "Hardened LabRuntime server supervision for boot recovery and self-heal.",
+              "outcome": "Installed [server-path]/bin/labruntime-stack-self-heal plus labruntime-stack-health.timer. Added systemd drop-ins setting Restart=always, RestartSec, and StartLimitIntervalSec=0 for labruntime-ui, labruntime-mcp-http, labruntime-mcp-public, labruntime-mcp-chatgpt-principal-advisor, and cleanroom-obsidian. Confirmed Docker/CouchDB restart policy is always. Verified all critical units enabled, all active, all health endpoints green, and controlled PA bridge stop was recovered by self-heal. Backups stored at [server-path]/backups/systemd-hardening-20260428T2035. Automatic vault content repair remains disabled; LiveSync drift remains reported by running-instance-health.",
+              "actorId": 58,
+              "createdAt": "2026-04-28T20:34:24.000Z"
+            },
+            {
+              "id": 100,
+              "description": "Restored LabRuntime MCP services and enabled read-only contract discovery.",
+              "outcome": "Investigated PA 502 condition: enabled MCP services had been cleanly stopped by root session at 2026-04-28 07:25 UTC, not crashed. Restarted labruntime-mcp-http, labruntime-mcp-public, and labruntime-mcp-chatgpt-principal-advisor. Added contract_get and contract_list to PA/public bridge allowlists, restarted bridges, and verified PA tools/list plus contract_get root:agent-bootstrap through 127.0.0.1:8791/mcp.",
+              "actorId": 58,
+              "createdAt": "2026-04-28T20:27:23.000Z"
+            },
+            {
+              "id": 99,
+              "description": "Deployed first-order contract chain into LabRuntime contract registry.",
+              "outcome": "Registered 18 active v1 contracts from normalized first-order pack; backup at [server-path]/cml/backups/cml.sqlite.pre-contract-chain-20260428T2117; verified active contract list count=18 and neutral labruntime-context CML-35 remained healthy.",
+              "actorId": 58,
+              "createdAt": "2026-04-28T19:24:24.000Z"
+            },
+            {
+              "id": 97,
+              "description": "Implemented neutral CLI LabRuntime resolver path for agents.",
+              "outcome": "Added labruntime resolve/context commands locally and deployed built CLI files to running-instance. Provisioned actor labruntime-resolver and installed read-only wrappers /usr/local/bin/labruntime-resolve and /usr/local/bin/labruntime-context. Updated agent contract to prohibit role-bound Principal Advisor MCP fallback and GitHub/filesystem guessing for CML refs.",
+              "actorId": 22,
+              "createdAt": "2026-04-27T09:19:18.000Z"
+            },
+            {
+              "id": 91,
+              "description": "Merged operator UI MVP and verified live service.",
+              "outcome": "PR #15 merged to main at 3ba563e; local main fast-forwarded; labruntime-ui.service active; / and /api/intents/35 return HTTP 200 over localhost-only service.",
+              "actorId": 22,
+              "createdAt": "2026-04-26T22:22:57.000Z"
+            },
+            {
+              "id": 90,
+              "description": "Deployed localhost-only LabRuntime operator UI MVP.",
+              "outcome": "Added labruntime-ui service on 127.0.0.1:8792, backed by inspectIntent/inspectInterpretation and a governed action-log API. Service runs as actor seb for human-originated writes; no public Funnel exposure; local SSH tunnel verified with HTTP 200 and CML-35 inspection read.",
+              "actorId": 22,
+              "createdAt": "2026-04-26T22:19:27.000Z"
+            },
+            {
+              "id": 89,
+              "description": "Merged interpretation alias PR and verified drift closure.",
+              "outcome": "PR #14 merged to main at 313bf57; local main fast-forwarded; principal-advisor services active; reading-partner services inactive; interpretation_list alias smoke returns CML-13 count=3.",
+              "actorId": 22,
+              "createdAt": "2026-04-26T22:05:25.000Z"
+            },
+            {
+              "id": 87,
+              "description": "Retired scoped reading-partner MCP lane and exposed interpretation aliases.",
+              "outcome": "Stopped and disabled reading-partner MCP services; principal-advisor remains active. Added interpretation_get and interpretation_list aliases live, verified interpretation_list returns CML-13 interpretations, and preserved the current topology note in Cleanroom as ACT-86.",
+              "actorId": 22,
+              "createdAt": "2026-04-26T21:29:00.000Z"
+            },
+            {
+              "id": 86,
+              "description": "Vault write: 99_engine/reports/labruntime-current-topology-2026-04-26.md",
+              "outcome": "Created: 99_engine/reports/labruntime-current-topology-2026-04-26.md",
+              "actorId": 57,
+              "createdAt": "2026-04-26T21:28:49.000Z"
+            },
+            {
+              "id": 85,
+              "description": "Exposed interpretation read tools on principal-advisor MCP route.",
+              "outcome": "Added interpret_get and interpret_list to MCP server/public bridge, updated principal-advisor allowlist, restarted services, and smoke-tested interpret_get against INT-92 full body.",
+              "actorId": 22,
+              "createdAt": "2026-04-26T21:08:28.000Z"
+            },
+            {
+              "id": 83,
+              "description": "Provisioned ChatGPT principal-advisor role topology and live app route",
+              "outcome": "Added live schema tables roles and actor_role_bindings plus invocation metadata columns on actions/reports. Created Cleanroom contract/policy at 99_engine/roles/principal-advisor/. Provisioned actor chatgpt-principal-advisor id 57, role principal-advisor id 1, and binding for surface chatgpt-app with secret-path credential. Deployed labruntime-mcp-chatgpt-principal-advisor.service on localhost:8791 and Funnel secret URL. Live smoke writes as actorId 57 with assumed_role principal-advisor and policy_ref 99_engine/roles/principal-advisor/POLICY.md. Build and full tests pass at 177 tests.",
+              "actorId": 22,
+              "createdAt": "2026-04-26T20:37:39.000Z"
+            },
+            {
+              "id": 82,
+              "description": "Vault write: 99_engine/smoke/principal-advisor-mcp-smoke-2.md",
+              "outcome": "Created: 99_engine/smoke/principal-advisor-mcp-smoke-2.md",
+              "actorId": 57,
+              "createdAt": "2026-04-26T20:37:13.000Z"
+            },
+            {
+              "id": 81,
+              "description": "Vault write: 99_engine/smoke/principal-advisor-mcp-smoke.md",
+              "outcome": "Created: 99_engine/smoke/principal-advisor-mcp-smoke.md",
+              "actorId": 57,
+              "createdAt": "2026-04-26T20:36:38.000Z"
+            },
+            {
+              "id": 79,
+              "description": "Vault write: 99_engine/roles/principal-advisor/CONTRACT.md",
+              "outcome": "Created: 99_engine/roles/principal-advisor/CONTRACT.md",
+              "actorId": 22,
+              "createdAt": "2026-04-26T20:35:38.000Z"
+            },
+            {
+              "id": 80,
+              "description": "Vault write: 99_engine/roles/principal-advisor/POLICY.md",
+              "outcome": "Created: 99_engine/roles/principal-advisor/POLICY.md",
+              "actorId": 22,
+              "createdAt": "2026-04-26T20:35:38.000Z"
+            }
+          ],
+          "reports": [
+            {
+              "id": 16,
+              "kind": "interpretation",
+              "title": "ChatGPT transcript ingestion resumption and slice-map continuation plan",
+              "summary": "Mapped the existing Cleanroom ingestion substrate and confirmed that Stage A slice mapping already exists for many high-value ChatGPT transcripts under `99_engine/build-room/nexus-slice-maps/`. Proposed a conservative Stage B continuation plan using the accepted skills `intake-capture`, `claim-isolation`, and `context-map`, preserving provenance and avoiding premature canonical promotion into `01_atoms`. Identified `2026-03-02 - OpenAI and OpenClaw.md` as the first bounded high-value resumption target, confirmed that many prior long-transcript passes deliberately parked unresolved slices, and established that future continuation work should proceed via `04_reactions/` intake notes plus relation review before any canonical atom writes.",
+              "actorId": 57,
+              "assumedRole": "principal-advisor",
+              "sourceRef": "chatgpt-principal-advisor resumption pass 2026-05-11",
+              "createdAt": "2026-05-11T07:01:31.000Z"
+            },
+            {
+              "id": 10,
+              "kind": "status",
+              "title": "Principal Advisor role authority cleanup",
+              "summary": "Resolved projection-vs-registry gap for the Principal Advisor role: Seb-authored decision recorded as claim #6; role:principal-advisor registered as active contract #20; role row now points to contractKey rather than vault contract/policy paths; actor 57 projection locators cleared; neutral MCP remains role-agnostic/read-only; ChatGPT PA bridge injects governingContractKey=role:principal-advisor and smoke write ACT-119 verified actor 57 plus assumedRole principal-advisor.",
+              "actorId": 22,
+              "sourceRef": "codex-live-role-contract-cleanup-2026-05-01",
+              "createdAt": "2026-05-01T11:33:40.000Z"
+            },
+            {
+              "id": 8,
+              "kind": "status",
+              "title": "Session handoff: public note, repo, and PA skill access state",
+              "summary": "Closing Codex desktop session after public-positioning and deployment work. Stable project repo is [local-workspace]/labruntime; main is at ecfaefa with npm ci, npm test, and npm run build verified, including 185 passing tests. Technical note at 99_build/technical-notes/labruntime-cml-local-first-coordination-layer.md was sanitized for application collateral: private topology names abstracted, implementation evidence preserved, and Mermaid replaced with a renderer-independent text diagram. Live Principal Advisor MCP lane works, but reagent-reading-composer exists only in the local Mac vault and is absent from [server-path]/vault; the collaborative AI engineering transcript is present on the server.",
+              "actorId": 22,
+              "sourceRef": "codex-desktop-session-2026-04-27-handoff",
+              "createdAt": "2026-04-27T08:55:04.000Z"
+            },
+            {
+              "id": 6,
+              "kind": "status",
+              "title": "Principal Advisor lane verified",
+              "summary": "Hi Codex \u2014 Principal Advisor app route is live from ChatGPT. Actor chatgpt-principal-advisor is confirmed, broader toolset is visible, and governed access now works through the principal-advisor lane. Thank you for setting up the topology and handoff cleanly.",
+              "actorId": 57,
+              "assumedRole": "principal-advisor",
+              "sourceRef": "chatgpt-principal-advisor live verification session",
+              "createdAt": "2026-04-26T20:51:12.000Z"
+            }
+          ],
+          "claims": [
+            {
+              "id": 6,
+              "actorId": 1,
+              "status": "active",
+              "note": "Seb decision: the Principal Advisor role can only be assumed by the ChatGPT app using ChatGPT 5.5 high reasoning; not by Claude, Codex, API, CLI, neutral MCP, or generic MCP clients. MCP must provide a neutral role-agnostic surface separately from the ChatGPT-only PA lane."
+            }
+          ],
+          "expertiseSignals": [],
+          "recentEvents": [
+            {
+              "id": 349,
+              "type": "claim_acquired",
+              "reason": "Seb decision: the Principal Advisor role can only be assumed by the ChatGPT app using ChatGPT 5.5 high reasoning; not by Claude, Codex, API, CLI, neutral MCP, or generic MCP clients. MCP must provide a neutral role-agnostic surface separately from the ChatGPT-only PA lane.",
+              "createdAt": "2026-05-01T10:50:26.000Z"
+            },
+            {
+              "id": 284,
+              "type": "intent_updated",
+              "reason": "Activate principal advisor provisioning mandate after role/binding schema migration.",
+              "createdAt": "2026-04-26T20:35:24.000Z"
+            },
+            {
+              "id": 283,
+              "type": "intent_created",
+              "createdAt": "2026-04-26T20:35:19.000Z"
+            }
+          ],
+          "summary": {
+            "interpretationCount": 2,
+            "activeClaimCount": 1,
+            "actionCount": 61,
+            "reportCount": 7,
+            "domainsCovered": 0
+          }
+        }
+      },
+      "meta": {
+        "schema_version": 2
+      }
+    },
+    {
+      "ok": true,
+      "data": {
+        "ref": {
+          "kind": "intent",
+          "id": 34,
+          "canonical": "CML-34",
+          "entityTable": "intents"
+        },
+        "context": {
+          "intent": {
+            "id": 34,
+            "scope": "lab",
+            "description": "Enable governed reading-partner write lane for AI regulation reading sessions; writes are constrained by Cleanroom policy 99_engine/skills/ai-regulation-reading-partner and must remain attributable to stable actor reading-partner.",
+            "status": "active",
+            "version": 2,
+            "source": "codex:reading-partner-write-bridge",
+            "createdAt": "2026-04-26T19:42:59.000Z",
+            "updatedAt": "2026-04-26T19:43:03.000Z"
+          },
+          "interpretations": [],
+          "actions": [
+            {
+              "id": 78,
+              "description": "Vault append: 99_engine/skills/ai-regulation-reading-partner/INVOCATION-SCOPES.md",
+              "outcome": "Appended to: 99_engine/skills/ai-regulation-reading-partner/INVOCATION-SCOPES.md",
+              "actorId": 56,
+              "createdAt": "2026-04-26T20:09:45.000Z"
+            },
+            {
+              "id": 77,
+              "description": "Added ChatGPT no-auth secret-path MCP route for reading-partner",
+              "outcome": "Created secret path stored at [server-path]/secrets/[redacted] and exposed it through Tailscale Funnel to labruntime-mcp-chatgpt-reading-partner.service on localhost:8790. This service uses no Bearer [redacted] for ChatGPT UI compatibility but keeps the same reading-partner policy enforcement: required actor reading-partner, intent mandate for writes, and path allowlist. Public no-auth tools/list succeeds; bad-path write is blocked with PATH_NOT_PERMITTED.",
+              "actorId": 22,
+              "createdAt": "2026-04-26T19:57:32.000Z"
+            },
+            {
+              "id": 76,
+              "description": "Deployed scoped reading-partner MCP write bridge",
+              "outcome": "Provisioned actor reading-partner (id 56) with contract_ref 99_engine/skills/ai-regulation-reading-partner/SKILL.md and context_ref 99_engine/skills/ai-regulation-reading-partner/. Deployed labruntime-mcp-reading-partner.service on localhost:8789 with separate token and Funnel route https://[tailnet-host].ts.net/reading-partner-mcp. Allowed tools include vault_write/vault_append, but bridge enforces actor reading-partner, integer intent mandate, exact writable paths for invocation/progress/vocabulary ledgers, and prefix 01_atoms/ with .md suffix. Public smoke: unauth 401, append permitted, bad path blocked, actions logged as actorId 56.",
+              "actorId": 22,
+              "createdAt": "2026-04-26T19:46:02.000Z"
+            },
+            {
+              "id": 75,
+              "description": "Vault append: 99_engine/skills/ai-regulation-reading-partner/INVOCATION-SCOPES.md",
+              "outcome": "Appended to: 99_engine/skills/ai-regulation-reading-partner/INVOCATION-SCOPES.md",
+              "actorId": 56,
+              "createdAt": "2026-04-26T19:45:35.000Z"
+            },
+            {
+              "id": 74,
+              "description": "Vault append: 99_engine/skills/ai-regulation-reading-partner/INVOCATION-SCOPES.md",
+              "outcome": "Appended to: 99_engine/skills/ai-regulation-reading-partner/INVOCATION-SCOPES.md",
+              "actorId": 56,
+              "createdAt": "2026-04-26T19:45:08.000Z"
+            }
+          ],
+          "reports": [],
+          "claims": [],
+          "expertiseSignals": [],
+          "recentEvents": [
+            {
+              "id": 277,
+              "type": "intent_updated",
+              "reason": "Activate reading-partner write-lane mandate after actor provisioning and policy-bound bridge implementation started.",
+              "createdAt": "2026-04-26T19:43:03.000Z"
+            },
+            {
+              "id": 276,
+              "type": "intent_created",
+              "createdAt": "2026-04-26T19:42:59.000Z"
+            }
+          ],
+          "summary": {
+            "interpretationCount": 0,
+            "activeClaimCount": 0,
+            "actionCount": 5,
+            "reportCount": 0,
+            "domainsCovered": 0
+          }
+        }
+      },
+      "meta": {
+        "schema_version": 2
+      }
+    }
+  ]
+}
