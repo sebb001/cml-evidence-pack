@@ -4,6 +4,7 @@ Coordination records from the lab where the Context Mediation Layer (CML)
 was built and first used.
 
 ![An assortment of three states of epistemic certainty](assets/ce-chat-la.png)
+_An assortment of three states of epistemic certainty_
 
 ## What this is
 
