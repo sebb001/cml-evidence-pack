@@ -20,8 +20,8 @@
     },
     {
       "path": "00-tech-note.md",
-      "bytes": 3911,
-      "sha256": "480f12e7ec9237f59f8a6e2694dd0aef34e5a42140cd838251be91c2cc63818a"
+      "bytes": 4019,
+      "sha256": "43fa667f972ff1fd6550316b20d70b1ff08d6299f78fa49d1b0397729c3e5cfe"
     },
     {
       "path": "LICENSE.txt",
@@ -30,8 +30,8 @@
     },
     {
       "path": "README.md",
-      "bytes": 4089,
-      "sha256": "fd8c565288a89a8d2638e3c38e8c8963a97376dbc443b8ee113b7f561ce70eb0"
+      "bytes": 4221,
+      "sha256": "b94756b3dfd97a1a6ed13ad88104ec326c6e3c23de5c1cc69249b280ad9eade0"
     },
     {
       "path": "REDACTIONS.md",
@@ -45,8 +45,8 @@
     },
     {
       "path": "cases/00-baseline-recovery-notion-prototype/README.md",
-      "bytes": 5647,
-      "sha256": "4faca6d9f7faff077dd1c9de4f3f6f8f974b352d6ce41098ad97108f85dd33bb"
+      "bytes": 5438,
+      "sha256": "e7b5bf928c32330eb75df264af00a02f7c59e7db65c5ae022ed33222802112e9"
     },
     {
       "path": "cases/00-baseline-recovery-notion-prototype/case.json",
@@ -55,8 +55,8 @@
     },
     {
       "path": "cases/01-paperclip-peer-correction/README.md",
-      "bytes": 3965,
-      "sha256": "0ae059e7a4914c0eb3d662da5e48c2603b9009b1529fee7ee362bc304e10d498"
+      "bytes": 3805,
+      "sha256": "4e54c1c7f45672b226776007e5409200459ffc8212a3bf554557e8269983944c"
     },
     {
       "path": "cases/01-paperclip-peer-correction/case.json",
@@ -65,8 +65,8 @@
     },
     {
       "path": "cases/02-repo-separation-build-loop/README.md",
-      "bytes": 4120,
-      "sha256": "36e90711fe14024560ef0b9b5f63f883c4c2a517434915d886822176f9872c78"
+      "bytes": 3764,
+      "sha256": "a46f20a708d46c98674fbc5421de93b743cdb1bf8da605c35c320e8974c43993"
     },
     {
       "path": "cases/02-repo-separation-build-loop/case.json",
@@ -75,8 +75,8 @@
     },
     {
       "path": "cases/03-substrate-salvage/README.md",
-      "bytes": 4446,
-      "sha256": "caaae234a26a1ce0072c7fac445f85888aea0721489a3e40957f45b5d74cf60e"
+      "bytes": 4263,
+      "sha256": "890d01d24414b0f20523bfe8ce474dfdd0462210914ee931d0d1ca8f2d84dc49"
     },
     {
       "path": "cases/03-substrate-salvage/case.json",
@@ -85,8 +85,8 @@
     },
     {
       "path": "cases/04-authority-bound-write-lane/README.md",
-      "bytes": 4246,
-      "sha256": "8a88d48ab7aa595bfe325024b9ef4590d7234d00a9cc157d5531a86a7553aaec"
+      "bytes": 3995,
+      "sha256": "89d23050af08c779a42dc33974bbe21fa0c69717e43ca65c71e28f9fd3d5cf1a"
     },
     {
       "path": "cases/04-authority-bound-write-lane/case.json",
@@ -95,18 +95,18 @@
     },
     {
       "path": "cases/05-gated-release-review/README.md",
-      "bytes": 4226,
-      "sha256": "83199755dc865bcbac23778183eccdd1832c8a5f67ac34e39b7dd8ef9209300c"
+      "bytes": 4060,
+      "sha256": "182bf95d799aed210c0ff724e784cbfef9f08c0a71099f1218480d2a126ee811"
     },
     {
       "path": "cases/05-gated-release-review/case.json",
-      "bytes": 51596,
-      "sha256": "43a931ccc50ce34d3a60f9b5cab75e6946f913ca64d988cc0ea8994be89ddde8"
+      "bytes": 51638,
+      "sha256": "b3397a13e4e36f868423ea8f276c804297461708bf74b7d2603f7c550631c21d"
     },
     {
       "path": "docs/how-to-read-this-pack.md",
-      "bytes": 1858,
-      "sha256": "6fb6186871c7676078b779387d21eaeb170eeb29530ddffb205aa2d73931570f"
+      "bytes": 2065,
+      "sha256": "0084560fc3e5f7ddb1f035f8101112b8900d31785566be18e1ddee97c1586e23"
     }
   ],
   "note": "Lean public dataset: six case packets with case-relevant records only. See REDACTIONS.md."
