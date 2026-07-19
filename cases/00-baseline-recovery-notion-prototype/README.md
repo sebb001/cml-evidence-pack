@@ -1,22 +1,16 @@
 # Baseline recovery
 
-*Origin case `00-baseline-recovery-notion-prototype`. The [case JSON](case.json) is authoritative; this brief is navigation.*
+The [case JSON](case.json) is authoritative; this brief is navigation.
 
-## Governance situation
+## Situation
 
 CML exists as an operational prototype, rather than only as an essay-series concept, because of an epistemic crisis in my own lab.
 
 The research environment had sunk into coordination chaos: parallel actors were working from incompatible maps, stale assumptions were being treated as live state, and a single human had become the manual bridge between systems that could no longer reliably understand each other. The shared state had collapsed. The first CML intervention was therefore not a product demo or a theoretical proof. It was a recovery operation: collect the divergent views, make them legible, let actors cold-read the shared surface, and see whether coherence could return without another round of private human mediation.
 
-## Judgment evidenced
-
-The evidence shows the core operating posture behind the later cases: when shared state collapses, do not compress the mess into a retrospective story. Collect the incompatible maps, preserve their provenance, separate observer-coupled interpretations from facts, and let the system recover through legibility.
-
-## Operating pattern in the records
-
 Thirteen status reports were collected from active Cowork and Code threads, synthesised into interpretations and divergences, persisted into the Notion CML prototype, and then read cold by participating actors.
 
-## Selected evidence spine
+## Evidence spine
 
 - **Time: 04:45 · Type: CML · Record: `CML-1` · State: Interpreted · Emitter: Cowork session**
   The first prototype intent frames the problem directly: LN-025 had shown that no single actor held canonical state, and context divergence could become unintended scope creep.
@@ -41,14 +35,14 @@ Thirteen status reports were collected from active Cowork and Code threads, synt
 - **Time: 10:38 · Type: RPT · Record: `N-NOTE-20260328` · State: field note · Emitter: CML Field Note**
   The field note records the operational result: approximately 13 report-outs were synthesised, actors cold-read the surface, and the board moved from half red/green to mostly green within 30 minutes.
 
-## Trust movement
+## Why it matters
+
+This is the failure mode 3M-LAYER was built to handle: not lack of intelligence, not lack of effort, but loss of shared state under parallel execution. When shared state collapses, the posture is not to compress the mess into a retrospective story: collect the incompatible maps, preserve their provenance, separate observer-coupled interpretations from facts, and let the system recover through legibility. The origin case shows why the system exists; the five cases that follow show what the recovered operating discipline made possible.
+
+## Record trail
 
 LN-025 -> STATUS-COLLECTION -> STATUS-SYNTHESIS -> CML-1..CML-8 -> CML-6 convergence
 
-## Governance evidence
-
-This is the failure mode 3M-LAYER was built to handle: not lack of intelligence, not lack of effort, but loss of shared state under parallel execution. The origin case shows why the system exists; the five cases that follow show what the recovered operating discipline made possible.
-
-## Verification links
+## Records
 
 [Case JSON](case.json) — the prototype-era Notion and vault sources for this case are embedded within it; the standalone source exports remain in the private record.

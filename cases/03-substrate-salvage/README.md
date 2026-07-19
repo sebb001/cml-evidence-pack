@@ -1,22 +1,16 @@
 # Substrate salvage
 
-*Case 3 `03-substrate-salvage`. The [case JSON](case.json) is authoritative; this brief is navigation.*
+The [case JSON](case.json) is authoritative; this brief is navigation.
 
-## Governance situation
+## Situation
 
 An attractive architecture gathered momentum, was challenged against the real requirements, then superseded without losing the learning it produced.
 
 The governance situation is not a simple mistake. The vault-centered plan had real attractions: editability, local durability, and familiar human workflows. The harder judgment was recognising when those attractions started to overdetermine the substrate. The salvage thread turns the previous work into evidence for a corrected basis instead of pretending the detour did not happen.
 
-## Judgment evidenced
+Supersession links preserve the abandoned vault-centred path while moving the active decision basis to a substrate derived from CML requirements.
 
-The evidence shows momentum with an escape hatch. A promising direction can be explored, learned from, stopped, and converted into a cleaner decision basis before sunk cost becomes governance.
-
-## Operating pattern in the records
-
-Supersession links preserve the abandoned vault-centered path while moving the active decision basis to a substrate derived from CML requirements.
-
-## Selected evidence spine
+## Evidence spine
 
 - **Time: 2026-04-13 07:29 · Type: CML · Record: `CML-26` · State: superseded · Emitter: Seb**
   Seb opens the vault-state architecture thread. The starting assumption is that vault-shaped state may be the right foundation for CML persistence and editing.
@@ -39,14 +33,14 @@ Supersession links preserve the abandoned vault-centered path while moving the a
 - **Time: 2026-04-15 09:18 · Type: INT · Record: `INT-87` · State: proposed · Emitter: code-framework**
   code-framework files the aligned CML-30 position and supersedes INT-85. The corrected interpretation becomes the compact decision basis for the new substrate path.
 
-## Trust movement
+## Why it matters
+
+This is sunk-cost resistance made visible. A promising direction can be explored, learned from, stopped, and converted into a cleaner decision basis before sunk cost becomes governance. The record shows a willingness to abandon a plausible path after it has accumulated work, while preserving enough evidence for future actors to understand why the path changed.
+
+## Record trail
 
 CML-26 + CML-29 -> CML-30 -> INT-85 -> INT-87
 
-## Governance evidence
-
-This is sunk-cost resistance made visible. The record shows a willingness to abandon a plausible path after it has accumulated work, while preserving enough evidence for future actors to understand why the path changed.
-
-## Verification links
+## Records
 
 [Case JSON](case.json) — embeds the full context packets for `CML-26`, `CML-29`, `CML-30`.

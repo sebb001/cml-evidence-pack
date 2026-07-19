@@ -1,22 +1,16 @@
 # Authority-bound write lane
 
-*Case 4 `04-authority-bound-write-lane`. The [case JSON](case.json) is authoritative; this brief is navigation.*
+The [case JSON](case.json) is authoritative; this brief is navigation.
 
-## Governance situation
+## Situation
 
 Agent access was treated as governance, not plumbing. Write capability was tested, separated from neutral access, and constrained through role, surface, and authority records.
 
 The governance situation is the one every organisation will face as agents become operational: a useful agent needs access, but convenience can collapse roles, permissions, and accountability into a single bridge. Here the work starts with a scoped write test, then separates neutral MCP access from privileged advisory authority. The permission story is recorded as claims and actions rather than assumed from configuration.
 
-## Judgment evidenced
-
-The evidence shows access control becoming legible. Instead of relying on a claim that agents are connected safely, the record exposes the authority topology: actor, role, contract, write surface, neutral retrieval lane, and privileged advisor lane.
-
-## Operating pattern in the records
-
 Actions prove what the bridges allow; claims define authority boundaries; the record separates actors, roles, neutral access, privileged advisor authority, and deployed tool surfaces.
 
-## Selected evidence spine
+## Evidence spine
 
 - **Time: 2026-04-26 19:42 · Type: CML · Record: `CML-34` · State: active · Emitter: codex-build**
   codex-build opens the reading-partner write-bridge thread. The question is whether a constrained agent lane can write to the vault without turning every connector into a general write surface.
@@ -37,14 +31,14 @@ Actions prove what the bridges allow; claims define authority boundaries; the re
 - **Time: 2026-05-16 08:04 · Type: ACT · Record: `ACT-156` · State: recorded · Emitter: codex-build**
   codex-build exposes the current 3M MCP tool surface on the public ChatGPT bridge. The resulting bridge is broad enough to operate, while the authority story still depends on the role and scope records.
 
-## Trust movement
+## Why it matters
+
+This is authority design under agentic pressure. Access control becomes legible rather than asserted: instead of relying on a claim that agents are connected safely, the record exposes the authority topology. It decomposes access into who can act, under which role, through which surface, with which constraints, and with what proof that the lane works.
+
+## Record trail
 
 CML-34 smoke writes -> CML-35 role topology -> CLM-6 -> ACT-156
 
-## Governance evidence
-
-This is authority design under agentic pressure. The record shows access being decomposed into who can act, under which role, through which surface, with which constraints, and with what proof that the lane works.
-
-## Verification links
+## Records
 
 [Case JSON](case.json) — embeds the full context packets for `CML-35` and `CML-34`.

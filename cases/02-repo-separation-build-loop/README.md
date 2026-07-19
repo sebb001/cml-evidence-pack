@@ -1,22 +1,16 @@
 # Repo separation build loop
 
-*Case 2 `02-repo-separation-build-loop`. The [case JSON](case.json) is authoritative; this brief is navigation.*
+The [case JSON](case.json) is authoritative; this brief is navigation.
 
-## Governance situation
+## Situation
 
 An architectural boundary was turned into executable work, kept aligned across actors, and later corrected when the repository state diverged from the narrative.
 
 The governance situation is a common failure point: a boundary decision sounds right, implementation begins, and the narrative can drift away from the repo. Here the decision is decomposed into work that can be built and inspected. When later verification finds the narrative stale, the correction lands back on the same operational thread.
 
-## Judgment evidenced
-
-The evidence shows a healthier operating cadence: architecture is not allowed to float above execution, and execution is not allowed to silently rewrite strategy. The record preserves whether a decision became a working capability, and whether later evidence changed the decision basis.
-
-## Operating pattern in the records
-
 The record keeps decision, scaffold, implementation, vertical-slice proof, CLI inspection, and later ground-truth correction in one operational chain.
 
-## Selected evidence spine
+## Evidence spine
 
 - **Time: 2026-04-02 12:51 · Type: CML · Record: `CML-17` · State: active · Emitter: Seb**
   Seb opens the repo-separation thread to turn a boundary decision into executable structure. The mandate is not only to discuss architecture, but to prove the split through working scaffolding.
@@ -37,14 +31,14 @@ The record keeps decision, scaffold, implementation, vertical-slice proof, CLI i
 - **Time: 2026-04-25 17:28 · Type: INT · Record: `INT-98` · State: proposed · Emitter: code-framework**
   code-framework later corrects the repo ground truth after local verification. The correction prevents a stale architecture claim from becoming the release story.
 
-## Trust movement
+## Why it matters
+
+This is execution discipline plus correction discipline. Architecture is not allowed to float above execution, and execution is not allowed to silently rewrite strategy. The record follows whether the intent produced working surfaces, then accepts later ground truth when the implementation story needs updating.
+
+## Record trail
 
 CML-17 -> INT-47 -> CML-22 -> ACT-27 -> INT-98
 
-## Governance evidence
-
-This is execution discipline plus correction discipline. The record does not stop at architecture intent; it follows whether the intent produced working surfaces, then accepts later ground truth when the implementation story needs updating.
-
-## Verification links
+## Records
 
 [Case JSON](case.json) — embeds the full context packets for `CML-17` and `CML-22`.

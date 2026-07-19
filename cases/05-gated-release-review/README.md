@@ -1,22 +1,16 @@
 # Gated release review
 
-*Case 5 `05-gated-release-review`. The [case JSON](case.json) is authoritative; this brief is navigation.*
+The [case JSON](case.json) is authoritative; this brief is navigation.
 
-## Governance situation
+## Situation
 
 Presentation pressure was converted into explicit release gates. A clean-publication effort grew into source custody, live topology, external review readiness, and claim-verification records.
 
 The governance situation is a deadline with reputational weight. It would be easy to optimise for presentation: clean the repo, show the demo, move quickly. Instead the matter becomes a governed release lane. The record distinguishes polish from proof, documents what is deployed, captures gate decisions, and packages evidence for an outside technical reader.
 
-## Judgment evidenced
-
-The evidence shows readiness becoming inspectable. The governing question is not whether the work can be made impressive; it is whether the claims behind it have been checked, what remains unresolved, and what evidence can be shared without creating avoidable risk.
-
-## Operating pattern in the records
-
 Publication work, OAuth/write deployment, client-executive review context, gate decisions, source-harvest results, and external review handoff remain linked across the release matter.
 
-## Selected evidence spine
+## Evidence spine
 
 - **Time: 2026-05-02 05:58 · Type: CML · Record: `CML-36` · State: active · Emitter: Seb**
   Seb opens the clean 3M-LAYER private pilot repo publication thread. The intent frames the release as a history-free pilot repo with internal matter separated from public scaffolding.
@@ -37,14 +31,14 @@ Publication work, OAuth/write deployment, client-executive review context, gate 
 - **Time: 2026-05-17 11:26 · Type: RPT · Record: `RPT-41` · State: status · Emitter: codex-build**
   codex-build files the Claude Code review handoff for the client-executive walkthrough scenario. This closes the loop between pilot publication, external technical review, and the meeting context that raised the quality bar.
 
-## Trust movement
+## Why it matters
+
+This is restraint under external pressure. The governing question is not whether the work can be made impressive; it is whether the claims behind it have been checked, what remains unresolved, and what evidence can be shared without creating avoidable risk. The record shows a clean-release effort slowed down by gates for naming, custody, actor identity, service topology, live deployment, and review readiness before the work is shown to outsiders.
+
+## Record trail
 
 CML-36 -> RPT-12 -> CML-38 -> RPT-33 -> RPT-39 -> RPT-41
 
-## Governance evidence
-
-This is restraint under external pressure. The record shows a clean-release effort being slowed down by gates for naming, custody, actor identity, service topology, live deployment, and review readiness before the work is shown to outsiders.
-
-## Verification links
+## Records
 
 [Case JSON](case.json) — embeds the full context packets for `CML-38` and `CML-36`.
