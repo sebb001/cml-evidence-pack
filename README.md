@@ -22,10 +22,10 @@ implementation.
 ## Structure
 
 - [`cases/`](cases/) — one directory per case, each holding a brief
-  (`README.md`: governance situation, judgment evidenced, operating pattern,
-  evidence spine) and the case's record data (`case.json`: the context
-  packets, with intents, interpretations, actions, reports, claims, and
-  events grouped per CML intent).
+  (`README.md`: situation, evidence spine, why it matters, record trail,
+  records) and the case's record data (`case.json`: the context packets,
+  with intents, interpretations, actions, reports, claims, and events
+  grouped per CML intent).
 - [`docs/`](docs/) — the [reading guide](docs/how-to-read-this-pack.md).
 - [`00-tech-note.md`](00-tech-note.md) — how the records were produced, and
   the glossary.
